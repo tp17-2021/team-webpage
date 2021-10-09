@@ -1,0 +1,111 @@
+// definition of breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+$custom-spacers: (
+    small : 0.5rem,
+    default : 1rem,
+    large : 2rem
+);
+
+// Merge the maps
+@if variable-exists(spacers) {
+    $spacers: map-merge($spacers, $custom-spacers);
+}
+
+
+$dark-blue: #143759;
+$light-blue: #B6D8F1;
+$red: #E3111A;
+$dark-gray-color: #333333;
+
+$primary-color: $dark-blue;
+$secondary-color: $red;
+
+$main-font-color: black;
+$main-headings-color: black;
+
+$link-color: black;
+$link-color-content: $dark-blue;
+$link-color-hover: darken($dark-blue, 10%);
+$link-color-visited: lighten($dark-blue, 10%);
+
+
+//import font in theme style to not duplicate
+$font-open-sans: 'Open Sans', sans-serif;
+$font-arvo: 'Arvo', serif;
+$font-primary: $font-open-sans;
+
+@mixin single-transition($property:all, $speed:.125s, $ease:linear) {
+    -webkit-transition: $property $speed $ease;
+    -moz-transition: $property $speed $ease;
+    -o-transition: $property $speed $ease;
+    transition: $property $speed $ease;
+}
+
+//Spacing
+
+$default-space: 2rem;
+$default-space-lg: 3rem;
+$default-space-sm: $default-space / 2;
+$default-space-xs: $default-space / 4;
+
+$default-icon-space: 8px;
+
+// headings font sizes map
+$headings-font-sizes: (
+    h1 : 3.25rem,
+    h2 : 2.5rem,
+    h3 : 2rem,
+    h4 : 1.5rem,
+    h5 : 1.25rem,
+    h6 : 1rem,
+);
+
+
+//Block editors namespace
+$blockNamespace: "novyblesk";
+
+// bootstrap override
+$custom-theme-colors: (
+    "primary": $primary-color,
+    "secondary": $secondary-color,
+);
+
+@if variable-exists(theme-colors) {
+    $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+}
+$alert-border-radius: 0;
+
+$modal-content-border-radius: 0;
+
+$box-shadow-custom-color: $primary-color;
+$input-focus-width: .2rem;
+$input-focus-border-color: rgba($box-shadow-custom-color, .5);
+$input-focus-box-shadow: 0 0 0 $input-focus-width rgba($box-shadow-custom-color, .25);
+
+
+$input-border-radius: 0;
+$input-border-radius-sm: 0;
+$input-border-radius-lg: 0;
+
+
+$form-check-input-checked-bg-color: $primary-color;
+$form-check-input-focus-box-shadow: $input-focus-box-shadow;
+$form-check-input-checked-border-color: $primary-color;
+
+
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+
+$btn-padding-x-lg: 2.5rem;
+$btn-padding-y-lg: 1rem;
+
+

@@ -1,0 +1,67 @@
+@import "variables";
+
+html, body {
+    background-color: white;
+}
+
+img, figure {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-arvo;
+}
+
+/* Hero */
+#hero{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    .overlay {
+        background: $dark-gray-color;
+        opacity: 0.8;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .hero-content {
+        z-index: 2;
+    }
+}
+
+/* Members section */
+.member {
+    .member-image {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .member-name {
+       text-align: center;
+    }
+    .member-description {
+        text-align: center;
+    }
+}
+
+.advantage {
+    @include card-shadow();
+    .advantage-name, .advantage-description {
+        text-align: center;
+    }
+}
