@@ -1,9 +1,11 @@
 <?php
 return [
+    /* General */
     'site_title' => 'E-voľby | TP@FIIT STU',
     'site_name' => 'E-voľby',
     'email' => 'tim172021@googlegroups.com',
 
+    /* Advantages */
     'advantages' => [
         [
             'name' => 'Výhoda',
@@ -23,6 +25,7 @@ return [
         ]
     ],
 
+    /* Voting process */
     'voting_items' => [
         [
             'name' => 'Step 1',
@@ -38,6 +41,7 @@ return [
         ],
     ],
 
+    /* Team */
     'team_members' => [
         [
             'name' => 'For Biden',
@@ -61,4 +65,25 @@ return [
         ],
     ],
 
+    /* Documents */
+    'document_groups' => [
+        [
+            'name' => 'Group 1',
+            'description' => 'desc',
+            'documents' => [
+
+            ]
+        ],
+        [
+            'name' => 'Group 2',
+            'description' => 'desc',
+            'documents' => [
+
+            ]
+        ],
+    ],
+
+    /* Progress */
+    'progress_bar_label' => '20%',
+    'progress_bar_width' => 20,
 ];

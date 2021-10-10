@@ -38,9 +38,9 @@
         </nav>
     </header>
     <main>
-        <section id="hero" class="has-background-image has-overlay text-white py-5" style="background-image: url(img/hero.jpg)">
+        <section id="hero" class="has-background-image has-overlay text-white py-5 py-lg-7" style="background-image: url(img/hero.jpg)">
             <div class="inner-content container-lg">
-                <h1 class="text-center">Prvé elektronické voľby na Slovensku</h1>
+                <h1 class="section-title">Prvé elektronické voľby na Slovensku</h1>
                 <div class="mt-5">
                     <div class="text-center">
                         <a href="#voting-proces" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
@@ -50,10 +50,10 @@
             <div class="overlay"></div>
         </section>
 
-        <section id="advantages" class="py-5">
-            <div class="container-lg">
-                <h2 class="text-center mb-4">Výhody nášho riešenia</h2>
-                <div class="row g-5">
+        <section id="advantages">
+            <div class="container-lg overflow-hidden py-5 py-lg-7">
+                <h2 class="section-title">Výhody nášho riešenia</h2>
+                <div class="row g-4 g-md-6">
                     <?php foreach ($config['advantages'] as $advantage): ?>
                         <div class="col-md-6">
                             <div class="advantage p-5">
@@ -67,9 +67,9 @@
                 </div>
             </div>
         </section>
-        <section id="voting-proces" class="has-background-image has-overlay py-5" style="background-image: url(img/parliament.png)">
+        <section id="voting-proces" class="has-background-image has-overlay py-5 py-lg-7" style="background-image: url(img/parliament.png)">
             <div class="container-lg inner-content">
-                <h2 class="text-center text-white mb-4">Ako voliť</h2>
+                <h2 class="section-title text-white">Ako voliť</h2>
                 <div class="row">
                     <div class="col-md-6 mb-0 mb-md-0">
                         <div class="accordion accordion-flush" id="voting-accordion">
@@ -93,9 +93,9 @@
             </div>
             <div class="overlay"></div>
         </section>
-        <section id="team" class="py-5">
+        <section id="team" class="py-5 py-lg-7">
             <div class="container-lg overflow-hidden">
-                <h2 class="text-center mb-4">Tím</h2>
+                <h2 class="section-title">Tím</h2>
                 <div class="row g-4">
                     <?php foreach ($config['team_members'] as $member): ?>
                     <div class="col-md-6 col-lg-3">
@@ -117,18 +117,40 @@
                 </div>
             </div>
         </section>
-        <section id="documents" class="py-5">
+        <section id="documents" class="has-background-image has-overlay" style="background-image: url(img/parliament2.jpg)">
+            <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
+                <h2 class="section-title text-white">Dokumenty</h2>
+                <div class="row g-4 g-md-6 justify-content-center">
+                    <?php foreach ($config['document_groups'] as $document_group): ?>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="document-group p-5 bg-white">
+                                <h4 class="document-group-name"><?php echo $document_group['name'] ?></h4>
+                                <div class="document-group-description">
+                                    <?php echo $document_group['description'] ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <div class="overlay"></div>
+        </section>
+        <section id="progress" class="py-5 py-lg-7">
             <div class="container-lg">
-                <h2 class="text-center mb-4">Dokumenty</h2>
+                <h2 class="section-title">Výsledky našej práce</h2>
                 <div class="row">
-
+                    <div class="col-md-8 mx-auto">
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: <?php echo $config['progress_bar_width']; ?>%;"  aria-valuenow="<?php echo $config['progress_bar_width']; ?>" aria-valuemin="0" aria-valuemax="100"><?php echo $config['progress_bar_label']; ?></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="contact" class="footer has-background-image has-overlay text-white py-5" style="background-image: url(img/footer.png)">
+    <footer id="contact" class="footer has-background-image has-overlay text-white py-5 py-lg-7" style="background-image: url(img/footer.png)">
         <div class="container-lg inner-content">
-            <div class="row">
+            <div class="row align-items-end">
                 <div class="col-md-6 mb-5 mb-md-0">
                     <img src="img/logo_white.svg" alt="team logo" class="team-logo mb-4">
                     <h2 class="mb-4">Prvé voľby na Slovensku</h2>
