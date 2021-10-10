@@ -46,7 +46,8 @@ $link-color-visited: lighten($dark-blue, 10%);
 
 //import font in theme style to not duplicate
 $font-open-sans: 'Open Sans', sans-serif;
-$font-exo: 'Exo 2', sans-serif;;
+$font-exo: 'Exo 2', sans-serif;
+$font-bitter: 'Bitter', sans-serif;
 $font-primary: $font-open-sans;
 
 @mixin single-transition($property:all, $speed:.125s, $ease:linear) {
@@ -115,5 +116,14 @@ $btn-border-radius-lg: 0;
 
 $btn-padding-x-lg: 2.5rem;
 $btn-padding-y-lg: 1rem;
+
+
+$accordion-border-width: 0;
+$accordion-border-radius: 0.5rem;
+$accordion-inner-border-radius: $accordion-border-radius;
+$accordion-button-focus-border-color: rgba($dark-blue, .5);
+$accordion-button-focus-box-shadow: 0 0 0 $input-focus-width rgba($dark-blue, .25);
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: tint-color($dark-blue, 95%);
 
 

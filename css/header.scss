@@ -1,2 +1,34 @@
 @import "variables";
 
+.navbar {
+    padding: 0;
+    background-color: white;
+
+    .collapse {
+        height: 100%;
+    }
+
+    .navbar-nav {
+        height: 100%;
+
+        .nav-item {
+            height: 100%;
+            color: $main-headings-color;
+
+            &:hover {
+                background-color: $red;
+                color: $white;
+            }
+
+            .nav-link {
+                font-size: 1.25rem;
+                font-family: $font-bitter;
+                font-weight: 600;
+                padding: 1.25rem 1.5rem;
+                color: inherit;
+                transition: none;
+            }
+        }
+    }
+}
+

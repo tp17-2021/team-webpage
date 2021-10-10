@@ -28,15 +28,27 @@ return [
     /* Voting process */
     'voting_items' => [
         [
-            'name' => 'Step 1',
+            'name' => 'Preukázať sa',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         ],
         [
-            'name' => 'Step 2',
+            'name' => 'Vybrať si NFC tag',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         ],
         [
-            'name' => 'Step 3',
+            'name' => 'Zahlasovať',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        ],
+        [
+            'name' => 'Zobrať lístok',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        ],
+        [
+            'name' => 'Vhodiť do urny',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+        ],
+        [
+            'name' => 'Štastne odísť domov',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         ],
     ],
@@ -44,24 +56,44 @@ return [
     /* Team */
     'team_members' => [
         [
-            'name' => 'For Biden',
+            'name' => 'Lucia Janíková',
             'img_path' => 'img/biden.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Denis Klenovič',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Matúš Staš',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Marek Čeľuch',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Timotej Králik',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Libor Duda',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'name' => 'Adam Slatinský',
+            'img_path' => 'img/biden.jpg',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'For Biden',
             'img_path' => 'img/biden.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
-        [
-            'name' => 'For Biden',
-            'img_path' => 'img/biden.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
-        [
-            'name' => 'For Biden',
-            'img_path' => 'img/biden.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
     ],
 
@@ -86,4 +118,28 @@ return [
     /* Progress */
     'progress_bar_label' => '20%',
     'progress_bar_width' => 20,
+
+    /* Sprint results */
+    'sprint_results' => [
+        [
+            'date' => '10.10.2021',
+            'title' => 'Výsledok analýzy',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'date' => '10.10.2021',
+            'title' => 'Výsledok analýzy',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'date' => '10.10.2021',
+            'title' => 'Výsledok analýzy',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
+        [
+            'date' => '10.10.2021',
+            'title' => 'Výsledok analýzy',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ]
+    ]
 ];

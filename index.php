@@ -9,7 +9,7 @@
     </head>
     <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-lg">
                 <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="team logo" class="team-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
     <main>
         <section id="hero" class="has-background-image has-overlay text-white py-5 py-lg-7" style="background-image: url(img/hero.jpg)">
             <div class="inner-content container-lg">
-                <h1 class="section-title">Prvé elektronické voľby na Slovensku</h1>
+                <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
                 <div class="mt-5">
                     <div class="text-center">
                         <a href="#voting-proces" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
@@ -72,7 +72,7 @@
                 <h2 class="section-title text-white">Ako voliť</h2>
                 <div class="row">
                     <div class="col-md-6 mb-0 mb-md-0">
-                        <div class="accordion accordion-flush" id="voting-accordion">
+                        <div class="accordion" id="voting-accordion">
                             <?php $items_count = count($config['voting_items']); ?>
                             <?php foreach ($config['voting_items'] as $key => $item): ?>
                                 <div class="accordion-item <?php if($key < $items_count - 1) echo 'mb-3'; ?>">
@@ -88,7 +88,11 @@
                             <?php endforeach; ?>
                         </div>
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="" style="background-color: #1e71ab; width: 400px; height: 400px"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="overlay"></div>
@@ -96,7 +100,7 @@
         <section id="team" class="py-5 py-lg-7">
             <div class="container-lg overflow-hidden">
                 <h2 class="section-title">Tím</h2>
-                <div class="row g-4">
+                <div class="row g-4 g-lg-6">
                     <?php foreach ($config['team_members'] as $member): ?>
                     <div class="col-md-6 col-lg-3">
                         <div class="member">
@@ -140,10 +144,43 @@
                 <h2 class="section-title">Výsledky našej práce</h2>
                 <div class="row">
                     <div class="col-md-8 mx-auto">
+                        <div class="d-flex justify-content-between">
+                            <div>Week1</div>
+                            <div>Week2</div>
+                        </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: <?php echo $config['progress_bar_width']; ?>%;"  aria-valuenow="<?php echo $config['progress_bar_width']; ?>" aria-valuemin="0" aria-valuemax="100"><?php echo $config['progress_bar_label']; ?></div>
                         </div>
                     </div>
+                </div>
+
+                <div class="sprint-results mt-5">
+                    <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
+
+                    <?php
+                        $classes = "";
+                        $classes = ($index % 2 == 1) ? $classes." alternate" : $classes;
+                    ?>
+                    <div class="sprint-result d-flex <?php echo $classes; ?>">
+                        <div class="circle">
+                            <span>
+                                <?php echo $index + 1; ?>
+                            </span>
+                        </div>
+                        <div class="connector">
+                            <div class="line"></div>
+                        </div>
+                        <div class="box">
+                            <div class="header py-3 px-5"><?php echo $sprint_result['date']."&nbsp;- <br>".$sprint_result['date'] ?></div>
+                            <div class="content p-3">
+                                <h3><?php echo $sprint_result['title'] ?></h3>
+                                <div>
+                                    <?php echo $sprint_result['description'] ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
