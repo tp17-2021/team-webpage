@@ -14,33 +14,40 @@ iframe {
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: $font-arvo;
+    font-family: $font-exo;
 }
 
-/* Hero */
-#hero{
+.has-background-image{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+
+    &.has-overlay {
+        .overlay {
+            background: $dark-gray-color;
+            opacity: 0.8;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .inner-content {
+        z-index: 2;
+        position: inherit;
+    }
+}
+
+/* Hero */
+#hero{
     min-height: 80vh;
     color: white;
     display: flex;
     align-items: center;
-
-    .overlay {
-        background: $dark-gray-color;
-        opacity: 0.8;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
-
-    .hero-content {
-        z-index: 2;
-    }
 }
 
 /* Members section */
