@@ -4,16 +4,16 @@ $(document).ready(function ($) {
 
     console.log(menuToggle);
 
-    const bsCollapse = new bootstrap.Collapse(menuToggle);
+    //const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
 
 
-    navLinks.forEach((l) => {
+    /*navLinks.forEach((l) => {
         l.addEventListener('click', (e) => {
             e.preventDefault();
 
             // py is 5px on the logo image
-            let menuHeight = $(".navbar-brand").height() + 10;
-            let divId = $(e.target).attr('href');
+            /*let menuHeight = $(".navbar-brand").height() + 10;
+            /*let divId = $(e.target).attr('href');
 
             $('html, body').animate({
                 scrollTop: $(divId).offset().top - menuHeight
@@ -24,5 +24,5 @@ $(document).ready(function ($) {
                 bsCollapse.toggle();
             }
         })
-    });
+    });*/
 });

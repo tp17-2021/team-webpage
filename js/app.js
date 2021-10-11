@@ -1,7 +1,5 @@
 import "../css/all.scss"
 
-// import $ from "jquery";
-
 var $ = require( "jquery" );
 window.$ = $;
 

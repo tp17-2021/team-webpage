@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="dist/app.css">
         <script src="dist/app.js"></script>
     </head>
-    <body>
+    <body class="homepage">
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <div class="container-lg">
@@ -38,8 +38,8 @@
         </nav>
     </header>
     <main>
-        <section id="hero" class="has-background-image has-overlay text-white py-5 py-lg-7" style="background-image: url(img/hero.jpg)">
-            <div class="inner-content container-lg">
+        <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+            <div class="inner-content container-lg py-5 py-lg-7">
                 <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
                 <div class="mt-5">
                     <div class="text-center">
@@ -67,16 +67,16 @@
                 </div>
             </div>
         </section>
-        <section id="voting-process" class="has-background-image has-overlay py-5 py-lg-7" style="background-image: url(img/parliament.png)">
-            <div class="container-lg inner-content">
+        <section id="voting-process" class="has-background-image has-overlay" style="background-image: url(img/parliament.png)">
+            <div class="container-lg inner-content py-5 py-lg-7">
                 <h2 class="section-title text-white">Ako voliť</h2>
                 <div class="row">
-                    <div class="col-md-6 mb-0 mb-md-0">
+                    <div class="col-md-6 mb-5 mb-md-0">
                         <div class="accordion" id="voting-accordion">
                             <?php $items_count = count($config['voting_items']); ?>
                             <?php foreach ($config['voting_items'] as $key => $item): ?>
                                 <div class="accordion-item <?php if($key < $items_count - 1) echo 'mb-3'; ?>">
-                                    <h2 class="accordion-header" id="flush-headingOne">
+                                    <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#item-<?php echo $key; ?>" aria-expanded="false" aria-controls="item-<?php echo $key; ?>">
                                             <?php echo $item['name']; ?>
                                         </button>
@@ -144,8 +144,8 @@
             </div>
             <div class="overlay"></div>
         </section>
-        <section id="progress" class="py-5 py-lg-7">
-            <div class="container-lg">
+        <section id="progress">
+            <div class="container-lg py-5 py-lg-7">
                 <h2 class="section-title">Výsledky našej práce</h2>
                 <div class="row mb-5">
                     <div class="col-md-8 mx-auto">
@@ -197,8 +197,8 @@
             </div>
         </section>
     </main>
-    <footer id="contact" class="footer has-background-image has-overlay text-white py-5 py-lg-7" style="background-image: url(img/footer.png)">
-        <div class="container-lg inner-content">
+    <footer id="contact" class="footer has-background-image has-overlay text-white " style="background-image: url(img/footer.png)">
+        <div class="container-lg inner-content py-5 py-lg-7">
             <div class="row align-items-end">
                 <div class="col-md-6 mb-5 mb-md-0">
                     <img src="img/logo_white.svg" alt="team logo" class="team-logo mb-4">
