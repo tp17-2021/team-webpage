@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title><?php echo $config['site_title']; ?></title>
         <link rel="stylesheet" href="dist/app.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <script src="dist/app.js"></script>
     </head>
     <body class="homepage">
