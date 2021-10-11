@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-bitter;
+}
+
+h1 {
+    font-size: if(map-has-key($headings-font-sizes, h1), map-get($headings-font-sizes, h1), 3.25rem);
+    @include media-breakpoint-down('md'){
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: if(map-has-key($headings-font-sizes, h2), map-get($headings-font-sizes, h2), 2.5rem);
+    @include media-breakpoint-down('md'){
+        font-size: 2.25rem;
+    }
+}
+
+h3 {
+    font-size: if(map-has-key($headings-font-sizes, h3), map-get($headings-font-sizes, h3), 2rem);
+    @include media-breakpoint-down('md'){
+        font-size: 1.75rem;
+    }
+}
+
+h4 {
+    font-size: if(map-has-key($headings-font-sizes, h4), map-get($headings-font-sizes, h4), 1.5rem);
+}
+
+h5 {
+    font-size: if(map-has-key($headings-font-sizes, h5), map-get($headings-font-sizes, h5), 1.25rem);
+}
+
+h6 {
+    font-size: if(map-has-key($headings-font-sizes, h6), map-get($headings-font-sizes, h6), 1rem);
+}
+
+.font-extra-bold {
+    font-weight: 800;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-exo {
+    font-family: $font-exo;
+}
+
+.font-bitter {
+    font-family: $font-bitter;
+}
+
+.constrained-width-text {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}

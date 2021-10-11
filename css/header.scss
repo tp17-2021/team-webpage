@@ -11,7 +11,13 @@
     padding: 0;
     background-color: white;
 
+    @include card-shadow-medium();
+
     .navbar-nav {
+
+        @include media-breakpoint-down('md'){
+            padding: 0.5rem 0;
+        }
 
         .nav-item {
             color: $main-headings-color;
@@ -22,12 +28,17 @@
             }
 
             .nav-link {
-                font-size: 1.25rem;
+                font-size: 1.15rem;
                 font-family: $font-bitter;
                 font-weight: 600;
                 padding: 1.25rem 1.5rem;
                 color: inherit;
                 transition: none;
+
+                @include media-breakpoint-down('md'){
+                    //font-size: 1.1rem;
+                    padding: 1.15rem 1.5rem;
+                }
             }
         }
     }

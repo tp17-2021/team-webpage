@@ -2,6 +2,15 @@
 
 html, body {
     background-color: white;
+    font-size: 18px;
+
+    @include media-breakpoint-down("md"){
+        font-size: 16px;
+    }
+}
+
+main {
+    margin-top: 60px;
 }
 
 img, figure {
@@ -11,26 +20,6 @@ img, figure {
 
 iframe {
     max-width: 100%;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-exo;
-}
-
-.font-extra-bold {
-    font-weight: 800;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
-.font-semi-bold {
-    font-weight: 600;
-}
-
-.font-medium {
-    font-weight: 500;
 }
 
 .has-background-image {
@@ -78,11 +67,11 @@ h1, h2, h3, h4, h5, h6 {
         text-transform: uppercase;
         font-family: $font-bitter;
 
-        @include media-breakpoint-down("md"){
+        @include media-breakpoint-down("md") {
             font-size: 3rem;
         }
 
-        @include media-breakpoint-down("sm"){
+        @include media-breakpoint-down("sm") {
             font-size: 2.25rem;
         }
     }
@@ -92,20 +81,20 @@ h1, h2, h3, h4, h5, h6 {
 .advantage {
     @include card-shadow();
     border-radius: $default-border-radius;
+    height: 100%;
 
-    .advantage-name, .advantage-description {
-        text-align: center;
-    }
     .advantage-name {
+        text-align: center;
         position: relative;
         padding-bottom: map_get($spacers, 3);
         margin-bottom: map_get($spacers, 3);
+        font-weight: 700;
 
         &:after {
             $element-width: 50%;
             content: ' ';
             display: block;
-            width:  $element-width;
+            width: $element-width;
             border-bottom: 4px solid $primary-color;
             border-radius: $default-border-radius;
             position: absolute;
@@ -114,22 +103,32 @@ h1, h2, h3, h4, h5, h6 {
             margin-top: map_get($spacers, 2);
         }
     }
+
+    .advantage-description {
+        min-height: 8rem;
+        text-align: left;
+    }
 }
 
 /* Members section */
 .member {
     .member-image {
-        max-width: 150px;
+        max-width: 200px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .member-name {
         text-align: center;
+        font-weight: 700;
+        font-family: $font-exo;
+        margin-bottom: map_get($spacers, 4);
     }
 
     .member-description {
         text-align: center;
+        font-weight: 300;
+        font-size: 18px;
     }
 }
 
@@ -149,122 +148,190 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Documents */
-.document-group {
-    @include card-shadow-large();
-    border-radius: $default-border-radius;
+#documents {
+    .width-constraint {
+        max-width: 80%;
+        margin: auto;
 
-    .document-group-icon-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-bottom: map_get($spacers, 5);
+        @include media-breakpoint-down('lg'){
+            max-width: 90%;
+        }
 
-        .icon-circle {
-            width: 7rem;
-            height: 7rem;
-            border-radius: 50%;
-            border: 2px solid $dark-blue;
+        @include media-breakpoint-down('md'){
+            max-width: 100%;
+        }
+
+        .document-group {
+
+            cursor: pointer;
+            @include card-shadow-large();
+            border-radius: $default-border-radius;
             background-color: white;
+            height: 100%;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            &:hover {
+                background-color: #f7f9f9;
+                transform: translateY(-10px);
+                transition: 0.15s ease-in-out;
+            }
 
-            i {
-                font-size: 2.5rem;
+            .document-group-icon-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-bottom: map_get($spacers, 5);
+
+                .icon-circle {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;
+                    border: 2px solid $dark-blue;
+                    background-color: white;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            .document-group-name {
+                text-align: center;
+                margin-bottom: map_get($spacers, 3);
+            }
+
+            .document-group-description {
+
+                min-height: 8rem;
             }
         }
-    }
-
-    .document-group-name {
-        text-align: center;
-        margin-bottom: map_get($spacers, 3);
-    }
-
-    .document-group-description {
-
-        min-height: 8rem;
     }
 }
 
-/* Timeline */
-.sprint-results {
-    margin-bottom: -1 * map_get($spacers, 5);
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 
-    @include media-breakpoint-down("md") {
-        max-width: 100%;
+#progress {
+    .progress-wrapper {
+        .progress {
+            height: 1.4rem;
+            @include card-shadow-medium();
+
+            .progress-bar {
+                border-radius: $default-border-radius;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+        }
+
+        .week {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: $font-exo;
+            margin-bottom: map_get($spacers, 1);
+        }
     }
 
-    .sprint-result {
-        margin-bottom: map_get($spacers, 5);
-        align-items: center;
+    /* Timeline */
+    .sprint-results {
+        margin-bottom: -1 * map_get($spacers, 5);
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
 
-        .circle-wrapper {
-            display: flex;
-            min-width: 150px;
+        @include media-breakpoint-down("md") {
+            max-width: 100%;
+        }
 
-            &.right {
+        .sprint-result {
+            margin-bottom: map_get($spacers, 5);
+            align-items: center;
+
+            .circle-wrapper {
+                display: flex;
+                min-width: 150px;
+
+                &.right {
+                    .circle {
+                        order: 1;
+                    }
+
+                    .connector {
+                        order: 0;
+                    }
+                }
+
                 .circle {
-                    order: 1;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    color: $dark-blue;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    background-color: white;
+
+                    border-radius: 50%;
+                    border-width: 4px;
+                    border-style: solid;
+                    @include card-shadow-large();
                 }
 
                 .connector {
-                    order: 0;
+                    display: flex;
+                    align-items: center;
+                    width: calc(100% - 100px);
+
+                    .line {
+                        width: 100%;
+                        height: 4px;
+                    }
                 }
             }
 
-            .circle {
-                width: 100px;
-                height: 100px;
+            .box {
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                border-radius: $default-border-radius;
+                background-color: white;
+                overflow: hidden;
 
-                color: $dark-blue;
-                font-size: 2rem;
-                font-weight: 700;
-
-                border-radius: 50%;
-                border: 4px solid $dark-blue;
                 @include card-shadow-large();
-            }
 
-            .connector {
-                display: flex;
-                align-items: center;
-                width: calc(100% - 100px);
+                .header {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //background-color: $dark-blue;
+                    font-weight: 500;
+                    color: white;
+                }
 
-                .line {
-                    width: 100%;
-                    height: 4px;
-                    background-color: $dark-blue;
+                .content {
+                    .title {
+                        font-weight: 600;
+                        font-family: $font-exo;
+                    }
                 }
             }
         }
+    }
+}
 
-        .box {
-            display: flex;
-            border-radius: $default-border-radius;
-            background-color: white;
-            overflow: hidden;
+$starting-color: lighten($dark-blue, 40);
+@for $i from 1 through 12 {
+    .bg-blue-shade-#{$i} {
+        background-color: darken($starting-color, $i * 4);
+    }
 
-            @include card-shadow-large();
+    .border-blue-shade-#{$i} {
+        border-color: darken($starting-color, $i * 4);
+    }
 
-            .header {
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                background-color: $dark-blue;
-                font-weight: 500;
-                color: white;
-            }
-
-            .content {
-
-            }
-        }
+    .font-blue-shade-#{$i} {
+        color: darken($starting-color, $i * 4);
     }
 }

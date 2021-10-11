@@ -1,30 +1,36 @@
 $(document).ready(function ($) {
-    const navLinks = document.querySelectorAll('.nav-item');
     const menuToggle = document.getElementById('main-navbar');
+    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
+    const menuHeight = 59;
 
-    const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
-    $('.navbar-collapse a').click(function(){
-        bsCollapse.toggle();
+    // after clicking on manu item, hide collapsible navbar
+    $('.navbar-collapse a').click(function () {
+        let toggler_visible = $('.navbar .navbar-toggler').is(':visible');
+        if (toggler_visible) {
+            bsCollapse.toggle();
+        }
     });
 
-    if(window.location.hash) {
-        let menuHeight = $(".navbar .navbar-brand").height() + 10;
-        console.log(menuHeight);
-        menuHeight = 60;
-        let hash = window.location.hash;
-        let element = $('html, body').find(hash);
-        if(element.length){
-            $('html, body').animate({ scrollTop: $(window.location.hash).offset().top - menuHeight}, 0);
-        }else{
-            window.history.pushState("", document.title, window.location.pathname);
-        }
+    // animate when loading page with anchor in url
+    if (window.location.hash) {
+        scrollToAnchor(window.location.hash, 500);
     }
 
-    //https://github.com/cferdinandi/smooth-scroll
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        offset: function (anchor, toggle) {
-            return  $(".navbar-brand").height() + 10;
-        }
+    // on any href click, scroll to element, with offset -60 (menu height)
+    $('a[href^="#"]').on('click', function (event) {
+        let anchor = $(this).attr('href');
+        event.preventDefault();
+        scrollToAnchor(anchor);
     });
 
+    // scroll to anchor element
+    function scrollToAnchor(selector, timeout = 100) {
+        let target = $('html, body').find(selector);
+        if (target.length) {
+            document.location.hash = selector;
+            $('html, body').animate({
+                scrollTop: target.offset().top - menuHeight
+            }, timeout);
+        }
+    }
 });
