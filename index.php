@@ -12,16 +12,16 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-lg">
                 <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="team logo" class="team-logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse" id="main-navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#advantages">Výhody</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#voting-proces">Ako voliť</a>
+                            <a class="nav-link" aria-current="page" href="#voting-process">Ako voliť</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#team">Tím</a>
@@ -43,7 +43,7 @@
                 <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
                 <div class="mt-5">
                     <div class="text-center">
-                        <a href="#voting-proces" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
+                        <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </section>
-        <section id="voting-proces" class="has-background-image has-overlay py-5 py-lg-7" style="background-image: url(img/parliament.png)">
+        <section id="voting-process" class="has-background-image has-overlay py-5 py-lg-7" style="background-image: url(img/parliament.png)">
             <div class="container-lg inner-content">
                 <h2 class="section-title text-white">Ako voliť</h2>
                 <div class="row">

@@ -62,6 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin-bottom: map_get($spacers, 5);
     font-weight: 700;
+    color: $primary-color;
 }
 
 /* Hero */
@@ -72,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 
     h1 {
+        color: white;
         font-size: 56px;
         text-transform: uppercase;
         font-family: $font-bitter;
@@ -85,6 +87,24 @@ h1, h2, h3, h4, h5, h6 {
 
     .advantage-name, .advantage-description {
         text-align: center;
+    }
+    .advantage-name {
+        position: relative;
+        padding-bottom: map_get($spacers, 3);
+        margin-bottom: map_get($spacers, 3);
+
+        &:after {
+            $element-width: 50%;
+            content: ' ';
+            display: block;
+            width:  $element-width;
+            border: 3px solid $primary-color;
+            border-radius: $default-border-radius;
+            position: absolute;
+            left: 50%;
+            transform: translateX(- $element-width);
+            margin-top: map_get($spacers, 2);
+        }
     }
 }
 
@@ -105,15 +125,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.accordion {
-    .accordion-item {
-        border-radius: $accordion-border-radius;
-
-        .accordion-button {
-            color: $dark-blue;
-            font-style: italic;
-            font-weight: 500;
+#voting-process {
+    .accordion {
+        .accordion-item {
             border-radius: $accordion-border-radius;
+
+            .accordion-button {
+                color: $dark-blue;
+                font-style: italic;
+                font-weight: 500;
+                border-radius: $accordion-border-radius;
+            }
         }
     }
 }
@@ -191,7 +213,6 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
-
 
         .box {
             display: flex;

@@ -77,9 +77,6 @@ $headings-font-sizes: (
 );
 
 
-//Block editors namespace
-$blockNamespace: "novyblesk";
-
 // bootstrap override
 $custom-theme-colors: (
     "primary": $primary-color,
@@ -111,17 +108,17 @@ $form-check-input-checked-bg-color: $primary-color;
 $form-check-input-focus-box-shadow: $input-focus-box-shadow;
 $form-check-input-checked-border-color: $primary-color;
 
-
-$btn-border-radius: 0;
-$btn-border-radius-sm: 0;
-$btn-border-radius-lg: 0;
+$btn-border-radius: $default-border-radius;
+$btn-border-radius-sm: $default-border-radius;
+$btn-border-radius-lg: $default-border-radius;
 
 $btn-padding-x-lg: 2.5rem;
 $btn-padding-y-lg: 1rem;
 
+$progress-border-radius: $default-border-radius;
 
 $accordion-border-width: 0;
-$accordion-border-radius: 0.5rem;
+$accordion-border-radius: $default-border-radius;
 $accordion-inner-border-radius: $accordion-border-radius;
 $accordion-button-focus-border-color: rgba($dark-blue, .5);
 $accordion-button-focus-box-shadow: 0 0 0 $input-focus-width rgba($dark-blue, .25);
