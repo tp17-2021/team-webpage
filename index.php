@@ -9,7 +9,7 @@
     </head>
     <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
             <div class="container-lg">
                 <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="team logo" class="team-logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,10 +124,15 @@
         <section id="documents" class="has-background-image has-overlay" style="background-image: url(img/parliament2.jpg)">
             <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
                 <h2 class="section-title text-white">Dokumenty</h2>
-                <div class="row g-4 g-md-6 justify-content-center">
+                <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $document_group): ?>
                         <div class="col-md-6 col-lg-4">
                             <div class="document-group p-5 bg-white">
+                                <div class="document-group-icon-wrapper">
+                                    <div class="icon-circle">
+                                        <i class="fas fa-file-word"></i>
+                                    </div>
+                                </div>
                                 <h4 class="document-group-name"><?php echo $document_group['name'] ?></h4>
                                 <div class="document-group-description">
                                     <?php echo $document_group['description'] ?>

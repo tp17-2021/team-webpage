@@ -74,9 +74,17 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
         color: white;
-        font-size: 56px;
+        font-size: 4rem;
         text-transform: uppercase;
         font-family: $font-bitter;
+
+        @include media-breakpoint-down("md"){
+            font-size: 3rem;
+        }
+
+        @include media-breakpoint-down("sm"){
+            font-size: 2.25rem;
+        }
     }
 }
 
@@ -98,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
             content: ' ';
             display: block;
             width:  $element-width;
-            border: 3px solid $primary-color;
+            border-bottom: 4px solid $primary-color;
             border-radius: $default-border-radius;
             position: absolute;
             left: 50%;
@@ -145,14 +153,36 @@ h1, h2, h3, h4, h5, h6 {
     @include card-shadow-large();
     border-radius: $default-border-radius;
 
+    .document-group-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: map_get($spacers, 5);
+
+        .icon-circle {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: 2px solid $dark-blue;
+            background-color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
     .document-group-name {
-        margin-top: map_get($spacers, 7);
         text-align: center;
+        margin-bottom: map_get($spacers, 3);
     }
 
     .document-group-description {
-        margin-top: map_get($spacers, 3);
-        min-height: 12rem;
+
+        min-height: 8rem;
     }
 }
 

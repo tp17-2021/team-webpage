@@ -126,3 +126,12 @@ $accordion-button-focus-box-shadow: none;
 $accordion-button-active-bg: tint-color($dark-blue, 95%);
 
 
+$navbar-light-color:                rgba($main-headings-color, .55);
+$navbar-light-hover-color:          rgba(white, .7);
+
+//$navbar-light-toggler-icon-bg: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxMnB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxOCAxMiIgd2lkdGg9IjE4cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZXNjLz48ZGVmcy8+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSI+PGcgZmlsbD0iIzAwMDAwMCIgaWQ9IkNvcmUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04Ny4wMDAwMDAsIC0zNDIuMDAwMDAwKSI+PGcgaWQ9Im1lbnUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDg3LjAwMDAwMCwgMzQyLjAwMDAwMCkiPjxwYXRoIGQ9Ik0wLDEyIEwxOCwxMiBMMTgsMTAgTDAsMTAgTDAsMTIgTDAsMTIgWiBNMCw3IEwxOCw3IEwxOCw1IEwwLDUgTDAsNyBMMCw3IFogTTAsMCBMMCwyIEwxOCwyIEwxOCwwIEwwLDAgTDAsMCBaIiBpZD0iU2hhcGUiLz48L2c+PC9nPjwvZz48L3N2Zz4=");
+
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$dark-blue}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 5h22M4 15h22M4 25h22'/></svg>");
+$navbar-light-toggler-border-color: rgba($black, .1);
+
+

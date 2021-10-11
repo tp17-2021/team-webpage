@@ -1,18 +1,19 @@
 @import "variables";
 
+//:target {
+//    display: block;
+//    position: relative;
+//    top: -120px;
+//    visibility: hidden;
+//}
+
 .navbar {
     padding: 0;
     background-color: white;
 
-    .collapse {
-        height: 100%;
-    }
-
     .navbar-nav {
-        height: 100%;
 
         .nav-item {
-            height: 100%;
             color: $main-headings-color;
 
             &:hover {
@@ -27,6 +28,51 @@
                 padding: 1.25rem 1.5rem;
                 color: inherit;
                 transition: none;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border-color: $dark-blue;
+        margin: 8px 0 8px auto;
+        padding: 0.6rem;
+        font-size: 0.95rem;
+        border-radius: 4px;
+        border-width: 2px;
+
+        .navbar-toggler-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+
+            //&.open {
+            //    display: flex;
+            //    background-image: url("data:image/svg+xml,%3Csvg height='384pt' viewBox='0 -53 384 384' width='384pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3Cpath d='m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3Cpath d='m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3C/svg%3E");
+            //}
+            //
+            //&.close {
+            //    display: none;
+            //    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001' style='enable-background:new 0 0 512.001 512.001' xml:space='preserve'%3E%3Cpath d='M284.286 256.002 506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
+            //}
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.show {
+            .navbar-toggler-icon {
+                &.close {
+                    font-size: 1.2rem;
+                    line-height: 1.2rem;
+                    display: flex;
+                }
+
+                &.open {
+                    display: none;
+                }
             }
         }
     }

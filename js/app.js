@@ -1,3 +1,13 @@
 import "../css/all.scss"
 
-require("bootstrap/dist/js/bootstrap.bundle");
+// import $ from "jquery";
+
+var $ = require( "jquery" );
+window.$ = $;
+
+var bootstrap = require("bootstrap/dist/js/bootstrap.bundle");
+window.bootstrap = bootstrap;
+
+require("@fortawesome/fontawesome-free/css/all.min.css");
+
+require("./utilities");
