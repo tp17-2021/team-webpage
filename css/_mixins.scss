@@ -7,3 +7,7 @@
         }
     }
 }
+
+@mixin card-shadow-large(){
+    box-shadow: 2px 24px 30px 0 rgba(0, 0, 0, 0.11);
+}

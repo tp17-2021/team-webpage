@@ -101,14 +101,42 @@ return [
     'document_groups' => [
         [
             'name' => 'Group 1',
-            'description' => 'desc',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
             'documents' => [
 
             ]
         ],
         [
             'name' => 'Group 2',
-            'description' => 'desc',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+            'documents' => [
+
+            ]
+        ],
+        [
+            'name' => 'Group 3',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+            'documents' => [
+
+            ]
+        ],
+        [
+            'name' => 'Group 4',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+            'documents' => [
+
+            ]
+        ],
+        [
+            'name' => 'Group 5',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
+            'documents' => [
+
+            ]
+        ],
+        [
+            'name' => 'Group 6',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.',
             'documents' => [
 
             ]

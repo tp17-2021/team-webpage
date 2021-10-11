@@ -156,7 +156,9 @@
 
                 <div class="sprint-results">
                     <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
-
+                    <?php
+                        $sprint_start =  DateTime::createFromFormat('d.m.Y', $sprint_result['date']);
+                    ?>
                     <div class="sprint-result">
                         <div class="row g-0 align-items-center">
                             <div class="col-auto d-none d-md-block <?php if($index % 2 == 1) echo 'order-1'; ?>">
@@ -173,7 +175,7 @@
                             </div>
                             <div class="col <?php if($index % 2 == 1) echo 'order-0'; ?>">
                                 <div class="box">
-                                    <div class="header py-3 px-3 px-md-5"><?php echo $sprint_result['date']."&nbsp;- <br>".$sprint_result['date'] ?></div>
+                                    <div class="header py-3 px-3 px-md-5 <?php if($index % 2 == 1) echo 'order-2'; ?>"><?php echo $sprint_start->format('d.m')."&nbsp;- <br>".$sprint_start->format('d.m.Y') ?></div>
                                     <div class="content p-3">
                                         <h3><?php echo $sprint_result['title'] ?></h3>
                                         <div>
