@@ -78,6 +78,14 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+/* Advantages */
+.advantage {
+    @include card-shadow();
+    .advantage-name, .advantage-description {
+        text-align: center;
+    }
+}
+
 /* Members section */
 .member {
     .member-image {
@@ -94,13 +102,6 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
-.advantage {
-    @include card-shadow();
-    .advantage-name, .advantage-description {
-        text-align: center;
-    }
-}
-
 .accordion {
     .accordion-item {
         border-radius: $accordion-border-radius;
@@ -113,39 +114,61 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+/* Documents */
+.document-group{
+    @include card-shadow();
+
+}
+
+/* Timeline */
 .sprint-results {
-    margin-bottom: -2rem;
+    margin-bottom: -1 * map_get($spacers, 5);
     .sprint-result {
-        margin-bottom: 2rem;
+        margin-bottom: map_get($spacers, 5);
         align-items: center;
 
-        .circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 4px solid $dark-blue;
-            color: $dark-blue;
+        .circle-wrapper {
             display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            min-width: 150px;
 
-        .connector {
-            display: flex;
-            align-items: center;
+            &.right{
+                .circle {
+                    order: 1;
+                }
+                .connector {
+                    order: 0;
+                }
+            }
 
-            .line {
-                width: 50px;
-                height: 4px;
-                background-color: $dark-blue;
+            .circle {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 4px solid $dark-blue;
+                color: $dark-blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .connector {
+                display: flex;
+                align-items: center;
+                width: calc(100% - 100px);
+
+                .line {
+                    width: 100%;
+                    height: 4px;
+                    background-color: $dark-blue;
+                }
             }
         }
+
 
         .box {
             display: flex;
             @include card-shadow();
             border-radius: 12px;
-            border: 12px;
             background-color: white;
             overflow: hidden;
 
@@ -160,15 +183,6 @@ h1, h2, h3, h4, h5, h6{
 
             .content {
 
-            }
-        }
-
-        &.alternate {
-            .circle {
-                order: 3;
-            }
-            .connector {
-                order: 2;
             }
         }
     }

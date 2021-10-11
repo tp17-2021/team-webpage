@@ -21,7 +21,7 @@
                             <a class="nav-link" aria-current="page" href="#advantages">Výhody</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#voting-proces">Ako votiť</a>
+                            <a class="nav-link" aria-current="page" href="#voting-proces">Ako voliť</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#team">Tím</a>
@@ -97,8 +97,8 @@
             </div>
             <div class="overlay"></div>
         </section>
-        <section id="team" class="py-5 py-lg-7">
-            <div class="container-lg overflow-hidden">
+        <section id="team">
+            <div class="container-lg overflow-hidden py-5 py-lg-7">
                 <h2 class="section-title">Tím</h2>
                 <div class="row g-4 g-lg-6">
                     <?php foreach ($config['team_members'] as $member): ?>
@@ -142,7 +142,7 @@
         <section id="progress" class="py-5 py-lg-7">
             <div class="container-lg">
                 <h2 class="section-title">Výsledky našej práce</h2>
-                <div class="row">
+                <div class="row mb-5">
                     <div class="col-md-8 mx-auto">
                         <div class="d-flex justify-content-between">
                             <div>Week1</div>
@@ -154,32 +154,37 @@
                     </div>
                 </div>
 
-                <div class="sprint-results mt-5">
+                <div class="sprint-results">
                     <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
 
-                    <?php
-                        $classes = "";
-                        $classes = ($index % 2 == 1) ? $classes." alternate" : $classes;
-                    ?>
-                    <div class="sprint-result d-flex <?php echo $classes; ?>">
-                        <div class="circle">
-                            <span>
-                                <?php echo $index + 1; ?>
-                            </span>
-                        </div>
-                        <div class="connector">
-                            <div class="line"></div>
-                        </div>
-                        <div class="box">
-                            <div class="header py-3 px-5"><?php echo $sprint_result['date']."&nbsp;- <br>".$sprint_result['date'] ?></div>
-                            <div class="content p-3">
-                                <h3><?php echo $sprint_result['title'] ?></h3>
-                                <div>
-                                    <?php echo $sprint_result['description'] ?>
+                    <div class="sprint-result">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-auto d-none d-md-block <?php if($index % 2 == 1) echo 'order-1'; ?>">
+                                <div class="circle-wrapper <?php if($index % 2 == 1) echo 'right'; ?>">
+                                    <div class="circle">
+                                    <span>
+                                        <?php echo $index + 1; ?>
+                                    </span>
+                                    </div>
+                                    <div class="connector">
+                                        <div class="line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col <?php if($index % 2 == 1) echo 'order-0'; ?>">
+                                <div class="box">
+                                    <div class="header py-3 px-3 px-md-5"><?php echo $sprint_result['date']."&nbsp;- <br>".$sprint_result['date'] ?></div>
+                                    <div class="content p-3">
+                                        <h3><?php echo $sprint_result['title'] ?></h3>
+                                        <div>
+                                            <?php echo $sprint_result['description'] ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <?php endforeach; ?>
                 </div>
             </div>
