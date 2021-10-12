@@ -1,11 +1,14 @@
-<?php $config = require_once 'config.php'; ?>
+<?php
+$config = require_once 'config.php';
+require_once 'functions.php';
+?>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title><?php echo $config['site_title']; ?></title>
-    <link rel="stylesheet" href="dist/app.css">
-    <script src="dist/app.js"></script>
+    <link rel="stylesheet" href="<?php echo get_file_time('dist/app.css'); ?>">
+    <script src="<?php echo get_file_time('dist/app.js'); ?>"></script>
 </head>
 <body class="homepage">
 <header>
@@ -73,7 +76,7 @@
         </div>
     </section>
     <section id="voting-process" class="has-background-image has-overlay"
-             style="background-image: url(img/parliament.png)">
+             style="background-image: url(img/parliament.jpg)">
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
@@ -255,7 +258,7 @@
     </section>
 </main>
 <footer id="contact" class="footer has-background-image has-overlay text-white "
-        style="background-image: url(img/footer.png)">
+        style="background-image: url(img/footer.jpg)">
     <div class="container-lg inner-content py-5 py-lg-7">
         <div class="row align-items-end">
             <div class="col-md-6 mb-5 mb-md-0">
