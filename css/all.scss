@@ -1,0 +1,33 @@
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700;800;900&display=swap');
+
+
+// Import necessary bootstrap to override read more here: https://stackoverflow.com/questions/45776055/how-to-extend-modify-customize-bootstrap-4-with-sass
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+// Import variables (first!), function and mixins first to be available in all files!
+// // comment escaped from generated css
+// /**/ comment remain in generated css
+@import "variables";
+@import "mixins";
+
+@import "~bootstrap/scss/utilities";
+
+
+@import "bootstrap/before-generate";
+// Generate whole bootstrap or only parts with custom variables
+/* Bootstrap Utilities */
+@import "~bootstrap/scss/bootstrap";
+
+@import "bootstrap/after-generate";
+
+
+@import "generic";
+@import "general";
+@import "typography";
+@import "header";
+@import "footer";

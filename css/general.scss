@@ -1,0 +1,337 @@
+@import "variables";
+
+html, body {
+    background-color: white;
+    font-size: 18px;
+
+    @include media-breakpoint-down("md"){
+        font-size: 16px;
+    }
+}
+
+main {
+    margin-top: 60px;
+}
+
+img, figure {
+    height: auto;
+    max-width: 100%;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.has-background-image {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    &.has-overlay {
+        .overlay {
+            background: $dark-blue;
+            opacity: 0.60;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .inner-content {
+        z-index: 2;
+        position: inherit;
+    }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: map_get($spacers, 5);
+    font-weight: 700;
+    color: $primary-color;
+}
+
+/* Hero */
+#hero {
+    min-height: 80vh;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-family: $font-bitter;
+
+        @include media-breakpoint-down("md") {
+            font-size: 3rem;
+        }
+
+        @include media-breakpoint-down("sm") {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+/* Advantages */
+.advantage {
+    @include card-shadow();
+    border-radius: $default-border-radius;
+    height: 100%;
+
+    .advantage-name {
+        text-align: center;
+        position: relative;
+        padding-bottom: map_get($spacers, 3);
+        margin-bottom: map_get($spacers, 3);
+        font-weight: 700;
+
+        &:after {
+            $element-width: 50%;
+            content: ' ';
+            display: block;
+            width: $element-width;
+            border-bottom: 4px solid $primary-color;
+            border-radius: $default-border-radius;
+            position: absolute;
+            left: 50%;
+            transform: translateX(- $element-width);
+            margin-top: map_get($spacers, 2);
+        }
+    }
+
+    .advantage-description {
+        min-height: 8rem;
+        text-align: left;
+    }
+}
+
+/* Members section */
+.member {
+    .member-image {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .member-name {
+        text-align: center;
+        font-weight: 700;
+        font-family: $font-exo;
+        margin-bottom: map_get($spacers, 4);
+    }
+
+    .member-description {
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+#voting-process {
+    .accordion {
+        .accordion-item {
+            border-radius: $accordion-border-radius;
+
+            .accordion-button {
+                color: $dark-blue;
+                font-style: italic;
+                font-weight: 500;
+                border-radius: $accordion-border-radius;
+            }
+        }
+    }
+}
+
+/* Documents */
+#documents {
+    .width-constraint {
+        max-width: 80%;
+        margin: auto;
+
+        @include media-breakpoint-down('lg'){
+            max-width: 90%;
+        }
+
+        @include media-breakpoint-down('md'){
+            max-width: 100%;
+        }
+
+        .document-group {
+
+            cursor: pointer;
+            @include card-shadow-large();
+            border-radius: $default-border-radius;
+            background-color: white;
+            height: 100%;
+
+            &:hover {
+                background-color: #f7f9f9;
+                transform: translateY(-10px);
+                transition: 0.15s ease-in-out;
+            }
+
+            .document-group-icon-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-bottom: map_get($spacers, 5);
+
+                .icon-circle {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;
+                    border: 2px solid $dark-blue;
+                    background-color: white;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            .document-group-name {
+                text-align: center;
+                margin-bottom: map_get($spacers, 3);
+            }
+
+            .document-group-description {
+
+                min-height: 8rem;
+            }
+        }
+    }
+}
+
+
+#progress {
+    .progress-wrapper {
+        .progress {
+            height: 1.4rem;
+            @include card-shadow-medium();
+
+            .progress-bar {
+                border-radius: $default-border-radius;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+        }
+
+        .week {
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: $font-exo;
+            margin-bottom: map_get($spacers, 1);
+        }
+    }
+
+    /* Timeline */
+    .sprint-results {
+        margin-bottom: -1 * map_get($spacers, 5);
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media-breakpoint-down("md") {
+            max-width: 100%;
+        }
+
+        .sprint-result {
+            margin-bottom: map_get($spacers, 5);
+            align-items: center;
+
+            .circle-wrapper {
+                display: flex;
+                min-width: 150px;
+
+                &.right {
+                    .circle {
+                        order: 1;
+                    }
+
+                    .connector {
+                        order: 0;
+                    }
+                }
+
+                .circle {
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    color: $dark-blue;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    background-color: white;
+
+                    border-radius: 50%;
+                    border-width: 4px;
+                    border-style: solid;
+                    @include card-shadow-large();
+                }
+
+                .connector {
+                    display: flex;
+                    align-items: center;
+                    width: calc(100% - 100px);
+
+                    .line {
+                        width: 100%;
+                        height: 4px;
+                    }
+                }
+            }
+
+            .box {
+                display: flex;
+                border-radius: $default-border-radius;
+                background-color: white;
+                overflow: hidden;
+
+                @include card-shadow-large();
+
+                .header {
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    //background-color: $dark-blue;
+                    font-weight: 500;
+                    color: white;
+                }
+
+                .content {
+                    .title {
+                        font-weight: 600;
+                        font-family: $font-exo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+$starting-color: lighten($dark-blue, 40);
+@for $i from 1 through 12 {
+    .bg-blue-shade-#{$i} {
+        background-color: darken($starting-color, $i * 4);
+    }
+
+    .border-blue-shade-#{$i} {
+        border-color: darken($starting-color, $i * 4);
+    }
+
+    .font-blue-shade-#{$i} {
+        color: darken($starting-color, $i * 4);
+    }
+}

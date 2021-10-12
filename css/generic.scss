@@ -1,0 +1,55 @@
+@import "variables";
+
+/* Images styles */
+$image-ratios : (
+        "1-1": 100%,
+        "1-2": calc(2 / 1 * 100%),
+        "2-1": calc(1 / 2 * 100%),
+        "2-3": calc(3 / 2 * 100%),
+        "3-2": calc(2 / 3 * 100%),
+        "3-4": calc(4 / 3 * 100%),
+        "4-3": calc(3 / 4 * 100%),
+        "16-9": calc(9 / 16 * 100%),
+        "21-9": calc(9 / 21 * 100%)
+);
+
+.image-wrapper {
+    &.zoom-on-hover {
+        overflow: hidden;
+        img {
+            transition: transform .5s ease;
+        }
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &.rounded {
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    @each $ratio, $value in $image-ratios{
+        &.fixed-image-ratio-#{$ratio} {
+            display: block;
+            position: relative;
+            height: 0;
+            padding-bottom: $value;
+            overflow: hidden;
+            img {
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                top: 0 !important;
+                left: 0 !important;
+                width: 100% !important;
+                height: 100% !important;
+                max-width: inherit;
+            }
+        }
+    }
+}
+

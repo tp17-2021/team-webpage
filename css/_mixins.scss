@@ -1,0 +1,17 @@
+@mixin card-shadow($hover:false){
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    @include transition();
+    @if($hover == true){
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+
+@mixin card-shadow-medium(){
+    box-shadow: 2px 10px 24px 0 rgba(0, 0, 0, 0.10);
+}
+
+@mixin card-shadow-large(){
+    box-shadow: 2px 24px 30px 0 rgba(0, 0, 0, 0.10);
+}
