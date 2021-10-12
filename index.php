@@ -226,19 +226,19 @@ require_once 'functions.php';
                         <div class="row g-0 align-items-center">
                             <div class="col-auto d-none d-md-block <?php if ($index % 2 == 1) echo 'order-1'; ?>">
                                 <div class="circle-wrapper <?php if ($index % 2 == 1) echo 'right'; ?>">
-                                    <div class="circle <?php echo "border-blue-shade-" . ($index + 1); ?>">
-                                    <span class="<?php echo "font-blue-shade-" . ($index + 1); ?>">
+                                    <div class="circle <?php echo 'border-blue-shade-' . ($index + 1); ?>">
+                                    <span class="<?php echo 'font-blue-shade-' . ($index + 1); ?>">
                                         <?php echo $index + 1; ?>
                                     </span>
                                     </div>
                                     <div class="connector">
-                                        <div class="line <?php echo "bg-blue-shade-" . ($index + 1); ?>"></div>
+                                        <div class="line <?php echo 'bg-blue-shade-' . ($index + 1); ?>"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col <?php if ($index % 2 == 1) echo 'order-0'; ?>">
                                 <div class="box">
-                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo "bg-blue-shade-" . ($index + 1); ?>">
+                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
                                         <?php echo $sprint_start->format('d.m') . "&nbsp;- <br>" . $sprint_end->format('d.m.Y') ?>
                                     </div>
                                     <div class="content py-3 px-4">
