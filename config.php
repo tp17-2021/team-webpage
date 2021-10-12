@@ -83,7 +83,7 @@ return [
         ],
         [
             'name' => 'Marek Ceľuch',
-            'img_path' => 'img/biden.jpg',
+            'img_path' => 'img/team_members/marek_celuch.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
