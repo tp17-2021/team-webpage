@@ -30,10 +30,11 @@ $custom-gutters: (
 $dark-blue: #143759;
 $light-blue: #B6D8F1;
 $red: #E3111A;
+$green: #BED558;
 $dark-gray-color: #333333;
 
 $primary-color: $dark-blue;
-$secondary-color: $red;
+$secondary-color: $green;
 
 $main-font-color: black;
 $main-headings-color: black;
@@ -133,5 +134,11 @@ $navbar-light-hover-color:          rgba(white, .7);
 
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$dark-blue}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 5h22M4 15h22M4 25h22'/></svg>");
 $navbar-light-toggler-border-color: rgba($black, .1);
+
+$table-striped-bg: #cae4fc45;
+
+//$modal-show-transform
+$modal-content-border-radius: $default-border-radius;
+$modal-inner-padding: 1rem 2rem;
 
 
