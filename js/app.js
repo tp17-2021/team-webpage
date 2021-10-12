@@ -8,4 +8,8 @@ window.bootstrap = bootstrap;
 
 require("@fortawesome/fontawesome-free/css/all.min.css");
 
+// cannot use slick-theme styles
+require("slick-carousel/slick/slick.js");
+require("slick-carousel/slick/slick.css");
+
 require("./utilities");

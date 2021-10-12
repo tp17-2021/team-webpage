@@ -55,6 +55,37 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
+    <!-- Slider -->
+    <div class="slider-wrapper" style="display: none" >
+        <div class="main-slider">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+                <div class="inner-content container-lg py-5 py-lg-7">
+                    <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
+                    <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
+                    <div class="mt-5">
+                        <div class="text-center">
+                            <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+                <div class="inner-content container-lg py-5 py-lg-7">
+                    <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku 2</h1>
+                    <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
+                    <div class="mt-5">
+                        <div class="text-center">
+                            <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider end -->
+
     <section id="advantages">
         <div class="container-lg overflow-hidden py-5 py-lg-7">
             <h2 class="section-title mb-3">Naše riešenia</h2>
