@@ -83,7 +83,7 @@ return [
         ],
         [
             'name' => 'Marek Ceľuch',
-            'img_path' => 'img/biden.jpg',
+            'img_path' => 'img/team_members/marek_celuch.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
@@ -107,6 +107,7 @@ return [
     'document_groups' => [
         [
             'name' => 'Zápisnice zo stretnutí',
+            'iconpath' => 'img/document_icons/meetings.svg',
             'description' => 'Zápisnica obsahuje transkript konverzácii s vedúcim projektu z našich pravidelných ceremónii, ktoré sa uskutočňujú každý utorok. V zápisnici sú poznačené rozhodnutia, ktoré sme na ceremónni vykonali a sú zadefinované ciele na další týždeň.',
             'documents' => [
                 [
@@ -168,6 +169,7 @@ return [
         ],
         [
             'name' => 'Zhodnotenie šprintov',
+            'iconpath' => 'img/document_icons/sprint_reports.svg',
             'description' => 'Podvoch týždňoch sa vrámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprintt.',
             'documents' => [
 
@@ -175,6 +177,7 @@ return [
         ],
         [
             'name' => 'Metodiky',
+            'iconpath' => 'img/document_icons/methodologies.svg',
             'description' => 'Náš tím pracuje s viacorími metodikami, v ktorých sú rámcovo podrobne zadefinované požiadaky na štruktúru a kavlitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
             'documents' => [
 
@@ -182,6 +185,7 @@ return [
         ],
         [
             'name' => 'Ostatné',
+            'iconpath' => 'img/document_icons/other_documents.svg',
             'description' => 'Ostatné dokuemnty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projek a súťažou TP CUP.',
             'documents' => [
 

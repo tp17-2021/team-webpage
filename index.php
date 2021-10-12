@@ -55,6 +55,37 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
+    <!-- Slider -->
+    <div class="slider-wrapper" style="display: none" >
+        <div class="main-slider">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+                <div class="inner-content container-lg py-5 py-lg-7">
+                    <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
+                    <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
+                    <div class="mt-5">
+                        <div class="text-center">
+                            <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+                <div class="inner-content container-lg py-5 py-lg-7">
+                    <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku 2</h1>
+                    <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
+                    <div class="mt-5">
+                        <div class="text-center">
+                            <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider end -->
+
     <section id="advantages">
         <div class="container-lg overflow-hidden py-5 py-lg-7">
             <h2 class="section-title mb-3">Naše riešenia</h2>
@@ -140,14 +171,14 @@ require_once 'functions.php';
                 <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
                         <div class="col-md-6">
-                            <div class="document-group p-5" data-bs-toggle="modal"
-                                 data-bs-target="#modal-document-group-<?php echo $key + 1; ?>">
+                            <div class="document-group-card p-5 h-100" data-bs-toggle="modal"
+                                 data-bs-target="#document-modal-group-<?php echo $key + 1; ?>">
                                 <div class="document-group-icon-wrapper">
                                     <div class="icon-circle">
-                                        <i class="fas fa-file-word"></i>
+                                        <img src="<?php echo $document_group['iconpath']; ?>" alt="<?php echo $document_group['name']; ?>">
                                     </div>
                                 </div>
-                                <h4 class="document-group-name font-bold font-exo"><?php echo $document_group['name'] ?></h4>
+                                <h4 class="document-group-name font-bold font-exo"><?php echo $document_group['name']; ?></h4>
                                 <div class="document-group-description font-light">
                                     <?php echo $document_group['description'] ?>
                                 </div>
@@ -162,29 +193,47 @@ require_once 'functions.php';
 
     <!-- MODALS -->
     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
-        <div id="modal-document-group-<?php echo $key + 1; ?>" class="modal" tabindex="-1">
-            <div class="modal-dialog modal-lg">
+        <div id="document-modal-group-<?php echo $key + 1; ?>" class="modal document-group-modal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="font-exo"><?php echo $document_group['name']; ?></h5>
+                        <h5 class="modal-title font-exo text-center w-100"><?php echo $document_group['name']; ?></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div>
-                            <div>
-                                <table class="w-100 table document-table">
-                                    <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                    </thead>
+                        <div class="row">
+                            <div class="col-4 h-100 d-none d-md-flex justify-content-center">
+                                <div class="document-group-card small p-4" >
+                                    <div class="document-group-icon-wrapper">
+                                        <div class="icon-circle">
+                                            <img src="<?php echo $document_group['iconpath']; ?>" alt="<?php echo $document_group['name']; ?>">
+                                        </div>
+                                    </div>
+                                    <h4 class="document-group-name font-bold font-exo"><?php echo $document_group['name'] ?></h4>
+                                    <div class="document-group-description font-light">
+                                        <?php echo $document_group['description'] ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <?php if(empty($document_group['documents'])): ?>
+                                    <div class="d-flex justify-content-center">
+                                        <span class="no-documents-message">Zatiaľ tu nie sú žiadne dokumenty</span>
+                                    </div>
+                                <?php endif; ?>
+
+                                <table class="w-100 table document-table table-responsive table-striped">
                                     <tbody>
                                     <?php foreach ($document_group['documents'] as $index => $document): ?>
                                         <tr>
-                                            <td><?php echo $document['name'] ?></td>
-                                            <td><?php echo $document['date'] ?></td>
-                                            <td>Download > See</td>
+                                            <td class="name"><?php echo $document['name'] ?></td>
+                                            <td class="date"><?php echo $document['date'] ?></td>
+                                            <td class="actions">
+                                                <div class="icons">
+                                                    <i class="fas fa-download"></i>
+                                                    <i class="fas fa-search ml-3"></i>
+                                                </div>
+                                            </td>
                                         </tr>
                                     <?php endforeach; ?>
                                     </tbody>
@@ -256,6 +305,7 @@ require_once 'functions.php';
             </div>
         </div>
     </section>
+
 </main>
 <footer id="contact" class="footer has-background-image has-overlay text-white "
         style="background-image: url(img/footer.jpg)">

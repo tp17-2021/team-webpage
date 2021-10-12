@@ -25,6 +25,16 @@ $(document).ready(function ($) {
 
     // scroll to anchor element
     function scrollToAnchor(selector, timeout = 100) {
+        selector = selector.trim();
+
+        if(selector === '#'){
+            document.location.hash = selector;
+            $('html, body').animate({
+                scrollTop: 0,
+            }, timeout);
+            return;
+        }
+
         let target = $('html, body').find(selector);
         if (target.length) {
             document.location.hash = selector;
@@ -33,4 +43,10 @@ $(document).ready(function ($) {
             }, timeout);
         }
     }
+
+    $('.main-slider').slick({
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+    });
 });

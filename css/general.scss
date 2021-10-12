@@ -4,7 +4,7 @@ html, body {
     background-color: white;
     font-size: 18px;
 
-    @include media-breakpoint-down("md"){
+    @include media-breakpoint-down("md") {
         font-size: 16px;
     }
 }
@@ -55,7 +55,7 @@ iframe {
 }
 
 /* Hero */
-#hero {
+#hero, .hero-slider-slide {
     min-height: 80vh;
     color: white;
     display: flex;
@@ -153,58 +153,78 @@ iframe {
         max-width: 80%;
         margin: auto;
 
-        @include media-breakpoint-down('lg'){
+        @include media-breakpoint-down('lg') {
             max-width: 90%;
         }
 
-        @include media-breakpoint-down('md'){
+        @include media-breakpoint-down('md') {
             max-width: 100%;
         }
+    }
+}
 
-        .document-group {
+.document-group-card {
 
-            cursor: pointer;
-            @include card-shadow-large();
-            border-radius: $default-border-radius;
-            background-color: white;
-            height: 100%;
+    @include card-shadow-large();
+    border-radius: $default-border-radius;
+    background-color: white;
 
-            &:hover {
-                background-color: #f7f9f9;
-                transform: translateY(-10px);
-                transition: 0.15s ease-in-out;
+    .document-group-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: map_get($spacers, 5);
+
+        .icon-circle {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 50%;
+            border: 2px solid $dark-blue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 3rem;
+                height: 3rem;
             }
+        }
+    }
 
-            .document-group-icon-wrapper {
-                display: flex;
-                justify-content: center;
-                margin-bottom: map_get($spacers, 5);
+    .document-group-name {
+        text-align: center;
+        margin-bottom: map_get($spacers, 3);
+    }
 
-                .icon-circle {
-                    width: 7rem;
-                    height: 7rem;
-                    border-radius: 50%;
-                    border: 2px solid $dark-blue;
-                    background-color: white;
+    &:not(.small){
+        cursor: pointer;
 
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+        &:hover {
+            background-color: #f7f9f9;
+            transform: translateY(-10px);
+            transition: 0.15s ease-in-out;
+        }
 
-                    i {
-                        font-size: 2.5rem;
-                    }
+        .document-group-description {
+            min-height: 8rem;
+        }
+    }
+
+    &.small {
+        max-width: 300px;
+        background-color: #c2e4ff12;
+
+        .document-group-icon-wrapper {
+            margin-bottom: map_get($spacers, 3);
+
+            .icon-circle {
+                width: 5rem;
+                height: 5rem;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
                 }
-            }
-
-            .document-group-name {
-                text-align: center;
-                margin-bottom: map_get($spacers, 3);
-            }
-
-            .document-group-description {
-
-                min-height: 8rem;
             }
         }
     }
@@ -335,3 +355,63 @@ $starting-color: lighten($dark-blue, 40);
         color: darken($starting-color, $i * 4);
     }
 }
+
+
+.document-group-modal {
+
+    .modal-header {
+        border: none;
+
+        .modal-title {
+            font-size: 1.75rem;
+            color: $dark-blue;
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+    }
+
+    .no-documents-message {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: grey;
+    }
+
+    .document-table {
+        > :not(:first-child) {
+            border: none;
+        }
+
+        tr {
+            td {
+                padding: 0.75rem 1rem;
+                border: none;
+
+                &:first-child {
+                    border-radius: 12px 0 0 12px;
+                }
+
+                &:last-child {
+                    border-radius: 0 12px 12px 0;
+                }
+
+                &.name {
+                    font-family: $font-exo;
+                    font-style: italic;
+                    font-weight: 600;
+                }
+
+                &.actions {
+                    .icons {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        i {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
