@@ -226,12 +226,13 @@ require_once 'functions.php';
                                     <tbody>
                                     <?php foreach ($document_group['documents'] as $index => $document): ?>
                                         <tr>
-                                            <td class="name"><?php echo $document['name'] ?></td>
-                                            <td class="date"><?php echo $document['date'] ?></td>
+                                            <?php $file_size_string = get_file_size($document['filepath']); ?>
+                                            <td class="name"><?php echo $document['name']; ?></td>
+                                            <td class="size"><?php if(!empty($file_size_string)){ echo $file_size_string; } ?></td>
+                                            <td class="date"><?php echo $document['date']; ?></td>
                                             <td class="actions">
                                                 <div class="icons">
-                                                    <i class="fas fa-download"></i>
-                                                    <i class="fas fa-search ml-3"></i>
+                                                    <a href="<?php echo $document['filepath']; ?>" target="_blank"><i class="fas fa-download"></i></a>
                                                 </div>
                                             </td>
                                         </tr>

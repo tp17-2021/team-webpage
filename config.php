@@ -113,7 +113,7 @@ return [
                 [
                     'name' => 'Zápisnica č.1',
                     'date' => '20.06.1987',
-                    'filepath' => ''
+                    'filepath' => 'img/biden.jpg'
                 ],
                 [
                     'name' => 'Zápisnica č.1',
