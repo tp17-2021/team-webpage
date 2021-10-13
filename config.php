@@ -1,62 +1,58 @@
 <?php
 return [
     /* General */
-    'site_title' => 'E-voľby | TP@FIIT STU',
-    'site_name' => 'E-voľby',
+    'site_title' => 'Electie | TP@FIIT STU',
+    'site_name' => 'Electie - The Future of Voting',
     'email' => 'tim172021@googlegroups.com',
-    'main_motto' => 'Naše riešenie poskytuje možnosť fyzického hlasovania vo volebných miestnostiach za pomoci volebných terminálov.',
-    'main_description' => 'Naše riešenie poskytuje možnosť fyzického hlasovania vo volebných miestnostiach za pomoci volebných terminálov. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has be.',
+    'main_title' => 'BUDÚCNOSŤ VOLIEB',
+    'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
     /* Advantages */
     'advantages' => [
         [
             'name' => 'Šetrenie papiera',
-            'description' => 'V našom riešení pracujeme iba s jedným malým papierom, ktorý bude slúžiť ako potvrdenie o voľbe. Ubudne tlač papierov pre všetky volebné strany. Rovnako budeme tlačiť len potvrdenia pre zúčastnených voličov. Výrazne tak znížime spotrebu papiera pri voľbách, čím chránime naše životné prostredie ako aj naše peňaženky.'
+            'description' => 'V prípade našeho digitálneho riešenia vôbec netlačíme volebné hárky na papier. Na jedno odvolenie voličom spotrebujeme iba jeden kus malého papiera, ktorý sa uchováva ako potvrdenie. Tieto potvrdenia sú vytlačené iba pre zúčastnených voličov, čím sa tiež ušetrí veľké množstvo papiera. Výrazne znížime spotrebu papiera pri voľbách, čím chránime naše životné prostredie ako aj naše peňaženky.'
         ],
         [
             'name' => 'Rýchlejšie výsledky',
-            'description' => 'Výsledky hlasovania sa budú spracovávať automaticky počas volieb, čím vieme poskytnúť prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite.'
+            'description' => 'Výsledky hlasovania sa budú spracovávať automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
         ],
         [
             'name' => 'Znovupoužiteľosť',
-            'description' => 'Naše riešenie bude fungovať pre všetky typy volieb na Slovensku, rovnako počítame s podporou referenda alebo lokálnych hlasovaní napríklad pri akademických senátoch. Voľby do europarlamentu alebo samospráv sú taktiež samozrejmosťou.'
+            'description' => 'Naše riešenie bude fungovať pre všetky typy volieb na Slovensku, rovnako počítame s podporou referenda alebo lokálnych hlasovaní napríklad pri akademických senátoch.'
         ],
         [
             'name' => 'Znížená chybovosť',
-            'description' => 'Naše riešenie dosiahne nižšiu chybovosť pri prepočítavaní hlasov, keďže sa hlasy budú spočítavať elektronicky. Členovia volebnej komisie budú mať tak na starosti len overovanie totožnosti voličov a vydávanie NFC tagov pre hlasovanie.'
+            'description' => 'V našom riešení obmedzíme chybovosť pri počítaní hlasov, keďže hlasy budú sčítané elektronicky. Členovia volebnej komisie budú mať tak na starosti len overovanie totožnosti voličov a vydávanie NFC tagov pre hlasovanie.'
         ],
         [
             'name' => 'Možnosť kontroly',
-            'description' => 'V prípade problému je stále možné volebné lístky ručne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti na prepočítanie.'
+            'description' => 'V prípade problémov je stále možné vytlačené volebné lístky ručne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti.'
         ]
     ],
 
     /* Voting process */
     'voting_items' => [
         [
-            'name' => 'Preukázať sa',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'name' => 'Overenie totožnosti',
+            'description' => 'Volebná komisia overí totožnosť voliča pomocou občianskeho preukazu a zoznamu voličov v tablete. Oproti klasickému vyhľadávaniu, bude elektronické vyhľadanie rýchlejšie a precíznejšie.'
         ],
         [
-            'name' => 'Vybrať si NFC tag',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'name' => 'Výber NFC tagu',
+            'description' => 'Volič si náhodne vyberie jeden z ponúkaných NFC tagov z misy. Informácie uložené na Tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
         ],
         [
-            'name' => 'Zahlasovať',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'name' => 'Hlasovanie',
+            'description' => 'Volič pristúpi k volebnému terminálu, do ktorého vloží NFC Tag, čím mu je umožnené odvoliť. Volič postupuje podľa pokynov na obrazovke. Aplikácia je navrhnutá s ohľadom na jej použiteľnosť, obrazovka je dostatočne veľká a písmo je jasne čitateľné. Svoju voľbu potvrdí a volebný terminál vytlačí potvrdenie o hlasovaní.'
         ],
         [
-            'name' => 'Zobrať lístok',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+            'name' => 'Vhodenie potvrdenia do urny',
+            'description' => 'Vytlačený volebný lístok volič hodí do urny. Umožňuje tým kontrolu hlasov v prípade problémov alebo sťažností. Používame len jeden menší papier pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
         ],
         [
-            'name' => 'Vhodiť do urny',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
-        [
-            'name' => 'Štastne odísť domov',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
-        ],
+            'name' => 'Úspešne odvolené',
+            'description' => 'Po vhodení potvrdenia do urny môže volič opustiť volebnú miestnosť. Výsledky môžu byť po uzavretí miestností dostupné vďaku nášmu riešeniu oveľa skôr ako býva zvykom pri manuálnom prepočítavaní.'
+        ]
     ],
 
     /* Team */
@@ -64,51 +60,51 @@ return [
         [
             'name' => 'Jaroslav Erdelyi',
             'img_path' => 'img/team_members/jaro_erdelyi.png',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Odborník na bezpečnosť IoT systémov a úžasný školiteľ. Vo voľnom čase rád skladá rubikovu kocku.'
         ],
         [
             'name' => 'Lucia Janíková',
             'img_path' => 'img/team_members/lucia_janikova.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Pracovitá a motivovaná študentka so záľubou pre cestovanie. Má rada aby bolo všetko precízne a bezchybné.'
         ],
         [
             'name' => 'Denis Klenovič',
             'img_path' => 'img/team_members/denis_klenovic.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Nadšenec pre webové technológie a design. Vo voľnom čase rád pečie a sleduje filmové novinky.'
         ],
         [
             'name' => 'Matúš Staš',
             'img_path' => 'img/team_members/matus_stas.jpeg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Cieľavedomý študent s veľkými plánmi do budúcna. Má rád cyklistiku a prírodu. #FocusMaster'
         ],
         [
             'name' => 'Marek Ceľuch',
             'img_path' => 'img/team_members/marek_celuch.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Rád kritizuje, sranduje a nevie si vybrať jednu oblasť. Nemá rád Windowsy, vo voľnom čase sa venuje hudbe a nepohrdne seriálom či víkendom Formuly 1.'
         ],
         [
             'name' => 'Timotej Králik',
             'img_path' => 'img/team_members/timotej_kralik.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'description' => 'Jeho revírom sú dáta a optimalizované systémy. Mimo IDEčka sa rád vyšantí na športovisku alebo na horách.'
         ],
         [
             'name' => 'Libor Duda',
-            'img_path' => 'img/team_members/libor_duda.png',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'img_path' => 'img/team_members/libor_duda.jpg',
+            'description' => 'Vyzná sa vo webových technológiách. Vo voľnom čase zanietený kutil a fanúšik spravodajstva. #Spektik.'
         ],
         [
             'name' => 'Adam Slatinský',
-            'img_path' => 'img/biden.jpg',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'img_path' => 'img/team_members/adam_slatinsky.jpg',
+            'description' => 'Odborník na bezpečnosť, ktorý pri PC neplytvá časom, ale všetko si automatizuje. Assembleru sa nebojí, stránky nakódi, appky nahackuje a v škole exceluje.'
         ]
     ],
 
     /* Documents */
     'document_groups' => [
         [
-            'name' => 'Zápisnice zo stretnutí',
+            'name' => 'Zápisnice',
             'iconpath' => 'img/document_icons/meetings.svg',
-            'description' => 'Zápisnica obsahuje transkript konverzácii s vedúcim projektu z našich pravidelných ceremónii, ktoré sa uskutočňujú každý utorok. V zápisnici sú poznačené rozhodnutia, ktoré sme na ceremónni vykonali a sú zadefinované ciele na další týždeň.',
+            'description' => 'Zápisnica obsahuje transkript konverzácii s vedúcim projektu z našich pravidelných ceremónii, ktoré sa uskutočňujú každý utorok. V zápisnici sú poznačené rozhodnutia, ktoré sme na ceremónii vykonali a sú zadefinované ciele na ďalší týždeň.',
             'documents' => [
                 [
                     'name' => 'Zápisnica č.1',
@@ -170,7 +166,7 @@ return [
         [
             'name' => 'Zhodnotenie šprintov',
             'iconpath' => 'img/document_icons/sprint_reports.svg',
-            'description' => 'Podvoch týždňoch sa vrámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprintt.',
+            'description' => 'Po dvoch týždňoch sa v rámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprint.',
             'documents' => [
 
             ]
@@ -178,7 +174,7 @@ return [
         [
             'name' => 'Metodiky',
             'iconpath' => 'img/document_icons/methodologies.svg',
-            'description' => 'Náš tím pracuje s viacorími metodikami, v ktorých sú rámcovo podrobne zadefinované požiadaky na štruktúru a kavlitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
+            'description' => 'Náš tím pracuje s viacerými metodikami, v ktorých sú rámcovo podrobne zadefinované požiadavky na štruktúru a kvalitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
             'documents' => [
 
             ]
@@ -186,7 +182,7 @@ return [
         [
             'name' => 'Ostatné',
             'iconpath' => 'img/document_icons/other_documents.svg',
-            'description' => 'Ostatné dokuemnty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projek a súťažou TP CUP.',
+            'description' => 'Ostatné dokumenty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projekt a súťažou TP CUP.',
             'documents' => [
 
             ]
