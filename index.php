@@ -28,10 +28,13 @@ require_once 'functions.php';
                         <a class="nav-link" aria-current="page" href="#voting-process">Ako voliť</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#team">Tím</a>
+                        <a class="nav-link" aria-current="page" href="#sprint-results">Šprinty</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#documents">Dokumenty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#team">Tím</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#contact">Kontakt</a>
@@ -98,6 +101,7 @@ require_once 'functions.php';
             </div>
         </div>
     </section>
+
     <section id="voting-process" class="has-background-image has-overlay"
              style="background-image: url(assets/img/parliament.jpg)">
         <div class="container-lg inner-content py-5 py-lg-7">
@@ -132,30 +136,68 @@ require_once 'functions.php';
         </div>
         <div class="overlay"></div>
     </section>
-    <section id="team">
-        <div class="container-lg overflow-hidden py-5 py-lg-7">
-            <h2 class="section-title">Tím</h2>
-            <div class="row g-4 g-lg-6">
-                <?php foreach ($config['team_members'] as $member): ?>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="member">
-                            <div class="member-image">
-                                <div class="image-wrapper fixed-image-ratio-1-1 rounded mb-3">
-                                    <?php if (!empty($member['img_path'])): ?>
-                                        <img src="<?php echo $member['img_path']; ?>" alt="member image">
-                                    <?php endif; ?>
+
+    <section id="progress">
+        <div class="container-lg py-5 py-lg-7">
+            <h2 class="section-title">Výsledky našej práce</h2>
+            <div class="row mb-7">
+                <div class="col-md-8 mx-auto progress-wrapper">
+                    <div class="d-flex justify-content-between">
+                        <div class="week first">Týždeň 1</div>
+                        <div class="week last">Týždeň 24</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar"
+                             style="width: <?php echo $config['progress_bar_width']; ?>%;"
+                             aria-valuenow="<?php echo $config['progress_bar_width']; ?>" aria-valuemin="0"
+                             aria-valuemax="100"><?php echo $config['progress_bar_label']; ?></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sprint-results" class="sprint-results">
+                <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
+                    <?php
+                    $sprint_start = DateTime::createFromFormat('d.m.Y', $sprint_result['date']);
+                    $sprint_end = clone $sprint_start;
+                    $sprint_end = $sprint_end->add(new DateInterval('P14D'));
+                    ?>
+                    <div class="sprint-result">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-auto d-none d-md-block <?php if ($index % 2 == 1) echo 'order-1'; ?>">
+                                <div class="circle-wrapper <?php if ($index % 2 == 1) echo 'right'; ?>">
+                                    <div class="circle <?php echo 'border-blue-shade-' . ($index + 1); ?>">
+                                    <span class="<?php echo 'font-blue-shade-' . ($index + 1); ?>">
+                                        <?php echo $index + 1; ?>
+                                    </span>
+                                    </div>
+                                    <div class="connector">
+                                        <div class="line <?php echo 'bg-blue-shade-' . ($index + 1); ?>"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <h4 class="member-name"><?php echo $member['name']; ?></h4>
-                            <div class="member-description">
-                                <?php echo $member['description']; ?>
+                            <div class="col <?php if ($index % 2 == 1) echo 'order-0'; ?>">
+                                <div class="box">
+                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
+                                        <?php echo $sprint_start->format('d.m') . "&nbsp;- <br>" . $sprint_end->format('d.m.Y') ?>
+                                    </div>
+                                    <div class="content py-3 px-4">
+                                        <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
+                                        <div>
+                                            <?php echo $sprint_result['description'] ?>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 <?php endforeach; ?>
             </div>
+
         </div>
     </section>
+
     <section id="documents" class="has-background-image has-overlay" style="background-image: url(assets/img/parliament2.jpg)">
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
             <h2 class="section-title text-white">Dokumenty</h2>
@@ -239,61 +281,26 @@ require_once 'functions.php';
         </div>
     <?php endforeach; ?>
 
-    <section id="progress">
-        <div class="container-lg py-5 py-lg-7">
-            <h2 class="section-title">Výsledky našej práce</h2>
-            <div class="row mb-7">
-                <div class="col-md-8 mx-auto progress-wrapper">
-                    <div class="d-flex justify-content-between">
-                        <div class="week first">Week 1</div>
-                        <div class="week last">Week 24</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar"
-                             style="width: <?php echo $config['progress_bar_width']; ?>%;"
-                             aria-valuenow="<?php echo $config['progress_bar_width']; ?>" aria-valuemin="0"
-                             aria-valuemax="100"><?php echo $config['progress_bar_label']; ?></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sprint-results">
-                <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
-                    <?php
-                    $sprint_start = DateTime::createFromFormat('d.m.Y', $sprint_result['date']);
-                    $sprint_end = clone $sprint_start;
-                    $sprint_end = $sprint_end->add(new DateInterval('P14D'));
-                    ?>
-                    <div class="sprint-result">
-                        <div class="row g-0 align-items-center">
-                            <div class="col-auto d-none d-md-block <?php if ($index % 2 == 1) echo 'order-1'; ?>">
-                                <div class="circle-wrapper <?php if ($index % 2 == 1) echo 'right'; ?>">
-                                    <div class="circle <?php echo 'border-blue-shade-' . ($index + 1); ?>">
-                                    <span class="<?php echo 'font-blue-shade-' . ($index + 1); ?>">
-                                        <?php echo $index + 1; ?>
-                                    </span>
-                                    </div>
-                                    <div class="connector">
-                                        <div class="line <?php echo 'bg-blue-shade-' . ($index + 1); ?>"></div>
-                                    </div>
+    <section id="team">
+        <div class="container-lg overflow-hidden py-5 py-lg-7">
+            <h2 class="section-title">Tím</h2>
+            <div class="row g-4 g-lg-6">
+                <?php foreach ($config['team_members'] as $member): ?>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="member">
+                            <div class="member-image">
+                                <div class="image-wrapper fixed-image-ratio-1-1 rounded mb-3">
+                                    <?php if (!empty($member['img_path'])): ?>
+                                        <img src="<?php echo $member['img_path']; ?>" alt="member image">
+                                    <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="col <?php if ($index % 2 == 1) echo 'order-0'; ?>">
-                                <div class="box">
-                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
-                                        <?php echo $sprint_start->format('d.m') . "&nbsp;- <br>" . $sprint_end->format('d.m.Y') ?>
-                                    </div>
-                                    <div class="content py-3 px-4">
-                                        <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
-                                        <div>
-                                            <?php echo $sprint_result['description'] ?>
-                                        </div>
-                                    </div>
-                                </div>
+                            <h4 class="member-name"><?php echo $member['name']; ?></h4>
+                            <div class="member-description">
+                                <?php echo $member['description']; ?>
                             </div>
                         </div>
                     </div>
-
                 <?php endforeach; ?>
             </div>
         </div>
@@ -306,14 +313,14 @@ require_once 'functions.php';
         <div class="row align-items-end">
             <div class="col-md-6 mb-5 mb-md-0">
                 <img src="assets/img/logo_white.svg" alt="team logo" class="team-logo mb-4">
-                <h2 class="mb-4 font-exo">Prvé spoľahlivé <br>elektronické voľby</h2>
-                <div class="font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam atque
-                    eius eveniet iste modi neque nihil nobis, nostrum quas quibusdam quis quisquam recusandae
-                    repellendus repudiandae rerum sit ullam voluptates.
+                <h2 class="mb-2 font-exo"><?php echo $config['main_title']; ?></h2>
+                <h4 class="mb-4 font-exo"><?php echo $config['main_subtitle']; ?></h4>
+                <div class="font-light">
+                    <?php echo $config['footer_credits'];?>
                 </div>
             </div>
             <div class="col-md-6">
-                <h2 class="mb-4 font-exo">Tím č.17</h2>
+                <h2 class="mb-4 font-exo font-semi-bold">Tím 17</h2>
                 <a href="mailto:<?php echo $config['email']; ?>" class="text-reset"><?php echo $config['email']; ?></a>
                 <div class="mt-5">
                     <img src="assets/img/fiit_logo.png" alt="fiit logo">

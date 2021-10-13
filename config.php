@@ -7,6 +7,8 @@ return [
     'main_title' => 'BUDÚCNOSŤ VOLIEB',
     'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
+    'footer_credits' => 'Tento projekt je realizovaný na Fakulte Informatiky a Informačných Technológií v rámci predmetu Tímový Projekt. Tím je vedený doktorandom Ing. Jaroslavom Erdelyim. Projekt sa zúčastňuje aj fakultnej súťaže TP CUP, kde bojuje o prvenstvo s ďalšími skvelými projektami.',
+
     /* Advantages */
     'advantages' => [
         [
@@ -90,7 +92,7 @@ return [
         [
             'name' => 'Libor Duda',
             'img_path' => 'assets/img/team_members/libor_duda.jpg',
-            'description' => 'Vyzná sa vo webových technológiách. Vo voľnom čase zanietený kutil a fanúšik spravodajstva. #Spektik.'
+            'description' => 'Vyzná sa vo webových technológiách. Vo voľnom čase zanietený kutil a fanúšik spravodajstva. #Skeptik'
         ],
         [
             'name' => 'Adam Slatinský',
@@ -157,7 +159,7 @@ return [
     'sprint_results' => [
         [
             'date' => '05.10.2021',
-            'title' => 'Výsledok analýzy',
+            'title' => 'Analýza hardvéru a technológii',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
@@ -166,52 +168,7 @@ return [
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '10.10.2021',
+            'date' => '02.11.2021',
             'title' => 'Výsledok analýzy',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ]

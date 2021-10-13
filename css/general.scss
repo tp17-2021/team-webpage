@@ -262,9 +262,13 @@ iframe {
     /* Timeline */
     .sprint-results {
         margin-bottom: -1 * map_get($spacers, 5);
-        max-width: 80%;
+        max-width: 70%;
         margin-left: auto;
         margin-right: auto;
+
+        @include media-breakpoint-down("lg") {
+            max-width: 80%;
+        }
 
         @include media-breakpoint-down("md") {
             max-width: 100%;
