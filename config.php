@@ -63,42 +63,42 @@ return [
     'team_members' => [
         [
             'name' => 'Jaroslav Erdelyi',
-            'img_path' => 'img/team_members/jaro_erdelyi.png',
+            'img_path' => 'assets/img/team_members/jaro_erdelyi.png',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Lucia Janíková',
-            'img_path' => 'img/team_members/lucia_janikova.jpg',
+            'img_path' => 'assets/img/team_members/lucia_janikova.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Denis Klenovič',
-            'img_path' => 'img/team_members/denis_klenovic.jpg',
+            'img_path' => 'assets/img/team_members/denis_klenovic.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Matúš Staš',
-            'img_path' => 'img/team_members/matus_stas.jpeg',
+            'img_path' => 'assets/img/team_members/matus_stas.jpeg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Marek Ceľuch',
-            'img_path' => 'img/team_members/marek_celuch.jpg',
+            'img_path' => 'assets/img/team_members/marek_celuch.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Timotej Králik',
-            'img_path' => 'img/team_members/timotej_kralik.jpg',
+            'img_path' => 'assets/img/team_members/timotej_kralik.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Libor Duda',
-            'img_path' => 'img/team_members/libor_duda.png',
+            'img_path' => 'assets/img/team_members/libor_duda.png',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ],
         [
             'name' => 'Adam Slatinský',
-            'img_path' => 'img/biden.jpg',
+            'img_path' => 'assets/img/biden.jpg',
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
         ]
     ],
@@ -129,7 +129,7 @@ return [
         ],
         [
             'name' => 'Zhodnotenie šprintov',
-            'iconpath' => 'img/document_icons/sprint_reports.svg',
+            'iconpath' => 'assets/img/document_icons/sprint_reports.svg',
             'description' => 'Podvoch týždňoch sa vrámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprintt.',
             'documents' => [
 
@@ -137,7 +137,7 @@ return [
         ],
         [
             'name' => 'Metodiky',
-            'iconpath' => 'img/document_icons/methodologies.svg',
+            'iconpath' => 'assets/img/document_icons/methodologies.svg',
             'description' => 'Náš tím pracuje s viacorími metodikami, v ktorých sú rámcovo podrobne zadefinované požiadaky na štruktúru a kavlitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
             'documents' => [
 
@@ -145,7 +145,7 @@ return [
         ],
         [
             'name' => 'Ostatné',
-            'iconpath' => 'img/document_icons/other_documents.svg',
+            'iconpath' => 'assets/img/document_icons/other_documents.svg',
             'description' => 'Ostatné dokuemnty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projek a súťažou TP CUP.',
             'documents' => [
 
