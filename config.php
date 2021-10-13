@@ -112,58 +112,18 @@ return [
             'documents' => [
                 [
                     'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'date' => '28.09.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie1.pdf'
                 ],
                 [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'name' => 'Zápisnica č.2',
+                    'date' => '05.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie2.pdf'
                 ],
                 [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'name' => 'Zápisnica č.3',
+                    'date' => '12.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie3.pdf'
                 ],
             ]
         ],
