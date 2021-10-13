@@ -14,7 +14,7 @@ require_once 'functions.php';
 <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container-lg">
-            <a class="navbar-brand" href="#"><img src="img/logo.svg" alt="team logo" class="team-logo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.svg" alt="team logo" class="team-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
                     aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,7 @@ require_once 'functions.php';
     </nav>
 </header>
 <main>
-    <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+    <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
         <div class="inner-content container-lg py-5 py-lg-7">
             <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
             <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
@@ -58,7 +58,7 @@ require_once 'functions.php';
     <!-- Slider -->
     <div class="slider-wrapper" style="display: none" >
         <div class="main-slider">
-            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
                 <div class="inner-content container-lg py-5 py-lg-7">
                     <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
                     <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
@@ -70,7 +70,7 @@ require_once 'functions.php';
                 </div>
                 <div class="overlay"></div>
             </div>
-            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(img/hero.jpg)">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
                 <div class="inner-content container-lg py-5 py-lg-7">
                     <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku 2</h1>
                     <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
@@ -107,7 +107,7 @@ require_once 'functions.php';
         </div>
     </section>
     <section id="voting-process" class="has-background-image has-overlay"
-             style="background-image: url(img/parliament.jpg)">
+             style="background-image: url(assets/img/parliament.jpg)">
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
@@ -164,7 +164,7 @@ require_once 'functions.php';
             </div>
         </div>
     </section>
-    <section id="documents" class="has-background-image has-overlay" style="background-image: url(img/parliament2.jpg)">
+    <section id="documents" class="has-background-image has-overlay" style="background-image: url(assets/img/parliament2.jpg)">
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
             <h2 class="section-title text-white">Dokumenty</h2>
             <div class="width-constraint">
@@ -309,11 +309,11 @@ require_once 'functions.php';
 
 </main>
 <footer id="contact" class="footer has-background-image has-overlay text-white "
-        style="background-image: url(img/footer.jpg)">
+        style="background-image: url(assets/img/footer.jpg)">
     <div class="container-lg inner-content py-5 py-lg-7">
         <div class="row align-items-end">
             <div class="col-md-6 mb-5 mb-md-0">
-                <img src="img/logo_white.svg" alt="team logo" class="team-logo mb-4">
+                <img src="assets/img/logo_white.svg" alt="team logo" class="team-logo mb-4">
                 <h2 class="mb-4 font-exo">Prvé spoľahlivé <br>elektronické voľby</h2>
                 <div class="font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam atque
                     eius eveniet iste modi neque nihil nobis, nostrum quas quibusdam quis quisquam recusandae
@@ -324,7 +324,7 @@ require_once 'functions.php';
                 <h2 class="mb-4 font-exo">Tím č.17</h2>
                 <a href="mailto:<?php echo $config['email']; ?>" class="text-reset"><?php echo $config['email']; ?></a>
                 <div class="mt-5">
-                    <img src="img/fiit_logo.png" alt="fiit logo">
+                    <img src="assets/img/fiit_logo.png" alt="fiit logo">
                 </div>
             </div>
         </div>
