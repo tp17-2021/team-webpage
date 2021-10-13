@@ -59,42 +59,42 @@ return [
     'team_members' => [
         [
             'name' => 'Jaroslav Erdelyi',
-            'img_path' => 'img/team_members/jaro_erdelyi.png',
+            'img_path' => 'assets/img/team_members/jaro_erdelyi.png',
             'description' => 'Odborník na bezpečnosť IoT systémov a úžasný školiteľ. Vo voľnom čase rád skladá rubikovu kocku.'
         ],
         [
             'name' => 'Lucia Janíková',
-            'img_path' => 'img/team_members/lucia_janikova.jpg',
+            'img_path' => 'assets/img/team_members/lucia_janikova.jpg',
             'description' => 'Pracovitá a motivovaná študentka so záľubou pre cestovanie. Má rada aby bolo všetko precízne a bezchybné.'
         ],
         [
             'name' => 'Denis Klenovič',
-            'img_path' => 'img/team_members/denis_klenovic.jpg',
+            'img_path' => 'assets/img/team_members/denis_klenovic.jpg',
             'description' => 'Nadšenec pre webové technológie a design. Vo voľnom čase rád pečie a sleduje filmové novinky.'
         ],
         [
             'name' => 'Matúš Staš',
-            'img_path' => 'img/team_members/matus_stas.jpeg',
+            'img_path' => 'assets/img/team_members/matus_stas.jpeg',
             'description' => 'Cieľavedomý študent s veľkými plánmi do budúcna. Má rád cyklistiku a prírodu. #FocusMaster'
         ],
         [
             'name' => 'Marek Ceľuch',
-            'img_path' => 'img/team_members/marek_celuch.jpg',
+            'img_path' => 'assets/img/team_members/marek_celuch.jpg',
             'description' => 'Rád kritizuje, sranduje a nevie si vybrať jednu oblasť. Nemá rád Windowsy, vo voľnom čase sa venuje hudbe a nepohrdne seriálom či víkendom Formuly 1.'
         ],
         [
             'name' => 'Timotej Králik',
-            'img_path' => 'img/team_members/timotej_kralik.jpg',
+            'img_path' => 'assets/img/team_members/timotej_kralik.jpg',
             'description' => 'Jeho revírom sú dáta a optimalizované systémy. Mimo IDEčka sa rád vyšantí na športovisku alebo na horách.'
         ],
         [
             'name' => 'Libor Duda',
-            'img_path' => 'img/team_members/libor_duda.jpg',
+            'img_path' => 'assets/img/team_members/libor_duda.jpg',
             'description' => 'Vyzná sa vo webových technológiách. Vo voľnom čase zanietený kutil a fanúšik spravodajstva. #Spektik.'
         ],
         [
             'name' => 'Adam Slatinský',
-            'img_path' => 'img/team_members/adam_slatinsky.jpg',
+            'img_path' => 'assets/img/team_members/adam_slatinsky.jpg',
             'description' => 'Odborník na bezpečnosť, ktorý pri PC neplytvá časom, ale všetko si automatizuje. Assembleru sa nebojí, stránky nakódi, appky nahackuje a v škole exceluje.'
         ]
     ],
@@ -103,69 +103,29 @@ return [
     'document_groups' => [
         [
             'name' => 'Zápisnice',
-            'iconpath' => 'img/document_icons/meetings.svg',
+            'iconpath' => 'assets/img/document_icons/meetings.svg',
             'description' => 'Zápisnica obsahuje transkript konverzácii s vedúcim projektu z našich pravidelných ceremónii, ktoré sa uskutočňujú každý utorok. V zápisnici sú poznačené rozhodnutia, ktoré sme na ceremónii vykonali a sú zadefinované ciele na ďalší týždeň.',
             'documents' => [
                 [
                     'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'date' => '28.09.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie1.pdf'
                 ],
                 [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'name' => 'Zápisnica č.2',
+                    'date' => '05.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie2.pdf'
                 ],
                 [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
-                ],
-                [
-                    'name' => 'Zápisnica č.1',
-                    'date' => '20.06.1987',
-                    'filepath' => ''
+                    'name' => 'Zápisnica č.3',
+                    'date' => '12.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie3.pdf'
                 ],
             ]
         ],
         [
             'name' => 'Zhodnotenie šprintov',
-            'iconpath' => 'img/document_icons/sprint_reports.svg',
+            'iconpath' => 'assets/img/document_icons/sprint_reports.svg',
             'description' => 'Po dvoch týždňoch sa v rámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprint.',
             'documents' => [
 
@@ -173,7 +133,7 @@ return [
         ],
         [
             'name' => 'Metodiky',
-            'iconpath' => 'img/document_icons/methodologies.svg',
+            'iconpath' => 'assets/img/document_icons/methodologies.svg',
             'description' => 'Náš tím pracuje s viacerými metodikami, v ktorých sú rámcovo podrobne zadefinované požiadavky na štruktúru a kvalitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
             'documents' => [
 
@@ -181,7 +141,7 @@ return [
         ],
         [
             'name' => 'Ostatné',
-            'iconpath' => 'img/document_icons/other_documents.svg',
+            'iconpath' => 'assets/img/document_icons/other_documents.svg',
             'description' => 'Ostatné dokumenty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projekt a súťažou TP CUP.',
             'documents' => [
 
