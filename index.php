@@ -125,7 +125,7 @@ require_once 'functions.php';
                 </div>
                 <div class="col-md-7">
                     <div class="d-flex justify-content-center align-items-center">
-                        <img src="img/illustrations/election_process.svg" alt="Priebeh volieb">
+                        <img src="assets/img/illustrations/election_process.svg" alt="Priebeh volieb">
                     </div>
                 </div>
             </div>
