@@ -44,13 +44,8 @@ require_once 'functions.php';
 <main>
     <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
         <div class="inner-content container-lg py-5 py-lg-7">
-            <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
-            <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
-            <div class="mt-5">
-                <div class="text-center">
-                    <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
-                </div>
-            </div>
+            <h1 class="section-title font-extra-bold"><?php echo $config['main_title']; ?></h1>
+            <div class="subtitle text-center constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
         </div>
         <div class="overlay"></div>
     </section>
@@ -60,8 +55,8 @@ require_once 'functions.php';
         <div class="main-slider">
             <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
                 <div class="inner-content container-lg py-5 py-lg-7">
-                    <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku</h1>
-                    <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
+                    <h1 class="section-title font-extra-bold"><?php echo $config['main_title']; ?></h1>
+                    <div class="motto text-center constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
                     <div class="mt-5">
                         <div class="text-center">
                             <a href="#voting-process" class="btn btn-secondary btn-lg">Ako fungujú naše voľby</a>
@@ -88,13 +83,10 @@ require_once 'functions.php';
 
     <section id="advantages">
         <div class="container-lg overflow-hidden py-5 py-lg-7">
-            <h2 class="section-title mb-3">Naše riešenia</h2>
-            <div class="text-center constrained-width-text font-light mb-5">
-                <?php echo $config['main_description']; ?>
-            </div>
+            <h2 class="section-title mb-6">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
-                <?php foreach ($config['advantages'] as $advantage): ?>
-                    <div class="col-md-6">
+                <?php foreach ($config['advantages'] as $key => $advantage): ?>
+                    <div class="col-md<?php echo $key == 0 ? "-8" : "-6"?>">
                         <div class="advantage p-5">
                             <h4 class="advantage-name"><?php echo $advantage['name'] ?></h4>
                             <div class="advantage-description font-light">
@@ -111,7 +103,7 @@ require_once 'functions.php';
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0">
+                <div class="col-md-5 mb-3 mt-0 my-md-5">
                     <div class="accordion" id="voting-accordion">
                         <?php $items_count = count($config['voting_items']); ?>
                         <?php foreach ($config['voting_items'] as $key => $item): ?>
@@ -125,15 +117,15 @@ require_once 'functions.php';
                                 </h2>
                                 <div id="item-<?php echo $key; ?>" class="accordion-collapse collapse"
                                      aria-labelledby="item-<?php echo $key; ?>" data-bs-parent="#voting-accordion">
-                                    <div class="accordion-body"><?php echo $item['description']; ?></div>
+                                    <div class="accordion-body font-light"><?php echo $item['description']; ?></div>
                                 </div>
                             </div>
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="d-flex justify-content-center align-items-center">
-                        <div class="" style="background-color: #1e71ab; width: 400px; height: 400px"></div>
+                        <img src="img/illustrations/election_process.svg" alt="Priebeh volieb">
                     </div>
                 </div>
             </div>
