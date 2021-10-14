@@ -3,6 +3,8 @@ $(document).ready(function ($) {
     const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
     const menuHeight = 59;
 
+    AOS.init();
+
     // after clicking on manu item, hide collapsible navbar
     $('.navbar-collapse a').click(function () {
         let toggler_visible = $('.navbar .navbar-toggler').is(':visible');
