@@ -7,7 +7,7 @@ return [
     'main_title' => 'BUDÚCNOSŤ VOLIEB',
     'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
-    'footer_credits' => 'Tento projekt je realizovaný na Fakulte Informatiky a Informačných Technológií v rámci predmetu Tímový Projekt. Tím je vedený doktorandom Ing. Jaroslavom Erdelyim. Projekt sa zúčastňuje aj fakultnej súťaže TP CUP, kde bojuje o prvenstvo s ďalšími skvelými projektami.',
+    'footer_credits' => 'Tento projekt je realizovaný na Fakulte informatiky a informačných technológií v&nbsp;rámci predmetu Tímový projekt. Tím je vedený doktorandom Ing. Jaroslavom Erdelyim. Projekt sa zúčastňuje aj fakultnej súťaže TP CUP, kde bojuje o prvenstvo s ďalšími skvelými projektami.',
 
     /* Advantages */
     'advantages' => [

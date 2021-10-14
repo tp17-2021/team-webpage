@@ -7,6 +7,7 @@ require_once 'functions.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title><?php echo $config['site_title']; ?></title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
     <link rel="stylesheet" href="<?php echo get_file_time('dist/app.css'); ?>">
     <script src="<?php echo get_file_time('dist/app.js'); ?>"></script>
 </head>
@@ -45,7 +46,7 @@ require_once 'functions.php';
     </nav>
 </header>
 <main>
-    <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
+    <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url('assets/img/hero.jpg')">
         <div class="inner-content container-lg py-5 py-lg-7">
             <h1 class="section-title font-extra-bold"><?php echo $config['main_title']; ?></h1>
             <div class="subtitle text-center constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
@@ -162,9 +163,9 @@ require_once 'functions.php';
                     $sprint_end = clone $sprint_start;
                     $sprint_end = $sprint_end->add(new DateInterval('P14D'));
                     ?>
-                    <div class="sprint-result">
+                    <div class="sprint-result" data-aos="fade-up">
                         <div class="row g-0 align-items-center">
-                            <div class="col-auto d-none d-md-block <?php if ($index % 2 == 1) echo 'order-1'; ?>">
+                            <div class="col-auto d-none d-lg-block <?php if ($index % 2 == 1) echo 'order-1'; ?>">
                                 <div class="circle-wrapper <?php if ($index % 2 == 1) echo 'right'; ?>">
                                     <div class="circle <?php echo 'border-blue-shade-' . ($index + 1); ?>">
                                     <span class="<?php echo 'font-blue-shade-' . ($index + 1); ?>">
@@ -204,8 +205,8 @@ require_once 'functions.php';
             <div class="width-constraint">
                 <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
-                        <div class="col-md-6">
-                            <div class="document-group-card p-5 h-100" data-bs-toggle="modal"
+                        <div class="col-6">
+                            <div class="document-group-card p-3 p-sm-5 h-100" data-bs-toggle="modal"
                                  data-bs-target="#document-modal-group-<?php echo $key + 1; ?>">
                                 <div class="document-group-icon-wrapper">
                                     <div class="icon-circle">
@@ -231,6 +232,7 @@ require_once 'functions.php';
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
+                        <button type="button" class="btn btn-back" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i></button>
                         <h5 class="modal-title font-exo text-center w-100"><?php echo $document_group['name']; ?></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -323,7 +325,7 @@ require_once 'functions.php';
                 <h2 class="mb-4 font-exo font-semi-bold">Tím 17</h2>
                 <a href="mailto:<?php echo $config['email']; ?>" class="text-reset"><?php echo $config['email']; ?></a>
                 <div class="mt-5">
-                    <img src="assets/img/fiit_logo.png" alt="fiit logo">
+                    <a href="https://www.fiit.stuba.sk"><img src="assets/img/fiit_logo.png" alt="fiit logo"></a>
                 </div>
             </div>
         </div>

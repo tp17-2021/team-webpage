@@ -12,4 +12,7 @@ require("@fortawesome/fontawesome-free/css/all.min.css");
 require("slick-carousel/slick/slick.js");
 require("slick-carousel/slick/slick.css");
 
+window.AOS = require("aos");
+require("aos/dist/aos.css");
+
 require("./utilities");
