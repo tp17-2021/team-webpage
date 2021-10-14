@@ -1,6 +1,7 @@
 // closes bootstrap modal after pressing back button if open
 // https://stackoverflow.com/questions/64832109/hide-modal-window-modal-box-when-browser-back-button-clicked
 
+history.scrollRestoration = 'manual';
 history.pushState(null, null);
 window.addEventListener('popstate', () => {
     // Add here the classes of the MODAL as they look when it is open
@@ -14,4 +15,3 @@ window.addEventListener('popstate', () => {
         window.history.back();
     }
 });
-
