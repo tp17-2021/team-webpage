@@ -128,10 +128,13 @@ iframe {
         text-align: center;
         font-weight: 700;
         font-family: $font-exo;
-        margin-bottom: map_get($spacers, 4);
+        @include media-breakpoint-down('sm'){
+            font-size: 1rem;
+        }
     }
 
     .member-description {
+        margin-top: map_get($spacers, 4);
         text-align: center;
         font-weight: 300;
         font-size: 18px;
@@ -256,13 +259,6 @@ iframe {
         }
     }
 }
-
-.document-group-modal {
-    .btn-back {
-        opacity: 0.5;
-    }
-}
-
 
 #progress {
     .progress-wrapper {
@@ -396,6 +392,20 @@ $starting-color: lighten($dark-blue, 40);
 
 .document-group-modal {
 
+    .btn-back {
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        .go-back-icon {
+            width: 1.75rem;
+        }
+    }
+
+
+
     .modal-header {
         border: none;
 
@@ -404,6 +414,12 @@ $starting-color: lighten($dark-blue, 40);
             color: $dark-blue;
             margin-bottom: 0;
             font-weight: 500;
+        }
+    }
+
+    .modal-body {
+        @include media-breakpoint-down("sm"){
+            padding: 1rem 1rem;
         }
     }
 
@@ -423,18 +439,36 @@ $starting-color: lighten($dark-blue, 40);
                 padding: 0.75rem 1rem;
                 border: none;
 
+                @include media-breakpoint-down("sm"){
+                    font-size: 0.9rem;
+                    padding: 0.75rem 0.3rem;
+                }
+
                 &:first-child {
                     border-radius: 12px 0 0 12px;
+                    padding-left: 0.5rem;
                 }
 
                 &:last-child {
                     border-radius: 0 12px 12px 0;
+                    padding-right: 0.5rem;
                 }
 
                 &.name {
                     font-family: $font-exo;
                     font-style: italic;
                     font-weight: 600;
+                }
+
+                &.date {
+                    white-space: nowrap;
+                }
+
+                &.size {
+                    @include media-breakpoint-down("sm"){
+                        //display: none;
+                    }
+                    white-space: nowrap;
                 }
 
                 &.actions {

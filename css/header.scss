@@ -27,16 +27,16 @@
             }
 
             .nav-link {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-family: $font-bitter;
                 font-weight: 600;
-                padding: 1.4rem 1.5rem;
+                padding: 1.4rem 1.4rem;
                 color: inherit;
                 transition: none;
 
                 @include media-breakpoint-down('md'){
                     //font-size: 1.1rem;
-                    padding: 1.15rem 1.5rem;
+                    padding: 1.15rem 1.4rem;
                 }
             }
         }

@@ -152,25 +152,25 @@ return [
     ],
 
     /* Progress */
-    'progress_bar_label' => '20%',
-    'progress_bar_width' => 20,
+    'progress_bar_label' => '18,6%',
+    'progress_bar_width' => 18,
 
     /* Sprint results */
     'sprint_results' => [
         [
             'date' => '05.10.2021',
-            'title' => 'Analýza hardvéru a technológii',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+            'title' => 'Analýza hardvéru a technológii + Webová stránka',
+            'description' => 'Vytvorili sme tímovú webovú stránku s použitém technológii HTML, PHP, Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový display. Prihlásili sme sa do TP CUpu.'
         ],
-        [
-            'date' => '19.10.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ],
-        [
-            'date' => '02.11.2021',
-            'title' => 'Výsledok analýzy',
-            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-        ]
+//        [
+//            'date' => '19.10.2021',
+//            'title' => 'Výsledok analýzy',
+//            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+//        ],
+//        [
+//            'date' => '02.11.2021',
+//            'title' => 'Výsledok analýzy',
+//            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+//        ]
     ]
 ];

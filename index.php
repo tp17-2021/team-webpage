@@ -184,7 +184,7 @@ require_once 'functions.php';
                                     </div>
                                     <div class="content py-3 px-4">
                                         <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
-                                        <div>
+                                        <div class="font-light">
                                             <?php echo $sprint_result['description'] ?>
                                         </div>
                                     </div>
@@ -232,7 +232,13 @@ require_once 'functions.php';
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="btn btn-back" data-bs-dismiss="modal"><i class="fas fa-arrow-left"></i></button>
+                        <button type="button" class="btn btn-back" data-bs-dismiss="modal">
+<!--                            <i class="fas fa-arrow-left"></i>-->
+<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">-->
+<!--                                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>-->
+<!--                            </svg>-->
+                            <img class="go-back-icon" src="assets/img/icons/arrow-left-black.svg" alt="go back icon">
+                        </button>
                         <h5 class="modal-title font-exo text-center w-100"><?php echo $document_group['name']; ?></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -263,7 +269,9 @@ require_once 'functions.php';
                                     <?php foreach ($document_group['documents'] as $index => $document): ?>
                                         <tr>
                                             <?php $file_size_string = get_file_size($document['filepath']); ?>
-                                            <td class="name"><?php echo $document['name']; ?></td>
+                                            <td class="name">
+                                                <?php echo $document['name']; ?>
+                                            </td>
                                             <td class="size"><?php if(!empty($file_size_string)){ echo $file_size_string; } ?></td>
                                             <td class="date"><?php echo $document['date']; ?></td>
                                             <td class="actions">
@@ -288,7 +296,7 @@ require_once 'functions.php';
             <h2 class="section-title">Tím</h2>
             <div class="row g-4 g-lg-6">
                 <?php foreach ($config['team_members'] as $member): ?>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-6 col-lg-3">
                         <div class="member">
                             <div class="member-image">
                                 <div class="image-wrapper fixed-image-ratio-1-1 rounded mb-3">
@@ -298,7 +306,7 @@ require_once 'functions.php';
                                 </div>
                             </div>
                             <h4 class="member-name"><?php echo $member['name']; ?></h4>
-                            <div class="member-description">
+                            <div class="member-description d-none d-sm-block">
                                 <?php echo $member['description']; ?>
                             </div>
                         </div>
