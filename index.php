@@ -57,7 +57,7 @@ require_once 'functions.php';
     <!-- Slider -->
     <div class="slider-wrapper" style="display: none" >
         <div class="main-slider">
-            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url('assets/img/hero.jpg')">
                 <div class="inner-content container-lg py-5 py-lg-7">
                     <h1 class="section-title font-extra-bold"><?php echo $config['main_title']; ?></h1>
                     <div class="motto text-center constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
@@ -69,7 +69,7 @@ require_once 'functions.php';
                 </div>
                 <div class="overlay"></div>
             </div>
-            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url(assets/img/hero.jpg)">
+            <div class="slide hero-slider-slide has-background-image has-overlay text-white" style="background-image: url('assets/img/hero.jpg')">
                 <div class="inner-content container-lg py-5 py-lg-7">
                     <h1 class="section-title font-extra-bold">Prvé elektronické <br>voľby na Slovensku 2</h1>
                     <div class="motto text-center constrained-width-text"><?php echo $config['main_motto']; ?></div>
@@ -104,7 +104,7 @@ require_once 'functions.php';
     </section>
 
     <section id="voting-process" class="has-background-image has-overlay"
-             style="background-image: url(assets/img/parliament.jpg)">
+             style="background-image: url('assets/img/parliament.jpg')">
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
@@ -199,14 +199,14 @@ require_once 'functions.php';
         </div>
     </section>
 
-    <section id="documents" class="has-background-image has-overlay" style="background-image: url(assets/img/parliament2.jpg)">
+    <section id="documents" class="has-background-image has-overlay" style="background-image: url('assets/img/parliament2.jpg')">
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
             <h2 class="section-title text-white">Dokumenty</h2>
             <div class="width-constraint">
                 <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
                         <div class="col-6">
-                            <div class="document-group-card p-3 p-sm-5 h-100" data-bs-toggle="modal"
+                            <div class="document-group-card p-4 p-sm-5 h-100" data-bs-toggle="modal"
                                  data-bs-target="#document-modal-group-<?php echo $key + 1; ?>">
                                 <div class="document-group-icon-wrapper">
                                     <div class="icon-circle">
@@ -310,7 +310,7 @@ require_once 'functions.php';
 
 </main>
 <footer id="contact" class="footer has-background-image has-overlay text-white "
-        style="background-image: url(assets/img/footer.jpg)">
+        style="background-image: url('assets/img/footer.jpg')">
     <div class="container-lg inner-content py-5 py-lg-7">
         <div class="row align-items-end">
             <div class="col-md-6 mb-5 mb-md-0">

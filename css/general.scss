@@ -180,6 +180,10 @@ iframe {
         justify-content: center;
         margin-bottom: map_get($spacers, 5);
 
+        @include media-breakpoint-down('sm') {
+            margin-bottom: map_get($spacers, 3);
+        }
+
         .icon-circle {
             width: 7rem;
             height: 7rem;
@@ -194,12 +198,25 @@ iframe {
                 width: 3rem;
                 height: 3rem;
             }
+
+            @include media-breakpoint-down('sm') {
+                width: 4rem;
+                height: 4rem;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
         }
     }
 
     .document-group-name {
         text-align: center;
         margin-bottom: 0;
+        @include media-breakpoint-down('sm') {
+            font-size: 1rem;
+        }
     }
 
     &:not(.small){
