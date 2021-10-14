@@ -68,4 +68,8 @@ module.exports = {
             }
         ]
     },
+    watchOptions: {
+        poll: true,  // fix windows wsl watch mode
+        ignored: /node_modules/
+    }
 };
