@@ -16,5 +16,3 @@ window.AOS = require("aos");
 require("aos/dist/aos.css");
 
 require("./utilities");
-require("./modal-back-button");
-
