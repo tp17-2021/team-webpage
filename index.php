@@ -103,12 +103,11 @@ require_once 'functions.php';
         </div>
     </section>
 
-    <section id="voting-process" class="has-background-image has-overlay"
-             style="background-image: url('assets/img/parliament.jpg')">
+    <section id="voting-process" class="bg-primary">
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
-                <div class="col-md-5 mb-3 mt-0 my-md-5">
+                <div class="col-md-5 mb-5 mb-md-0 mt-0">
                     <div class="accordion" id="voting-accordion">
                         <?php $items_count = count($config['voting_items']); ?>
                         <?php foreach ($config['voting_items'] as $key => $item): ?>
@@ -129,8 +128,8 @@ require_once 'functions.php';
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="assets/img/illustrations/election_process.svg" alt="Priebeh volieb">
+                    <div class="d-flex">
+                        <img class="voting-illustration mx-auto" src="assets/img/illustrations/election_process.svg" alt="Priebeh volieb">
                     </div>
                 </div>
             </div>
@@ -199,7 +198,7 @@ require_once 'functions.php';
         </div>
     </section>
 
-    <section id="documents" class="has-background-image has-overlay" style="background-image: url('assets/img/parliament2.jpg')">
+    <section id="documents" class="bg-primary" >
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
             <h2 class="section-title text-white">Dokumenty</h2>
             <div class="width-constraint">
