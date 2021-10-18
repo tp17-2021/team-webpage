@@ -152,8 +152,8 @@ return [
     ],
 
     /* Progress */
-    'progress_bar_label' => '18,6%',
-    'progress_bar_width' => 18,
+    'progress_bar_label' => '8,3%', /* 100 / 24 * n (číslo týždna)*/
+    'progress_bar_width' => 8,
 
     /* Sprint results */
     'sprint_results' => [

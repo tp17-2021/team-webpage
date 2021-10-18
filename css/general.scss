@@ -109,7 +109,7 @@ iframe {
 
 /* Advantages */
 .advantage {
-    @include card-shadow();
+    @include card-shadow-large();
     border-radius: $default-border-radius;
     height: 100%;
 

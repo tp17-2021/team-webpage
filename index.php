@@ -96,11 +96,11 @@ require_once 'functions.php';
 
     <section id="advantages">
         <div class="container-lg overflow-hidden py-5 py-lg-7">
-            <h2 class="section-title mb-6">Prečo naše riešenie</h2>
+            <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
                 <?php foreach ($config['advantages'] as $key => $advantage): ?>
                     <div class="col-md<?php echo $key == 0 ? "-8" : "-6"?>">
-                        <div class="advantage p-5">
+                        <div class="advantage p-5" data-aos="fade-up">
                             <h4 class="advantage-name"><?php echo $advantage['name'] ?></h4>
                             <div class="advantage-description font-light">
                                 <?php echo $advantage['description'] ?>
@@ -120,7 +120,7 @@ require_once 'functions.php';
                     <div class="accordion" id="voting-accordion">
                         <?php $items_count = count($config['voting_items']); ?>
                         <?php foreach ($config['voting_items'] as $key => $item): ?>
-                            <div class="accordion-item <?php if ($key < $items_count - 1) echo 'mb-3'; ?>">
+                            <div class="accordion-item <?php if ($key < $items_count - 1) echo 'mb-3';?>">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#item-<?php echo $key; ?>" aria-expanded="false"
@@ -128,7 +128,7 @@ require_once 'functions.php';
                                         <?php echo $item['name']; ?>
                                     </button>
                                 </h2>
-                                <div id="item-<?php echo $key; ?>" class="accordion-collapse collapse"
+                                <div id="item-<?php echo $key; ?>" class="accordion-collapse collapse <?php echo  ($key == 0) ? " show" : "";  ?> "
                                      aria-labelledby="item-<?php echo $key; ?>" data-bs-parent="#voting-accordion">
                                     <div class="accordion-body font-light"><?php echo $item['description']; ?></div>
                                 </div>
@@ -148,16 +148,16 @@ require_once 'functions.php';
 
     <section id="progress">
         <div class="container-lg py-5 py-lg-7">
-            <h2 class="section-title">Výsledky našej práce</h2>
+            <h2 class="section-title" data-aos="fade-up">Výsledky našej práce</h2>
             <div class="row mb-7">
-                <div class="col-md-8 mx-auto progress-wrapper">
+                <div class="col-md-8 mx-auto progress-wrapper" data-aos="fade-up">
                     <div class="d-flex justify-content-between">
                         <div class="week first">Týždeň 1</div>
                         <div class="week last">Týždeň 24</div>
                     </div>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar"
-                             style="width: <?php echo $config['progress_bar_width']; ?>%;"
+                             style="width: <?php echo $config['progress_bar_width']; ?>%; min-width: 18%;"
                              aria-valuenow="<?php echo $config['progress_bar_width']; ?>" aria-valuemin="0"
                              aria-valuemax="100"><?php echo $config['progress_bar_label']; ?></div>
                     </div>
@@ -209,12 +209,12 @@ require_once 'functions.php';
 
     <section id="documents" class="bg-primary" >
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
-            <h2 class="section-title text-white">Dokumenty</h2>
+            <h2 class="section-title text-white" data-aos="fade-up">Dokumenty</h2>
             <div class="width-constraint">
                 <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
                         <div class="col-6">
-                            <div class="document-group-card p-4 p-sm-5 h-100" data-bs-toggle="modal"
+                            <div class="document-group-card p-4 p-sm-5 h-100" data-bs-toggle="modal" data-aos="fade-up"
                                  data-bs-target="#document-modal-group-<?php echo $key + 1; ?>">
                                 <div class="document-group-icon-wrapper">
                                     <div class="icon-circle">
@@ -325,8 +325,7 @@ require_once 'functions.php';
     </section>
 
 </main>
-<footer id="contact" class="footer has-background-image has-overlay text-white "
-        style="background-image: url('assets/img/footer.jpg')">
+<footer id="contact" class="footer text-white bg-primary">
     <div class="container-lg inner-content py-5 py-lg-7">
         <div class="row align-items-end">
             <div class="col-md-6 mb-5 mb-md-0">
