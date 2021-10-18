@@ -4,7 +4,7 @@ return [
     'site_title' => 'Electie | TP@FIIT STU',
     'site_name' => 'Electie - The Future of Voting',
     'email' => 'tim172021@googlegroups.com',
-    'main_title' => 'BUDÚCNOSŤ VOLIEB',
+    'main_title' => 'BUDÚCNOSŤ<br>VOLIEB',
     'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
     'footer_credits' => 'Tento projekt je realizovaný na Fakulte informatiky a informačných technológií v&nbsp;rámci predmetu Tímový projekt. Tím je vedený doktorandom Ing. Jaroslavom Erdelyim. Projekt sa zúčastňuje aj fakultnej súťaže TP CUP, kde bojuje o prvenstvo s ďalšími skvelými projektami.',

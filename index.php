@@ -46,10 +46,19 @@ require_once 'functions.php';
     </nav>
 </header>
 <main>
-    <section id="hero" class="has-background-image has-overlay text-white" style="background-image: url('assets/img/hero.jpg')">
-        <div class="inner-content container-lg py-5 py-lg-7">
-            <h1 class="section-title font-extra-bold"><?php echo $config['main_title']; ?></h1>
-            <div class="subtitle text-center constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
+    <section id="hero" class="text-white">
+        <div class="inner-content container-lg overflow-hidden py-5 py-lg-7">
+            <div class="row gx-md-5 align-items-center">
+                <div class="col-md-7 col-lg-6 mb-5 mb-md-0 text-center text-md-start">
+                    <h1 class="font-extra-bold"><?php echo $config['main_title']; ?></h1>
+                    <div class="subtitle constrained-width-text"><?php echo $config['main_subtitle']; ?></div>
+                </div>
+                <div class="col-md-5 col-lg-6">
+                    <div class="hero-icons">
+                        <img src="assets/img/hero_icons.svg" alt="hero icons">
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="overlay"></div>
     </section>
