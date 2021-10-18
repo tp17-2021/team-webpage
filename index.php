@@ -29,7 +29,7 @@ require_once 'functions.php';
                         <a class="nav-link" aria-current="page" href="#voting-process">Ako voliť</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#sprint-results">Šprinty</a>
+                        <a class="nav-link" aria-current="page" href="#progress">Šprinty</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#documents">Dokumenty</a>
