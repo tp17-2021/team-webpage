@@ -14,7 +14,7 @@ function get_file_size($filepath)
         return null;
     }
     $bytes = filesize($filepath);
-    $s = array('b', 'Kb', 'Mb', 'Gb');
+    $s = array('B', 'kB', 'MB', 'GB');
     $e = floor(log($bytes)/log(1024));
     return sprintf('%.2f '.$s[$e], ($bytes/pow(1024, floor($e))));
 }
