@@ -123,6 +123,11 @@ return [
                     'date' => '12.10.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie3.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.4',
+                    'date' => '19.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie4.pdf'
+                ],
             ]
         ],
         [
@@ -146,7 +151,11 @@ return [
             'iconpath' => 'assets/img/document_icons/other_documents.svg',
             'description' => 'Ostatné dokumenty obsahujú rôzne náležitosti spojené s priebehom predmetu tímový projekt a súťažou TP CUP.',
             'documents' => [
-
+                [
+                    'name' => 'Prihláška na TP CUP',
+                    'date' => '19.10.2021',
+                    'filepath' => 'assets/documents/others/tp_cup_prihlaska.pdf'
+                ],
             ]
         ]
     ],
