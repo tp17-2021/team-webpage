@@ -1,4 +1,12 @@
 <?php
+require_once 'functions.php';
+$current_week_number = date_diff_in_weeks('20/09/2021', date('d/m/Y'));
+$total_weeks_number = date_diff_in_weeks('20/09/2021', date('06/06/2022'));
+
+$current_day_number = date_diff_in_days('20/09/2021', date('d/m/Y'));
+$total_days_number = date_diff_in_days('20/09/2021', date('06/06/2022'));
+
+
 return [
     /* General */
     'site_title' => 'Electie | TP@FIIT STU',
@@ -52,7 +60,7 @@ return [
             'description' => 'Vytlačený volebný lístok volič hodí do urny. Umožňuje tým kontrolu hlasov v prípade problémov alebo sťažností. Používame len jeden menší papier pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
         ],
         [
-            'name' => 'Úspešne odvolené',
+            'name' => 'Výsledky',
             'description' => 'Po vhodení potvrdenia do urny môže volič opustiť volebnú miestnosť. Výsledky môžu byť po uzavretí miestností dostupné vďaku nášmu riešeniu oveľa skôr ako býva zvykom pri manuálnom prepočítavaní.'
         ]
     ],
@@ -161,8 +169,11 @@ return [
     ],
 
     /* Progress */
-    'progress_bar_label' => '8,3%', /* 100 / 24 * n (číslo týždna)*/
-    'progress_bar_width' => 8,
+    'current_week_number' => $current_week_number,
+    'total_weeks_number' => $total_weeks_number,
+
+    'progress_bar_label' =>  round($current_day_number * 100 / $total_days_number, 1)."%", /* 100 / 24 * n (číslo týždna)*/
+    'progress_bar_width' => round($current_day_number * 100 / $total_days_number, 0),
 
     /* Sprint results */
     'sprint_results' => [
@@ -171,11 +182,11 @@ return [
             'title' => 'Analýza hardvéru a technológii + Webová stránka',
             'description' => 'Vytvorili sme tímovú webovú stránku s použitém technológii HTML, PHP, Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový display. Prihlásili sme sa do TP CUpu.'
         ],
-//        [
-//            'date' => '19.10.2021',
-//            'title' => 'Výsledok analýzy',
-//            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-//        ],
+        [
+            'date' => '19.10.2021',
+            'title' => 'Výsledok analýzy',
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
+        ],
 //        [
 //            'date' => '02.11.2021',
 //            'title' => 'Výsledok analýzy',

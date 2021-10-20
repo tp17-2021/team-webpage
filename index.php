@@ -63,6 +63,7 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
+    <?php if(0): ?>
     <!-- Slider -->
     <div class="slider-wrapper" style="display: none" >
         <div class="main-slider">
@@ -93,8 +94,12 @@ require_once 'functions.php';
         </div>
     </div>
     <!-- Slider end -->
+    <?php endif; ?>
 
-    <section id="advantages">
+    <section id="advantages" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg overflow-hidden py-5 py-lg-7">
             <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
@@ -146,14 +151,16 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
-    <section id="progress">
+    <section id="progress" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title" data-aos="fade-up">Výsledky našej práce</h2>
             <div class="row mb-7">
                 <div class="col-md-8 mx-auto progress-wrapper" data-aos="fade-up">
-                    <div class="d-flex justify-content-between">
-                        <div class="week first">Týždeň 1</div>
-                        <div class="week last">Týždeň 24</div>
+                    <div class="d-flex justify-content-center">
+                        <div class="week">Týždeň <?php echo $config["current_week_number"]; ?> / <?php echo $config["total_weeks_number"]; ?></div>
                     </div>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar"
@@ -187,12 +194,12 @@ require_once 'functions.php';
                             </div>
                             <div class="col <?php if ($index % 2 == 1) echo 'order-0'; ?>">
                                 <div class="box">
-                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
-                                        <?php echo $sprint_start->format('d.m') . "&nbsp;- <br>" . $sprint_end->format('d.m.Y') ?>
+                                    <div class="header py-3 px-4 px-md-5 text-center <?php if ($index % 2 == 1) echo 'order-md-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
+                                        <?php echo $sprint_start->format('d.m.Y')."<br> - <br>" . $sprint_end->format('d.m.Y') ?>
                                     </div>
                                     <div class="content py-3 px-4">
                                         <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
-                                        <div class="font-light">
+                                        <div class="font-light text">
                                             <?php echo $sprint_result['description'] ?>
                                         </div>
                                     </div>

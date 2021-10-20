@@ -142,3 +142,16 @@ $modal-content-border-radius: $default-border-radius;
 $modal-inner-padding: 1rem 2rem;
 
 
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(16px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
