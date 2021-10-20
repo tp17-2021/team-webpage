@@ -113,39 +113,55 @@ iframe {
     }
 }
 
-/* Advantages */
-.advantage {
-    @include card-shadow-large();
-    border-radius: $default-border-radius;
-    height: 100%;
+#advantages {
+    .pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
 
-    .advantage-name {
-        text-align: center;
-        position: relative;
-        padding-bottom: map_get($spacers, 3);
-        margin-bottom: map_get($spacers, 3);
-        font-weight: 700;
-        color: $dark-blue;
-
-        &:after {
-            $element-width: 50%;
-            content: ' ';
-            display: block;
-            width: $element-width;
-            border-bottom: 4px solid $primary-color;
-            border-radius: $default-border-radius;
-            position: absolute;
-            left: 50%;
-            transform: translateX(- $element-width);
-            margin-top: map_get($spacers, 2);
+        img {
+            opacity: 0.85;
         }
     }
 
-    .advantage-description {
-        min-height: 8rem;
-        text-align: justify;
+    .advantage {
+        @include card-shadow-large();
+        border-radius: $default-border-radius;
+        height: 100%;
+        background: white;
+
+        .advantage-name {
+            text-align: center;
+            position: relative;
+            padding-bottom: map_get($spacers, 3);
+            margin-bottom: map_get($spacers, 3);
+            font-weight: 700;
+            color: $dark-blue;
+
+            &:after {
+                $element-width: 50%;
+                content: ' ';
+                display: block;
+                width: $element-width;
+                border-bottom: 4px solid $primary-color;
+                border-radius: $default-border-radius;
+                position: absolute;
+                left: 50%;
+                transform: translateX(- $element-width);
+                margin-top: map_get($spacers, 2);
+            }
+        }
+
+        .advantage-description {
+            min-height: 8rem;
+            text-align: justify;
+        }
     }
 }
+/* Advantages */
+
 
 /* Members section */
 .member {
@@ -303,6 +319,17 @@ iframe {
 }
 
 #progress {
+
+    .pattern {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        img {
+            opacity: 0.85;
+        }
+    }
+
     .progress-wrapper {
         .progress {
             height: 1.4rem;

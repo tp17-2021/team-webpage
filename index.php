@@ -63,6 +63,7 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
+    <?php if(0): ?>
     <!-- Slider -->
     <div class="slider-wrapper" style="display: none" >
         <div class="main-slider">
@@ -93,8 +94,12 @@ require_once 'functions.php';
         </div>
     </div>
     <!-- Slider end -->
+    <?php endif; ?>
 
-    <section id="advantages">
+    <section id="advantages" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg overflow-hidden py-5 py-lg-7">
             <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
@@ -146,7 +151,10 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
-    <section id="progress">
+    <section id="progress" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title" data-aos="fade-up">Výsledky našej práce</h2>
             <div class="row mb-7">
