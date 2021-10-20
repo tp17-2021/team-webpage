@@ -1,6 +1,6 @@
 @import "variables";
 
-html, body {
+html, body, main {
     background-color: white;
     font-size: 18px;
 
@@ -10,7 +10,7 @@ html, body {
 }
 
 main {
-    margin-top: 60px;
+    margin-top: 4.5rem;
 }
 
 img, figure {
@@ -56,11 +56,11 @@ iframe {
 
 /* Hero */
 #hero, .hero-slider-slide {
-    min-height: 80vh;
+    min-height: calc(100vh - 4.5rem);
     color: white;
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg, #143759 0%, rgba(38, 83, 117, 0.83) 47.92%, #FFFFFF 99.99%, #FFFFFF 100%);
+    background: linear-gradient(124deg, #143759 0%, rgba(38, 83, 117, 0.83) 47.92%, #FFFFFF 99.99%, #FFFFFF 100%);
 
 
 
@@ -98,6 +98,12 @@ iframe {
         justify-content: end;
         align-items: center;
 
+        img {
+            transform: translatey(0px);
+            animation: float 6s ease-in-out infinite;
+            box-shadow: none;
+        }
+
         @include media-breakpoint-down('md'){
             justify-content: center;
             img{
@@ -119,6 +125,7 @@ iframe {
         padding-bottom: map_get($spacers, 3);
         margin-bottom: map_get($spacers, 3);
         font-weight: 700;
+        color: $dark-blue;
 
         &:after {
             $element-width: 50%;
@@ -136,7 +143,7 @@ iframe {
 
     .advantage-description {
         min-height: 8rem;
-        text-align: left;
+        text-align: justify;
     }
 }
 
@@ -175,6 +182,10 @@ iframe {
                 font-style: italic;
                 font-weight: 600;
                 border-radius: $accordion-border-radius;
+            }
+
+            .accordion-body {
+                text-align: justify;
             }
         }
     }
@@ -263,6 +274,8 @@ iframe {
         .document-group-description {
             margin-top: map_get($spacers, 3);
             min-height: 8rem;
+            text-align: justify;
+
             @include media-breakpoint-down('md'){
                 display: none;
             }
@@ -380,22 +393,37 @@ iframe {
                 background-color: white;
                 overflow: hidden;
 
+                @include media-breakpoint-down("md") {
+                    flex-direction: column;
+                }
+
                 @include card-shadow-large();
 
                 .header {
-                    text-align: center;
+                    text-align: left;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    //background-color: $dark-blue;
                     font-weight: 500;
                     color: white;
+
+                    @include media-breakpoint-down("md") {
+                        justify-content: flex-start;
+                        font-style: italic;
+
+                        br {
+                            display: none;
+                        }
+                    }
                 }
 
                 .content {
                     .title {
                         font-weight: 600;
                         font-family: $font-exo;
+                    }
+                    .text {
+                        text-align: justify;
                     }
                 }
             }
