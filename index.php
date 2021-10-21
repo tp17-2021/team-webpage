@@ -218,7 +218,7 @@ require_once 'functions.php';
         <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
             <h2 class="section-title text-white" data-aos="fade-up">Dokumenty</h2>
             <div class="width-constraint">
-                <div class="row g-4 g-lg-7 justify-content-center">
+                <div class="row g-4 g-lg-7 justify-content-center align-items-stretch">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
                         <div class="col-6">
                             <div class="document-group-card p-4 p-sm-5 h-100" data-bs-toggle="modal" data-aos="fade-up"
