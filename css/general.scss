@@ -13,7 +13,7 @@ main {
     margin-top: 4.5rem;
 
     @include media-breakpoint-down("lg") {
-        margin-top: 60px;
+        margin-top: 4rem;
     }
 }
 
