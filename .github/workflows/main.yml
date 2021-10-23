@@ -6,9 +6,9 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ master, piepeline-upgrade ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, piepeline-upgrade ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: mkdir /var/hahaha
+        run: touch /home/ubuntu/hahaha.ha
 #         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
