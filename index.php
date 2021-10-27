@@ -47,7 +47,7 @@ require_once 'functions.php';
 </header>
 <main>
     <section id="hero" class="text-white overflow-hidden">
-        <div class="inner-content container-lg py-5 py-lg-7">
+        <div class="inner-content container-lg">
             <div class="row gx-md-5 align-items-center">
                 <div class="col-md-7 col-lg-6 mb-5 mb-md-0 text-center text-md-start">
                     <h1 class="font-extra-bold"><?php echo $config['main_title']; ?></h1>
