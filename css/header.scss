@@ -22,7 +22,7 @@
     }
     .navbar-nav {
 
-        @include media-breakpoint-down('md'){
+        @include media-breakpoint-down('md') {
             padding: 0.5rem 0;
         }
 
