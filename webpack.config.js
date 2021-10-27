@@ -8,9 +8,7 @@ var path = require('path');
 
 // change these variables to fit your project
 const jsPath= './js';
-const cssPath = './css';
 const outputPath = 'dist';
-const localDomain = 'http://mysite.local';
 const entryPoints = {
     // 'app' is the output name, people commonly use 'bundle'
     // you can have more than 1 entry point
@@ -22,6 +20,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, outputPath),
         filename: '[name].js',
+        // add publicPath for webpack 5.6 https://stackoverflow.com/questions/68115467/error-automatic-publicpath-is-not-supported-in-this-browser-when-i-am-running-m
+        publicPath: '',
     },
     plugins: [
         new MiniCssExtractPlugin({
