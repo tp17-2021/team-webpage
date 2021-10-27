@@ -136,6 +136,11 @@ return [
                     'date' => '19.10.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie4.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.5',
+                    'date' => '26.10.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie5.pdf'
+                ],
             ]
         ],
         [
