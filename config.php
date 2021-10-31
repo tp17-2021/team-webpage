@@ -146,7 +146,7 @@ return [
         [
             'name' => 'Zhodnotenie šprintov',
             'iconpath' => 'assets/img/document_icons/sprint_reports.svg',
-            'description' => 'Po dvoch týždňoch sa v rámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprint.',
+            'description' => 'Po dvoch týždňoch sa v rámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprintu.',
             'documents' => [
 
             ]
@@ -154,9 +154,18 @@ return [
         [
             'name' => 'Metodiky',
             'iconpath' => 'assets/img/document_icons/methodologies.svg',
-            'description' => 'Náš tím pracuje s viacerými metodikami, v ktorých sú rámcovo podrobne zadefinované požiadavky na štruktúru a kvalitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
+            'description' => 'Náš tím pracuje s viacerými metodikami, v&nbsp;ktorých sú rámcovo podrobne zadefinované požiadavky na štruktúru a kvalitu práce ktorú na projekte vykonávame. Cieľom je počas celej dĺžky trvania projektu dodržiavať tieto metodiky.',
             'documents' => [
-
+                [
+                    'name' => 'Metodika - Logovanie času',
+                    'date' => '31.10.2021',
+                    'filepath' => 'assets/documents/methodologies/motodika_logovanie_casu.pdf'
+                ],
+                [
+                    'name' => 'Metodika - Definition of done',
+                    'date' => '31.10.2021',
+                    'filepath' => 'assets/documents/methodologies/motodika_definition_of_done.pdf'
+                ],
             ]
         ],
         [
