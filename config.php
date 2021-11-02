@@ -133,6 +133,11 @@ return [
                     'date' => '26.10.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie5.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.6',
+                    'date' => '02.11.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie6.pdf'
+                ],
             ]
         ],
         [
@@ -157,6 +162,16 @@ return [
                     'name' => 'Metodika - Definition of done',
                     'date' => '31.10.2021',
                     'filepath' => 'assets/documents/methodologies/motodika_definition_of_done.pdf'
+                ],
+                [
+                    'name' => 'Metodika - Testovanie',
+                    'date' => '02.11.2021',
+                    'filepath' => 'assets/documents/methodologies/metodika_testovanie.pdf'
+                ],
+                [
+                    'name' => 'Metodika - Code style JavaScript',
+                    'date' => '02.11.2021',
+                    'filepath' => 'assets/documents/methodologies/metodika_code_style_javascript.pdf'
                 ],
             ]
         ],
