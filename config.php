@@ -138,6 +138,11 @@ return [
                     'date' => '02.11.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie6.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.7',
+                    'date' => '09.11.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie7.pdf'
+                ],
             ]
         ],
         [
@@ -172,6 +177,11 @@ return [
                     'name' => 'Metodika - Code style JavaScript',
                     'date' => '02.11.2021',
                     'filepath' => 'assets/documents/methodologies/metodika_code_style_javascript.pdf'
+                ],
+                [
+                    'name' => 'Metodika - Code style Python',
+                    'date' => '12.11.2021',
+                    'filepath' => 'assets/documents/methodologies/metodika_code_style_python.pdf'
                 ],
             ]
         ],
