@@ -143,6 +143,11 @@ return [
                     'date' => '09.11.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie7.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.8',
+                    'date' => '16.11.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie8.pdf'
+                ],
             ]
         ],
         [
@@ -150,7 +155,21 @@ return [
             'iconpath' => 'assets/img/document_icons/sprint_reports.svg',
             'description' => 'Po dvoch týždňoch sa v rámci retrospektívy spoločne zhodnotí práca na projekte. Vyhodnotí sa množstvo úspešne dokončených úloh, zistia sa problémy s úlohami, ktoré sa nepodarilo zrealizovať a následne sa tieto poznatky zoberú do úvahy pri pridávaní úlohy do nového šprintu.',
             'documents' => [
-
+                [
+                    'name' => 'Zhodnotenie šprintu 1',
+                    'date' => '17.11.2021',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu1.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 2',
+                    'date' => '17.11.2021',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu2.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 3',
+                    'date' => '17.11.2021',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu3.pdf'
+                ],
             ]
         ],
         [
@@ -182,6 +201,11 @@ return [
                     'name' => 'Metodika - Code style Python',
                     'date' => '12.11.2021',
                     'filepath' => 'assets/documents/methodologies/metodika_code_style_python.pdf'
+                ],
+                [
+                    'name' => 'Metodika - Manažment kódu',
+                    'date' => '17.11.2021',
+                    'filepath' => 'assets/documents/methodologies/metodika_manazmentu_kodu.pdf'
                 ],
             ]
         ],
