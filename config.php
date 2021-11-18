@@ -243,7 +243,7 @@ return [
         [
             'date' => '05.10.2021',
             'title' => 'Analýza hardvéru a technológii + Webová stránka',
-            'description' => 'Vytvorili sme tímovú webovú stránku s použitém technológii HTML, PHP, Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový display. Prihlásili sme sa do TP CUpu.'
+            'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.'
         ],
         [
             'date' => '19.10.2021',
