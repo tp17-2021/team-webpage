@@ -18,3 +18,17 @@ function get_file_size($filepath)
     $e = floor(log($bytes)/log(1024));
     return sprintf('%.2f '.$s[$e], ($bytes/pow(1024, floor($e))));
 }
+
+function date_diff_in_weeks($date1, $date2)
+{
+    $first = DateTime::createFromFormat('d/m/Y', $date1);
+    $second = DateTime::createFromFormat('d/m/Y', $date2);
+    return floor($first->diff($second)->days/7);
+}
+
+function date_diff_in_days($date1, $date2)
+{
+    $first = DateTime::createFromFormat('d/m/Y', $date1);
+    $second = DateTime::createFromFormat('d/m/Y', $date2);
+    return floor($first->diff($second)->days);
+}

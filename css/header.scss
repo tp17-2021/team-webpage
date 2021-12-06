@@ -7,9 +7,17 @@
 
     @include card-shadow-medium();
 
-    .navbar-brand{
-        .team-logo{
-            max-height: 50px;
+    .navbar-brand {
+
+        @include media-breakpoint-down('lg') {
+            min-height: 4rem;
+        }
+
+        display: flex;
+        align-items: center;
+
+        .team-logo {
+            max-height: 3rem;
         }
     }
     .navbar-nav {
@@ -27,15 +35,21 @@
             }
 
             .nav-link {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 font-family: $font-bitter;
                 font-weight: 600;
-                padding: 1.4rem 1.4rem;
+                padding: 0 1.4rem;
                 color: inherit;
                 transition: none;
+                display: flex;
+                align-items: center;
+                height: 4.5rem;
+
+                @include media-breakpoint-down('lg') {
+                    height: 4rem;
+                }
 
                 @include media-breakpoint-down('md'){
-                    //font-size: 1.1rem;
                     padding: 1.15rem 1.4rem;
                 }
             }
@@ -54,18 +68,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 20px;
-            height: 20px;
-
-            //&.open {
-            //    display: flex;
-            //    background-image: url("data:image/svg+xml,%3Csvg height='384pt' viewBox='0 -53 384 384' width='384pt' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3Cpath d='m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3Cpath d='m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0'/%3E%3C/svg%3E");
-            //}
-            //
-            //&.close {
-            //    display: none;
-            //    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001' style='enable-background:new 0 0 512.001 512.001' xml:space='preserve'%3E%3Cpath d='M284.286 256.002 506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
-            //}
+            width: 1rem;
+            height: 1rem;
         }
 
         &:focus {

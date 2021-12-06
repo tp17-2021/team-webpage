@@ -63,6 +63,7 @@ require_once 'functions.php';
         <div class="overlay"></div>
     </section>
 
+    <?php if(0): ?>
     <!-- Slider -->
     <div class="slider-wrapper" style="display: none" >
         <div class="main-slider">
@@ -93,14 +94,18 @@ require_once 'functions.php';
         </div>
     </div>
     <!-- Slider end -->
+    <?php endif; ?>
 
-    <section id="advantages">
+    <section id="advantages" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg overflow-hidden py-5 py-lg-7">
             <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
                 <?php foreach ($config['advantages'] as $key => $advantage): ?>
-                    <div class="col-md<?php echo $key == 0 ? "-8" : "-6"?>">
-                        <div class="advantage p-5" data-aos="fade-up">
+                    <div class="col-md<?php echo $key == 0 ? '-8' : '-6'; ?> d-flex">
+                        <div class="advantage p-5 h-100 w-100" data-aos="fade-up">
                             <h4 class="advantage-name"><?php echo $advantage['name'] ?></h4>
                             <div class="advantage-description font-light">
                                 <?php echo $advantage['description'] ?>
@@ -116,7 +121,7 @@ require_once 'functions.php';
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
-                <div class="col-md-5 mb-5 mb-md-0 mt-0">
+                <div class="col-md-6 col-lg-5 mb-5 mb-md-0 mt-0">
                     <div class="accordion" id="voting-accordion">
                         <?php $items_count = count($config['voting_items']); ?>
                         <?php foreach ($config['voting_items'] as $key => $item): ?>
@@ -136,24 +141,25 @@ require_once 'functions.php';
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-6 col-lg-7">
                     <div class="d-flex">
                         <img class="voting-illustration mx-auto" src="assets/img/illustrations/election_process.svg" alt="Priebeh volieb">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="overlay"></div>
     </section>
 
-    <section id="progress">
+    <section id="progress" class="position-relative">
+        <div class="pattern">
+            <img src="assets/img/patterns/circuit_pattern.svg">
+        </div>
         <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title" data-aos="fade-up">Výsledky našej práce</h2>
             <div class="row mb-7">
                 <div class="col-md-8 mx-auto progress-wrapper" data-aos="fade-up">
-                    <div class="d-flex justify-content-between">
-                        <div class="week first">Týždeň 1</div>
-                        <div class="week last">Týždeň 24</div>
+                    <div class="d-flex justify-content-center">
+                        <div class="week">Týždeň <?php echo $config["current_week_number"]; ?> / <?php echo $config["total_weeks_number"]; ?></div>
                     </div>
                     <div class="progress">
                         <div class="progress-bar bg-primary" role="progressbar"
@@ -187,12 +193,12 @@ require_once 'functions.php';
                             </div>
                             <div class="col <?php if ($index % 2 == 1) echo 'order-0'; ?>">
                                 <div class="box">
-                                    <div class="header py-3 px-3 px-md-5 <?php if ($index % 2 == 1) echo 'order-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
-                                        <?php echo $sprint_start->format('d.m') . "&nbsp;- <br>" . $sprint_end->format('d.m.Y') ?>
+                                    <div class="header py-3 px-4 px-md-5 text-center <?php if ($index % 2 == 1) echo 'order-md-2'; ?>  <?php echo 'bg-blue-shade-' . ($index + 1); ?>">
+                                        <?php echo $sprint_start->format('d.m.Y')."<br> - <br>" . $sprint_end->format('d.m.Y') ?>
                                     </div>
                                     <div class="content py-3 px-4">
                                         <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
-                                        <div class="font-light">
+                                        <div class="font-light text">
                                             <?php echo $sprint_result['description'] ?>
                                         </div>
                                     </div>
@@ -200,10 +206,8 @@ require_once 'functions.php';
                             </div>
                         </div>
                     </div>
-
                 <?php endforeach; ?>
             </div>
-
         </div>
     </section>
 
@@ -213,8 +217,8 @@ require_once 'functions.php';
             <div class="width-constraint">
                 <div class="row g-4 g-lg-7 justify-content-center">
                     <?php foreach ($config['document_groups'] as $key => $document_group): ?>
-                        <div class="col-6">
-                            <div class="document-group-card p-4 p-sm-5 h-100" data-bs-toggle="modal" data-aos="fade-up"
+                        <div class="col-6 d-flex">
+                            <div class="document-group-card p-4 p-sm-5 w-100 h-100" data-bs-toggle="modal" data-aos="fade-up"
                                  data-bs-target="#document-modal-group-<?php echo $key + 1; ?>">
                                 <div class="document-group-icon-wrapper">
                                     <div class="icon-circle">
@@ -231,7 +235,6 @@ require_once 'functions.php';
                 </div>
             </div>
         </div>
-        <div class="overlay"></div>
     </section>
 
     <!-- MODALS -->
@@ -309,7 +312,7 @@ require_once 'functions.php';
                             <div class="member-image">
                                 <div class="image-wrapper fixed-image-ratio-1-1 rounded mb-3">
                                     <?php if (!empty($member['img_path'])): ?>
-                                        <img src="<?php echo $member['img_path']; ?>" alt="member image">
+                                        <img src="<?php echo $member['img_path']; ?>" alt="<?php echo $member['name']; ?>">
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -345,7 +348,6 @@ require_once 'functions.php';
             </div>
         </div>
     </div>
-    <div class="overlay" style="opacity: 0.7; background: #040e18;"></div>
 </footer>
 </body>
 </html>

@@ -1,4 +1,12 @@
 <?php
+require_once 'functions.php';
+$current_week_number = date_diff_in_weeks('20/09/2021', date('d/m/Y'));
+$total_weeks_number = date_diff_in_weeks('20/09/2021', date('06/06/2022'));
+
+$current_day_number = date_diff_in_days('20/09/2021', date('d/m/Y'));
+$total_days_number = date_diff_in_days('20/09/2021', date('06/06/2022'));
+
+
 return [
     /* General */
     'site_title' => 'Electie | TP@FIIT STU',
@@ -20,7 +28,7 @@ return [
             'description' => 'Výsledky hlasovania sa budú spracovávať automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
         ],
         [
-            'name' => 'Znovupoužiteľosť',
+            'name' => 'Znovupoužiteľnosť',
             'description' => 'Naše riešenie bude fungovať pre všetky typy volieb na Slovensku, rovnako počítame s podporou referenda alebo lokálnych hlasovaní napríklad pri akademických senátoch.'
         ],
         [
@@ -41,7 +49,7 @@ return [
         ],
         [
             'name' => 'Výber NFC tagu',
-            'description' => 'Volič si náhodne vyberie jeden z ponúkaných NFC tagov z misy. Informácie uložené na Tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
+            'description' => '<a href="https://en.wikipedia.org/wiki/Near-field_communication">NFC</a> tag je naprogramovateľný čip, ktorý v sebe nesie jedinečný kód pre voľby. Volič si náhodne vyberie jeden z ponúkaných NFC tagov z misy. Informácie uložené na Tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
         ],
         [
             'name' => 'Hlasovanie',
@@ -52,7 +60,7 @@ return [
             'description' => 'Vytlačený volebný lístok volič hodí do urny. Umožňuje tým kontrolu hlasov v prípade problémov alebo sťažností. Používame len jeden menší papier pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
         ],
         [
-            'name' => 'Úspešne odvolené',
+            'name' => 'Výsledky',
             'description' => 'Po vhodení potvrdenia do urny môže volič opustiť volebnú miestnosť. Výsledky môžu byť po uzavretí miestností dostupné vďaku nášmu riešeniu oveľa skôr ako býva zvykom pri manuálnom prepočítavaní.'
         ]
     ],
@@ -229,8 +237,11 @@ return [
     ],
 
     /* Progress */
-    'progress_bar_label' => '8,3%', /* 100 / 24 * n (číslo týždna)*/
-    'progress_bar_width' => 8,
+    'current_week_number' => $current_week_number,
+    'total_weeks_number' => $total_weeks_number,
+
+    'progress_bar_label' =>  round($current_day_number * 100 / $total_days_number, 1)."%", /* 100 / 24 * n (číslo týždna)*/
+    'progress_bar_width' => round($current_day_number * 100 / $total_days_number, 0),
 
     /* Sprint results */
     'sprint_results' => [
@@ -239,11 +250,11 @@ return [
             'title' => 'Analýza hardvéru a technológii + Webová stránka',
             'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.'
         ],
-//        [
-//            'date' => '19.10.2021',
-//            'title' => 'Výsledok analýzy',
-//            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-//        ],
+        [
+            'date' => '19.10.2021',
+            'title' => 'Dizajn volebnej aplikácie + Projektové metodiky',
+            'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.'
+        ],
 //        [
 //            'date' => '02.11.2021',
 //            'title' => 'Výsledok analýzy',

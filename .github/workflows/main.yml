@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ master ]
+    types: [closed]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Call deploy script
+        run: /home/deploy.sh
