@@ -161,6 +161,11 @@ return [
                     'date' => '23.11.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie9.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.10',
+                    'date' => '30.11.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie10.pdf'
+                ],
             ]
         ],
         [
@@ -255,10 +260,15 @@ return [
             'title' => 'Dizajn volebnej aplikácie + Projektové metodiky',
             'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.'
         ],
-//        [
-//            'date' => '02.11.2021',
-//            'title' => 'Výsledok analýzy',
-//            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been therieially unchanged. It was popularised in the 1960s.'
-//        ]
+        [
+            'date' => '02.11.2021',
+            'title' => 'Používateľské testovanie a analýza komponentov',
+            'description' => 'Vykonali sme 7 používateľských testovaní, pomocou ktorých sme odhalili niekoľko problémov týkajúcich sa hlavne používateľov staršej vekovej kategórie. Zistenia sme zapracovali do dizajnu a prototypu. Ďalej sme vykonali podrobnejšie analýzy komponentov gateway a server, ich vzájomnej komunikácie a definovali sme prvotné dátové modely.'
+        ],
+        [
+            'date' => '16.11.2021',
+            'title' => 'Začiatok implementácie',
+            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.'
+        ]
     ]
 ];
