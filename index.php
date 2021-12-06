@@ -46,8 +46,8 @@ require_once 'functions.php';
     </nav>
 </header>
 <main>
-    <section id="hero" class="text-white">
-        <div class="inner-content container-lg overflow-hidden py-5 py-lg-7">
+    <section id="hero" class="text-white overflow-hidden">
+        <div class="inner-content container-lg">
             <div class="row gx-md-5 align-items-center">
                 <div class="col-md-7 col-lg-6 mb-5 mb-md-0 text-center text-md-start">
                     <h1 class="font-extra-bold"><?php echo $config['main_title']; ?></h1>
@@ -96,11 +96,11 @@ require_once 'functions.php';
     <!-- Slider end -->
     <?php endif; ?>
 
-    <section id="advantages" class="position-relative">
+    <section id="advantages" class="position-relative overflow-hidden">
         <div class="pattern">
             <img src="assets/img/patterns/circuit_pattern.svg">
         </div>
-        <div class="container-lg overflow-hidden py-5 py-lg-7">
+        <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
                 <?php foreach ($config['advantages'] as $key => $advantage): ?>
@@ -211,8 +211,8 @@ require_once 'functions.php';
         </div>
     </section>
 
-    <section id="documents" class="bg-primary" >
-        <div class="container-lg inner-content overflow-hidden py-5 py-lg-7">
+    <section id="documents" class="bg-primary overflow-hidden" >
+        <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white" data-aos="fade-up">Dokumenty</h2>
             <div class="width-constraint">
                 <div class="row g-4 g-lg-7 justify-content-center">
@@ -302,8 +302,8 @@ require_once 'functions.php';
         </div>
     <?php endforeach; ?>
 
-    <section id="team">
-        <div class="container-lg overflow-hidden py-5 py-lg-7">
+    <section id="team" class="overflow-hidden">
+        <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title">Tím</h2>
             <div class="row g-4 g-lg-6">
                 <?php foreach ($config['team_members'] as $member): ?>
