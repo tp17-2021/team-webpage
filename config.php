@@ -171,6 +171,11 @@ return [
                     'date' => '07.12.2021',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie11.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.12',
+                    'date' => '15.12.2021',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie12.pdf'
+                ],
             ]
         ],
         [
@@ -192,6 +197,16 @@ return [
                     'name' => 'Zhodnotenie šprintu 3',
                     'date' => '17.11.2021',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu3.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 4',
+                    'date' => '15.12.2021',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu4.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 5',
+                    'date' => '15.12.2021',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu5.pdf'
                 ],
             ]
         ],
