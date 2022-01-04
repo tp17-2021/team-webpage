@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - name: Check current user
-        uses: whoami
+        run: whoami
 
       - name: Check out code
         uses: actions/checkout@v1
