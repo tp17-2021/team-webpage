@@ -27,6 +27,15 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v1
 
+      - name: Check current user 2
+        run: whoami
+
+      - name: Switch user
+        run: sudo su ubuntu
+
+      - name: Check current user 3
+        run: whoami
+
       - name: Branch
         run: git checkout piepeline-upgrade
 
