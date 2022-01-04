@@ -6,7 +6,7 @@ on:
     types: [closed]
 
   push:
-    branches: [ pipeline-upgrade ]
+    branches: [ piepeline-upgrade ]
 
   workflow_dispatch:
 
@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Branch
-        run: git checkout pipeline-upgrade
+        run: git checkout piepeline-upgrade
 
       - name: Docker-Compose
         run: docker-compose up -d --build
