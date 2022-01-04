@@ -5,6 +5,9 @@ on:
     branches: [ master ]
     types: [closed]
 
+  push:
+    branches: [ pipeline-upgrade ]
+
   workflow_dispatch:
 
 jobs:
@@ -15,8 +18,17 @@ jobs:
       - name: Check current user
         run: whoami
 
+      - name: List
+        run: ls -lah
+
+      - name: PWD
+        run: pwd
+
       - name: Check out code
         uses: actions/checkout@v1
+
+      - name: Branch
+        run: git checkout pipeline-upgrade
 
       - name: Docker-Compose
         run: docker-compose up -d --build
