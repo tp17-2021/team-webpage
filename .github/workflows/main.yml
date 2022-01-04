@@ -19,7 +19,7 @@ jobs:
         run: whoami
 
       - name: List
-        run: ls -lah
+        run: ls -lah ~
 
       - name: PWD
         run: pwd
