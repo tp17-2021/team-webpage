@@ -42,8 +42,11 @@ jobs:
       - name: List
         run: ls -lah
 
+      - name: Sudo i
+        run: sudo -i
+
       - name: Docker-Compose
-        run: bash fun.sh
+        run: docker-compose up -d --build
       
       - name: Run tests
         run: bash tests/site_up.sh
