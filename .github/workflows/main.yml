@@ -38,9 +38,9 @@ jobs:
 
       - name: Branch
         run: git checkout piepeline-upgrade
-
-      - name: Docker-Compose
-        run: docker-compose up -d --build
       
       - name: Run tests
         run: bash tests/site_up.sh
+
+      - name: Docker-Compose
+        run: docker-compose up -d --build
