@@ -18,8 +18,12 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v1
 
+      - name: List
+        run: ls -lah
+
       - name: Docker-Compose
         run: docker-compose up -d --build
       
       - name: Run tests
         run: bash tests/site_up.sh
+
