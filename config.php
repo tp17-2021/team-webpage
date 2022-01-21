@@ -257,6 +257,16 @@ return [
                     'date' => '19.10.2021',
                     'filepath' => 'assets/documents/others/tp_cup_prihlaska.pdf'
                 ],
+                [
+                    'name' => 'Míľnik 1 (ZS)',
+                    'date' => '20.12.2021',
+                    'filepath' => 'assets/documents/others/tim17_milnik1.pdf'
+                ],
+                [
+                    'name' => 'Míľnik 2 (ZS)',
+                    'date' => '20.12.2021',
+                    'filepath' => 'assets/documents/others/tim17_milnik2.pdf'
+                ],
             ]
         ]
     ],
