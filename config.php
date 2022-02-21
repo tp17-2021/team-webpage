@@ -177,6 +177,11 @@ return [
                     'filepath' => 'assets/documents/meeting_reports/stretnutie12.pdf'
                 ],
                 [
+                    'name' => 'Zápisnica č.13',
+                    'date' => '20.02.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie13.pdf'
+                ],
+                [
                     'name' => 'Zápisnica č.14',
                     'date' => '20.02.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie14.pdf'
