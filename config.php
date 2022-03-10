@@ -191,6 +191,16 @@ return [
                     'date' => '27.02.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie15.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.16',
+                    'date' => '10.03.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie16.pdf'
+                ],
+                [
+                    'name' => 'Zápisnica č.17',
+                    'date' => '10.03.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie17.pdf'
+                ],
             ]
         ],
         [
