@@ -206,6 +206,11 @@ return [
                     'date' => '20.03.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie18.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.19',
+                    'date' => '29.03.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie19.pdf'
+                ],
             ]
         ],
         [
