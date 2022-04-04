@@ -45,7 +45,7 @@ return [
     'voting_items' => [
         [
             'name' => 'Overenie totožnosti',
-            'description' => 'Volebná komisia overí totožnosť voliča štandardným spôsobom, teda pomocou občianskeho preukazu a zoznamu oprávnených voličov vo vytlačenom zozname. Elektronizácia tohto kroku je zámerne vynechaná, aby nebolo v žiadom prípade možné na základe časových pečiatok identifikovať ktorému voličovi patrí odoslaný hlas.'
+            'description' => 'Volebná komisia overí totožnosť voliča štandardným spôsobom, teda pomocou občianskeho preukazu a zoznamu oprávnených voličov vo vytlačenom zozname. Elektronizácia tohto kroku je zámerne vynechaná, aby nebolo v žiadom prípade možné na základe časových pečiatok identifikovať ku ktorému voličovi patrí odoslaný hlas.'
         ],
         [
             'name' => 'Výber NFC tagu',
