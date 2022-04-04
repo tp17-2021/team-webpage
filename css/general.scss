@@ -329,18 +329,20 @@ iframe {
     }
 }
 
-#progress {
-
+#project-architecture-design {
     .pattern {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: -1;
 
         img {
             opacity: 0.85;
         }
     }
+}
 
+#progress {
     .progress-wrapper {
         .progress {
             height: 1.4rem;

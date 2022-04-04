@@ -29,6 +29,9 @@ require_once 'functions.php';
                         <a class="nav-link" aria-current="page" href="#voting-process">Ako voliť</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#project-architecture-design">Návrh riešenia</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#progress">Šprinty</a>
                     </li>
                     <li class="nav-item">
@@ -117,7 +120,7 @@ require_once 'functions.php';
         </div>
     </section>
 
-    <section id="voting-process" class="bg-primary">
+    <section id="voting-process" class="bg-primary pos">
         <div class="container-lg inner-content py-5 py-lg-7">
             <h2 class="section-title text-white">Ako voliť</h2>
             <div class="row">
@@ -150,10 +153,9 @@ require_once 'functions.php';
         </div>
     </section>
 
+    <?php require_once 'our-solution.php'; ?>
+
     <section id="progress" class="position-relative">
-        <div class="pattern">
-            <img src="assets/img/patterns/circuit_pattern.svg">
-        </div>
         <div class="container-lg py-5 py-lg-7">
             <h2 class="section-title" data-aos="fade-up">Výsledky našej práce</h2>
             <div class="row mb-7">

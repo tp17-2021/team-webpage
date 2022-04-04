@@ -142,6 +142,13 @@ $modal-content-border-radius: $default-border-radius;
 $modal-inner-padding: 1rem 2rem;
 
 
+$nav-tabs-border-color: $primary-color;
+$nav-tabs-link-hover-border-color:	$primary-color $primary-color $nav-tabs-border-color;
+$nav-tabs-link-active-color: $primary-color;
+$nav-tabs-link-active-bg: white;
+$nav-tabs-link-active-border-color:	$primary-color $primary-color $nav-tabs-link-active-bg;
+
+
 @keyframes float {
     0% {
         transform: translatey(0px);
