@@ -25,7 +25,7 @@ return [
         ],
         [
             'name' => 'Rýchlejšie výsledky',
-            'description' => 'Výsledky hlasovania sa budú spracovávať automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
+            'description' => 'Výsledky hlasovania sa spracovávajú automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
         ],
         [
             'name' => 'Znovupoužiteľnosť',
@@ -33,11 +33,11 @@ return [
         ],
         [
             'name' => 'Znížená chybovosť',
-            'description' => 'V našom riešení obmedzíme chybovosť pri počítaní hlasov, keďže hlasy budú sčítané elektronicky. Členovia volebnej komisie budú mať tak na starosti len overovanie totožnosti voličov a vydávanie NFC tagov pre hlasovanie.'
+            'description' => 'V našom riešení eliminujeme chybovosť pri sčítaní hlasov, keďže hlasy sú sčítané elektronicky. Členovia volebnej komisie majú tak na starosti len overovanie totožnosti voličov a vydávanie autorizačných NFC tagov pre hlasovanie.'
         ],
         [
             'name' => 'Možnosť kontroly',
-            'description' => 'V prípade problémov je stále možné vytlačené volebné lístky ručne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti.'
+            'description' => 'V prípade problémov je stále možné vytlačené potvrdenia o voľbe manuálne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti. Tiež je možné automatizované offline spočítanie hlasov pomocou skenovania QR kódov z potvrdení o voľbe.'
         ]
     ],
 
@@ -45,19 +45,19 @@ return [
     'voting_items' => [
         [
             'name' => 'Overenie totožnosti',
-            'description' => 'Volebná komisia overí totožnosť voliča pomocou občianskeho preukazu a zoznamu voličov v tablete. Oproti klasickému vyhľadávaniu, bude elektronické vyhľadanie rýchlejšie a precíznejšie.'
+            'description' => 'Volebná komisia overí totožnosť voliča štandardným spôsobom, teda pomocou občianskeho preukazu a zoznamu oprávnených voličov vo vytlačenom zozname. Elektronizácia tohto kroku je zámerne vynechaná, aby nebolo v žiadom prípade možné na základe časových pečiatok identifikovať ktorému voličovi patrí odoslaný hlas.'
         ],
         [
             'name' => 'Výber NFC tagu',
-            'description' => '<a href="https://en.wikipedia.org/wiki/Near-field_communication">NFC</a> tag je naprogramovateľný čip, ktorý v sebe nesie jedinečný kód pre voľby. Volič si náhodne vyberie jeden z ponúkaných NFC tagov z misy. Informácie uložené na Tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
+            'description' => '<a href="https://en.wikipedia.org/wiki/Near-field_communication">NFC</a> tag je naprogramovateľný čip, ktorý v sebe nesie jedinečný autorizačný token pre voľby. Volič si náhodne vyberie jeden z ponúkaných NFC tagov z nádoby. Informácie uložené na tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
         ],
         [
             'name' => 'Hlasovanie',
-            'description' => 'Volič pristúpi k volebnému terminálu, do ktorého vloží NFC Tag, čím mu je umožnené odvoliť. Volič postupuje podľa pokynov na obrazovke. Aplikácia je navrhnutá s ohľadom na jej použiteľnosť, obrazovka je dostatočne veľká a písmo je jasne čitateľné. Svoju voľbu potvrdí a volebný terminál vytlačí potvrdenie o hlasovaní.'
+            'description' => 'Volič pristúpi k volebnému terminálu, ku čítačke priloží NFC tag, čím sa vykoná autorizácia a je mu umožnené odvoliť. Volič postupuje podľa pokynov na obrazovke. Aplikácia je navrhnutá s ohľadom na jej použiteľnosť, obrazovka je dostatočne veľká a písmo je jasne čitateľné. Svoju voľbu potvrdí a volebný terminál vytlačí potvrdenie o hlasovaní.'
         ],
         [
             'name' => 'Vhodenie potvrdenia do urny',
-            'description' => 'Vytlačený volebný lístok volič hodí do urny. Umožňuje tým kontrolu hlasov v prípade problémov alebo sťažností. Používame len jeden menší papier pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
+            'description' => 'Vytlačené potvrdenie o voľbe volič vhodí do urny. Je umožnená kontrola hlasov aj mimo volebného systému v prípade problémov alebo sťažností. Potvrdenie o voľbe je vytlačené na jednom malom papieri (menšom ako pokladničný doklad) pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
         ],
         [
             'name' => 'Výsledky',
