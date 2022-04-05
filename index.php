@@ -107,7 +107,7 @@ require_once 'functions.php';
             <h2 class="section-title mb-6" data-aos="fade-up">Prečo naše riešenie</h2>
             <div class="row g-4 g-md-5 g-lg-6 justify-content-center">
                 <?php foreach ($config['advantages'] as $key => $advantage): ?>
-                    <div class="col-md<?php echo $key == 0 ? '-8' : '-6'; ?> d-flex">
+                    <div class="col-md-6 d-flex">
                         <div class="advantage p-5 h-100 w-100" data-aos="fade-up">
                             <h4 class="advantage-name"><?php echo $advantage['name'] ?></h4>
                             <div class="advantage-description font-light">
@@ -176,8 +176,15 @@ require_once 'functions.php';
                 <?php foreach ($config['sprint_results'] as $index => $sprint_result): ?>
                     <?php
                     $sprint_start = DateTime::createFromFormat('d.m.Y', $sprint_result['date']);
-                    $sprint_end = clone $sprint_start;
-                    $sprint_end = $sprint_end->add(new DateInterval('P14D'));
+
+                    if($index == count($config['sprint_results']) - 1){
+                        $sprint_end = clone $sprint_start;
+                        $sprint_end = $sprint_end->add(new DateInterval('P14D'));
+                    } else {
+                        $sprint_end = DateTime::createFromFormat('d.m.Y', $config['sprint_results'][$index + 1]['date']);
+                        $sprint_end = $sprint_end->sub(new DateInterval('P1D'));
+                    }
+
                     ?>
                     <div class="sprint-result" data-aos="fade-up">
                         <div class="row g-0 align-items-center">
@@ -199,7 +206,12 @@ require_once 'functions.php';
                                         <?php echo $sprint_start->format('d.m.Y')."<br> - <br>" . $sprint_end->format('d.m.Y') ?>
                                     </div>
                                     <div class="content py-3 px-4">
-                                        <h4 class="title"><?php echo $sprint_result['title'] ?></h4>
+
+                                        <h4 class="title mb-1"><?php echo $sprint_result['title'] ?></h4>
+                                        <div class="mb-3">
+                                            <span class="badge rounded-pill bg-primary">one tag</span>
+                                            <span class="badge rounded-pill bg-primary">second tag</span>
+                                        </div>
                                         <div class="font-light text">
                                             <?php echo $sprint_result['description'] ?>
                                         </div>

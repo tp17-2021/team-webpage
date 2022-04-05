@@ -28,10 +28,6 @@ return [
             'description' => 'Výsledky hlasovania sa spracovávajú automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
         ],
         [
-            'name' => 'Znovupoužiteľnosť',
-            'description' => 'Naše riešenie bude fungovať pre všetky typy volieb na Slovensku, rovnako počítame s podporou referenda alebo lokálnych hlasovaní napríklad pri akademických senátoch.'
-        ],
-        [
             'name' => 'Znížená chybovosť',
             'description' => 'V našom riešení eliminujeme chybovosť pri sčítaní hlasov, keďže hlasy sú sčítané elektronicky. Členovia volebnej komisie majú tak na starosti len overovanie totožnosti voličov a vydávanie autorizačných NFC tagov pre hlasovanie.'
         ],
@@ -339,6 +335,41 @@ return [
             'date' => '16.11.2021',
             'title' => 'Začiatok implementácie',
             'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.'
+        ],
+        [
+            'date' => '30.11.2021',
+            'title' => 'Vytvorenie testov',
+            'description' => 'Dokončenie doterajšiu funkcionalitu jednotlivých mikroslužieb a vytvoriť unit testy, ktoré to overia. Členovia tímu majú rozdelené jednotlivé služby a majú na starosti doimplementovať testovacie prípady a použiť na to knižnicu pytest.'
+        ],
+        [
+            'date' => '16.12.2021',
+            'title' => 'Vianočný šprint',
+            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.'
+        ],
+        [
+            'date' => '16.12.2021',
+            'title' => 'Vianočný XXL šprint',
+            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.'
+        ],
+        [
+            'date' => '15.02.2022',
+            'title' => 'Hardwarový manifest',
+            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia.'
+        ],
+        [
+            'date' => '01.03.2022',
+            'title' => 'Integračné testovanie a počítanie výsledkov',
+            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewayu (Selenium a Pytest)'
+        ],
+        [
+            'date' => '15.03.2022',
+            'title' => 'Aplikácia na štatistiky',
+            'description' => 'Zápisnica, aplikácia na výsledky, setup gateway device, talčenie lístku'
+        ],
+        [
+            'date' => '29.03.2022',
+            'title' => 'IIT SRC článok',
+            'description' => 'článok, diagramy, manažment priebehu volieb, odosielanie a generovanie zápisníc'
         ]
     ]
 ];

@@ -56,7 +56,7 @@
     <div class="tab-pane fade" id="encryption-diagram" role="tabpanel" aria-labelledby="encryption-diagram-tab">
         <section class="position-relative">
             <div class="container-lg pb-5 py-lg-7">
-                <h4 class="section-title">Šifrovanie správ</h4>
+                <h4 class="section-title">Šifrovanie komunikácie</h4>
                 <p>
                     <b>Bezpečnosť</b> je vo voľbách, najmä v elektronických, prakticky najdôležitejším prvkom. Porušenie integrity volieb môže viesť k zmene výsledkov a v dôsledku toho k zvoleniu nesprávnych kandidátov.
                 </p>
@@ -113,7 +113,7 @@
     <div class="tab-pane fade" id="voting-process-diagram" role="tabpanel" aria-labelledby="voting-process-diagram-tab">
         <section class="position-relative">
             <div class="container-lg pb-5 py-lg-7">
-                <h4 class="section-title">Volebný process</h4>
+                <h4 class="section-title">Volebný proces</h4>
 
                 <div class="row">
                     <div class="col-md-7 mx-auto">
