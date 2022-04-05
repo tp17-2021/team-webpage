@@ -1,10 +1,10 @@
 <?php
 require_once 'functions.php';
 $current_week_number = date_diff_in_weeks('20/09/2021', date('d/m/Y'));
-$total_weeks_number = date_diff_in_weeks('20/09/2021', date('06/06/2022'));
+$total_weeks_number = date_diff_in_weeks('20/09/2021', date('01/05/2022'));
 
 $current_day_number = date_diff_in_days('20/09/2021', date('d/m/Y'));
-$total_days_number = date_diff_in_days('20/09/2021', date('06/06/2022'));
+$total_days_number = date_diff_in_days('20/09/2021', date('01/05/2022'));
 
 
 return [
