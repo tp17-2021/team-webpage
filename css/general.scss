@@ -340,6 +340,25 @@ iframe {
             opacity: 0.85;
         }
     }
+
+    p {
+        text-align: justify;
+    }
+    @include media-breakpoint-down('lg'){
+        .nav-item {
+            width: calc(50% - 8px);
+            margin: 4px;
+
+            .nav-link {
+                border: 1px solid $primary-color;
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-pills .nav-link {
+        transition: none;
+    }
 }
 
 #progress {

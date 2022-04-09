@@ -208,10 +208,14 @@ require_once 'functions.php';
                                     <div class="content py-3 px-4">
 
                                         <h4 class="title mb-1"><?php echo $sprint_result['title'] ?></h4>
-                                        <div class="mb-3">
-                                            <span class="badge rounded-pill bg-primary">one tag</span>
-                                            <span class="badge rounded-pill bg-primary">second tag</span>
-                                        </div>
+                                        <?php if(array_key_exists('tags', $sprint_result) && count($sprint_result['tags'])): ?>
+                                            <div class="mb-3">
+                                                <?php foreach ($sprint_result['tags'] as $i2 => $tag): ?>
+                                                    <span class="badge rounded-pill bg-primary my-1"><?php echo $tag; ?></span>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        <?php endif; ?>
+
                                         <div class="font-light text">
                                             <?php echo $sprint_result['description'] ?>
                                         </div>

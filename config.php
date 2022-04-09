@@ -311,7 +311,7 @@ return [
     'current_week_number' => $current_week_number,
     'total_weeks_number' => $total_weeks_number,
 
-    'progress_bar_label' =>  round($current_day_number * 100 / $total_days_number, 1)."%", /* 100 / 24 * n (číslo týždna)*/
+    'progress_bar_label' => round($current_day_number * 100 / $total_days_number, 1) . "%", /* 100 / 24 * n (číslo týždna)*/
     'progress_bar_width' => round($current_day_number * 100 / $total_days_number, 0),
 
     /* Sprint results */
@@ -319,57 +319,82 @@ return [
         [
             'date' => '05.10.2021',
             'title' => 'Analýza hardvéru a technológii + Webová stránka',
-            'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.'
+            'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.',
+            'tags' => [
+                'Hardware', 'Architektúra', 'Tímový web'
+            ]
         ],
         [
             'date' => '19.10.2021',
             'title' => 'Dizajn volebnej aplikácie + Projektové metodiky',
-            'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.'
+            'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.',
+            'tags' => [
+                'UI/UX prototype', 'Figma', 'Axure'
+            ]
         ],
         [
             'date' => '02.11.2021',
             'title' => 'Používateľské testovanie a analýza komponentov',
-            'description' => 'Vykonali sme 7 používateľských testovaní, pomocou ktorých sme odhalili niekoľko problémov týkajúcich sa hlavne používateľov staršej vekovej kategórie. Zistenia sme zapracovali do dizajnu a prototypu. Ďalej sme vykonali podrobnejšie analýzy komponentov gateway a server, ich vzájomnej komunikácie a definovali sme prvotné dátové modely.'
+            'description' => 'Vykonali sme 7 používateľských testovaní, pomocou ktorých sme odhalili niekoľko problémov týkajúcich sa hlavne používateľov staršej vekovej kategórie. Zistenia sme zapracovali do dizajnu a prototypu. Ďalej sme vykonali podrobnejšie analýzy komponentov gateway a server, ich vzájomnej komunikácie a definovali sme prvotné dátové modely.',
+            'tags' => [
+                'UX testing', 'UI design'
+            ]
         ],
         [
             'date' => '16.11.2021',
             'title' => 'Začiatok implementácie',
-            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.'
+            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.',
+            'tags' => [
+                'Microservices', 'Gateway', 'Voting frontend'
+            ]
         ],
         [
             'date' => '30.11.2021',
             'title' => 'Vytvorenie testov',
-            'description' => 'Dokončenie doterajšiu funkcionalitu jednotlivých mikroslužieb a vytvoriť unit testy, ktoré to overia. Členovia tímu majú rozdelené jednotlivé služby a majú na starosti doimplementovať testovacie prípady a použiť na to knižnicu pytest.'
+            'description' => 'Dokončenie doterajšiu funkcionalitu jednotlivých mikroslužieb a vytvoriť unit testy, ktoré to overia. Členovia tímu majú rozdelené jednotlivé služby a majú na starosti doimplementovať testovacie prípady a použiť na to knižnicu pytest.',
+            'tags' => [
+                'Microservices', 'Unit tests', 'Pytest'
+            ]
         ],
         [
             'date' => '16.12.2021',
             'title' => 'Vianočný šprint',
-            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.'
-        ],
-        [
-            'date' => '16.12.2021',
-            'title' => 'Vianočný XXL šprint',
-            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.'
+            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.',
+            'tags' => [
+                'Šifrovanie', 'Server API', 'CI/CD pipelines'
+            ]
         ],
         [
             'date' => '15.02.2022',
             'title' => 'Hardwarový manifest',
-            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia.'
+            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia. Implementovali a modifikovali sme kód na obsluhu daných zariadení a prisposobovali ich nášmu prípadu použitia. Vytvoril sa a naprogramoval formát lístknu na tlačenie.',
+            'tags' => [
+                'NFC čítačka', 'Termotlačiareň', 'Dotykový monitor'
+            ]
         ],
         [
             'date' => '01.03.2022',
             'title' => 'Integračné testovanie a počítanie výsledkov',
-            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewayu (Selenium a Pytest)'
+            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewayu (Selenium a Pytest)',
+            'tags' => [
+                'Elastic', 'Integračné testy', 'Selenium'
+            ]
         ],
         [
             'date' => '15.03.2022',
             'title' => 'Aplikácia na štatistiky',
-            'description' => 'Zápisnica, aplikácia na výsledky, setup gateway device, talčenie lístku'
+            'description' => 'Implentovali sme automatické generovanie a odosielanie zápisnice. Dokončili sme frontend aplikácie na zobrazovanie výsledkov. talčenie lístku',
+            'tags' => [
+                'Svelte', 'Aplikácia na štatistiky', 'Volebný terminál'
+            ]
         ],
         [
             'date' => '29.03.2022',
-            'title' => 'IIT SRC článok',
-            'description' => 'článok, diagramy, manažment priebehu volieb, odosielanie a generovanie zápisníc'
+            'title' => 'Publikácia na konferenciu',
+            'description' => 'Napísali sme publikáciu na školskú konferenciu IIT SRC do ktorej sme zapracovali prehľadné diagramy atchitektúry a fungovania nášho riešenia. Poskladali a prepojili sme zariadenia volebného terminálu.',
+            'tags' => [
+                'IIT SRC', 'Voting terminal setup'
+            ]
         ]
     ]
 ];
