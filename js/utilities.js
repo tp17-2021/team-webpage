@@ -51,4 +51,11 @@ $(document).ready(function ($) {
         prevArrow: false,
         nextArrow: false,
     });
+
+    $('.app-images-slider').slick({
+        dots: false,
+        prevArrow:'<span type="button" class="slick-control slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+        nextArrow:'<span type="button" class="slick-control slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+    });
+
 });

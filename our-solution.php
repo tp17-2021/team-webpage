@@ -205,6 +205,42 @@
             </section>
         </div>
     </div>
+</section>
 
+<section id="app-images">
+    <h2 class="section-title">Ukážky obrazoviek</h2>
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="slider-wrapper">
+                <div class="app-images-slider slick-slider">
+                    <div class="slide">
+                        <div class="inner-content">
+                            <img src="assets/img/showcase/showcase-candidates.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-content">
+                            <img src="assets/img/showcase/showcase-chart.png.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-content">
+                            <img src="assets/img/showcase/showcase-parliament-map.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-content">
+                            <img src="assets/img/showcase/showcase-parties.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-content">
+                            <img src="assets/img/showcase/showcase-regional-tables.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </section>

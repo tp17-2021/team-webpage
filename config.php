@@ -12,6 +12,7 @@ return [
     'site_title' => 'Electie | TP@FIIT STU',
     'site_name' => 'Electie - The Future of Voting',
     'email' => 'tim172021@googlegroups.com',
+    'github_link' => 'https://github.com/tp17-2021',
     'main_title' => 'BUDÚCNOSŤ<br>VOLIEB',
     'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
