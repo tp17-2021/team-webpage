@@ -329,7 +329,7 @@ iframe {
     }
 }
 
-#project-architecture-design {
+#project-architecture-design, #app-images {
     .pattern {
         position: absolute;
         top: 0;
@@ -349,6 +349,11 @@ iframe {
             width: calc(50% - 8px);
             margin: 4px;
 
+            @include media-breakpoint-down('sm'){
+                width: calc(100% - 8px);
+                margin: 4px;
+            }
+
             .nav-link {
                 border: 1px solid $primary-color;
                 width: 100%;
@@ -358,6 +363,17 @@ iframe {
 
     .nav-pills .nav-link {
         transition: none;
+    }
+}
+
+#app-images {
+    overflow-x: hidden;
+
+    .slick-slide {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -599,6 +615,16 @@ $progress-darken-step : 5;
                     }
                 }
             }
+        }
+    }
+}
+
+.slick-slider {
+    .slick-slide {
+        max-height: 500px;
+        img {
+            max-height: 500px;
+            margin: auto;
         }
     }
 }

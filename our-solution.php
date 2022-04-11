@@ -209,38 +209,142 @@
 
 <section id="app-images">
     <h2 class="section-title">Ukážky obrazoviek</h2>
-    <div class="row">
-        <div class="col-md-8 mx-auto">
-            <div class="slider-wrapper">
-                <div class="app-images-slider slick-slider">
-                    <div class="slide">
-                        <div class="inner-content">
-                            <img src="assets/img/showcase/showcase-candidates.png" alt="">
+
+    <ul class="nav nav-pills justify-content-center" id="app-images-nav" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="images-app-tab" data-bs-toggle="tab"
+                    data-bs-target="#images-app-section" type="button" role="tab"
+            >Volebná aplikácia
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="images-stats-tab" data-bs-toggle="tab"
+                    data-bs-target="#images-stats-section" type="button" role="tab">Výsledky a štatistiky
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" id="images-gateway-app-tab" data-bs-toggle="tab"
+                    data-bs-target="#images-gateway-app-section" type="button" role="tab">Gateway aplikácia
+            </button>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="images-app-section" role="tabpanel"
+             aria-labelledby="images-app-section-tab">
+            <div class="row my-4">
+                <div class="col-md-8 mx-auto">
+                    <div class="slider-wrapper">
+                        <div class="stats-app-images-slider slick-slider">
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-candidates.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-chart.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-parliament-map.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-parties.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-regional-tables.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="inner-content">
-                            <img src="assets/img/showcase/showcase-chart.png.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="images-stats-section" role="tabpanel"
+             aria-labelledby="images-stats-section-tab">
+            <div class="row my-4">
+                <div class="col-md-8 mx-auto">
+                    <div class="slider-wrapper">
+                        <div class="vt-images-slider slick-slider">
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-party-list.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-party-confirmation.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-pick-candidate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-confirm-candidate.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-voting-confirmation.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="inner-content">
-                            <img src="assets/img/showcase/showcase-parliament-map.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="inner-content">
-                            <img src="assets/img/showcase/showcase-parties.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="inner-content">
-                            <img src="assets/img/showcase/showcase-regional-tables.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="images-gateway-app-section" role="tabpanel"
+             aria-labelledby="images-gateway-app-section-tab">
+            <div class="row my-4">
+                <div class="col-md-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <div class="slider-wrapper">
+                                <div class="g-images-slider slick-slider">
+                                    <div class="slide">
+                                        <div class="inner-content">
+                                            <img src="assets/img/showcase/showcase-vt-party-list.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner-content">
+                                            <img src="assets/img/showcase/showcase-vt-party-confirmation.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner-content">
+                                            <img src="assets/img/showcase/showcase-vt-pick-candidate.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner-content">
+                                            <img src="assets/img/showcase/showcase-vt-confirm-candidate.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="inner-content">
+                                            <img src="assets/img/showcase/showcase-vt-voting-confirmation.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 </section>

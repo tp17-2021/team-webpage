@@ -52,10 +52,27 @@ $(document).ready(function ($) {
         nextArrow: false,
     });
 
-    $('.app-images-slider').slick({
+    $('#app-images-nav button[data-bs-toggle="tab"]').on('click', function (e) {
+        $('.vt-images-slider').slick('refresh');
+        $('.stats-app-images-slider').slick('refresh');
+        $('.g-images-slider').slick('refresh');
+    });
+
+    $('.stats-app-images-slider').slick({
         dots: false,
         prevArrow:'<span type="button" class="slick-control slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
         nextArrow:'<span type="button" class="slick-control slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
     });
 
+    $('.vt-images-slider').slick({
+        dots: false,
+        prevArrow:'<span type="button" class="slick-control slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+        nextArrow:'<span type="button" class="slick-control slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+    });
+
+    $('.g-images-slider').slick({
+        dots: false,
+        prevArrow:'<span type="button" class="slick-control slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+        nextArrow:'<span type="button" class="slick-control slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
+    });
 });
