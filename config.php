@@ -213,6 +213,11 @@ return [
                     'date' => '03.04.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie20.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.21',
+                    'date' => '11.04.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie21.pdf'
+                ],
             ]
         ],
         [
@@ -344,7 +349,7 @@ return [
         [
             'date' => '16.11.2021',
             'title' => 'Začiatok implementácie',
-            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.',
+            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewaya a servera (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Navrhli sme ich integráciu pomocou dokerizácie jednotlivých komponentov.',
             'tags' => [
                 'Microservices', 'Gateway', 'Voting frontend'
             ]
@@ -352,7 +357,7 @@ return [
         [
             'date' => '30.11.2021',
             'title' => 'Vytvorenie testov',
-            'description' => 'Dokončenie doterajšiu funkcionalitu jednotlivých mikroslužieb a vytvoriť unit testy, ktoré to overia. Členovia tímu majú rozdelené jednotlivé služby a majú na starosti doimplementovať testovacie prípady a použiť na to knižnicu pytest.',
+            'description' => 'Ďalej sme rozširovali funkcionalitu jednotlivých mikroslužieb a vytvorili sme unit testy pre overenie nášho riešenia. Členovia tímu mali rozdelené jednotlivé služby a doimplementáciu testovacích prípadov s použitím knižnice pytest.',
             'tags' => [
                 'Microservices', 'Unit tests', 'Pytest'
             ]
@@ -368,7 +373,7 @@ return [
         [
             'date' => '15.02.2022',
             'title' => 'Hardwarový manifest',
-            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia. Implementovali a modifikovali sme kód na obsluhu daných zariadení a prisposobovali ich nášmu prípadu použitia. Vytvoril sa a naprogramoval formát lístknu na tlačenie.',
+            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia. Implementovali a modifikovali sme kód na obsluhu daných zariadení a prisposobovali ich nášmu prípadu použitia. Vytvoril sa formát potvrdenia o voľbe na tlačenie.',
             'tags' => [
                 'NFC čítačka', 'Termotlačiareň', 'Dotykový monitor'
             ]
@@ -376,7 +381,7 @@ return [
         [
             'date' => '01.03.2022',
             'title' => 'Integračné testovanie a počítanie výsledkov',
-            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewayu (Selenium a Pytest)',
+            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewaya (Selenium a Pytest).',
             'tags' => [
                 'Elastic', 'Integračné testy', 'Selenium'
             ]
@@ -384,7 +389,7 @@ return [
         [
             'date' => '15.03.2022',
             'title' => 'Aplikácia na štatistiky',
-            'description' => 'Implentovali sme automatické generovanie a odosielanie zápisnice. Dokončili sme frontend aplikácie na zobrazovanie výsledkov. talčenie lístku',
+            'description' => 'Implentovali sme automatické generovanie a odosielanie zápisnice. Dokončili sme frontend aplikácie na zobrazovanie výsledkov. Prácovalo sa na tlači potvrdenia o voľbe.',
             'tags' => [
                 'Svelte', 'Aplikácia na štatistiky', 'Volebný terminál'
             ]
@@ -392,7 +397,7 @@ return [
         [
             'date' => '29.03.2022',
             'title' => 'Publikácia na konferenciu',
-            'description' => 'Napísali sme publikáciu na školskú konferenciu IIT SRC do ktorej sme zapracovali prehľadné diagramy atchitektúry a fungovania nášho riešenia. Poskladali a prepojili sme zariadenia volebného terminálu.',
+            'description' => 'Napísali sme publikáciu na školskú konferenciu IIT SRC, do ktorej sme zapracovali prehľadné diagramy architektúry a fungovania nášho riešenia. Poskladali a prepojili sme zariadenia volebného terminálu.',
             'tags' => [
                 'IIT SRC', 'Voting terminal setup'
             ]
