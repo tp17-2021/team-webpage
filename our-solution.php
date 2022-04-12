@@ -85,7 +85,9 @@
                     <p>
                         <b>Bezpečnosť</b> je vo voľbách, najmä v elektronických, prakticky najdôležitejším prvkom.
                         Porušenie integrity volieb môže viesť k zmene výsledkov a v dôsledku toho k zvoleniu nesprávnych
-                        kandidátov.
+                        kandidátov. Keďže naše riešenie zahŕňa iba jeden centrálny server a hlasy z gateway-ov sú odosielané cez
+                        verejnú internetovú sieť, rozhodli sme sa použiť <b>RSA</b> a <b>AES</b> algoritmy na šifrovanie
+                        prenášaných hlasov.
                     </p>
                     <div class="row">
                         <div class="col-md-10 mx-auto">
@@ -95,10 +97,8 @@
                     </div>
 
                     <p>
-                        Keďže naše riešenie zahŕňa iba jeden centrálny server a hlasy z gateway-ov sú odosielané cez
-                        verejnú internetovú sieť, rozhodli sme sa použiť <b>RSA</b> a <b>AES</b> algoritmy na šifrovanie
-                        prenášaných hlasov. Samotné hlasy sú zašifrované pomocou symetrického kľúča AES, ktorý je potom
-                        zašifrovaný verejným kľúčom RSA hlavného serveru. Hlasy sú tiež podpísané asymetrickým privátnym
+                        Samotné hlasy sú zašifrované pomocou symetrického kľúča AES, ktorý je potom
+                        zašifrovaný verejným kľúčom RSA hlavného servera. Hlasy sú tiež podpísané asymetrickým privátnym
                         kľúčom RSA gateway-a, ktorý zabezpečí, že počas prenosu na server dáta neboli zmenené. Zapojením
                         súkromného kľúča volebnej miestnosti sme zabezpečili, že aj keby útočník poznal verejný kľúč
                         hlavného servera, potrebovali by poznať aj privátny kľúč konkrétnej volebnej miestnosti.
@@ -131,10 +131,10 @@
                     <p>
                         Dáta reprezentujúce hlas voliča v <b>JSON</b> formáte sú odoslané na backend terminálu, kde sa
                         overí platnosť voličovho autorizačného tokenu a následne je potvrdený aj jeho hlas. Šifrovaný
-                        hlas, spolu s identifikátorom volebného terminálu a autorizačným tokenom voliča je odoslaný na
-                        gateway, kde sa spracuje. Voting Service dešifruje hlas kľúča daného volebného terminálu a
+                        hlas spolu s identifikátorom volebného terminálu a autorizačným tokenom voliča je odoslaný na
+                        gateway, kde sa spracuje. Voting Service dešifruje hlas kľúčom daného volebného terminálu a
                         následne overí <b>platnosť autorizačného tokenu</b>. Ak je token platný, hlas sa uloží do
-                        databázy a vráti správu o úspešnom spracovaní požiadavky. Akonáhle terminál prijme odpoveď, <b>tlačiareň
+                        databázy a je vrátená správa o úspešnom spracovaní požiadavky. Akonáhle terminál prijme odpoveď, <b>tlačiareň
                             vytlačí potvrdzujúci doklad</b> (malý papier) s podrobnosťami o hlasovaní a <b>QR kódom</b>.
                     </p>
 
@@ -196,7 +196,7 @@
 
                     <p>Taktiež je možné odovzdať aj prázdny hlas
                         ako to je možné pri klasických voľbách. Volebný terminál informuje voliča o úspechu voľby a
-                        vytlačí potvrdenie o hlasovaní (malý papierik, ktorý obsahuje QR kód pre možnosť offline
+                        vytlačí potvrdenie o hlasovaní (malý papier, ktorý obsahuje QR kód pre možnosť offline
                         počítania hlasov). Následne volič vhodí potvrdenie do volebnej urny a hlasovací proces je z
                         pohľadu voliča ukončený.
                     </p>
