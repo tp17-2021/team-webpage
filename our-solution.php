@@ -314,27 +314,17 @@
                                 <div class="g-images-slider slick-slider">
                                     <div class="slide">
                                         <div class="inner-content">
-                                            <img src="assets/img/showcase/showcase-vt-party-list.png" alt="">
+                                            <img src="assets/img/showcase/showcase-admin-g-pin.png" alt="">
                                         </div>
                                     </div>
                                     <div class="slide">
                                         <div class="inner-content">
-                                            <img src="assets/img/showcase/showcase-vt-party-confirmation.png" alt="">
+                                            <img src="assets/img/showcase/showcase-admin-g-dashboard.png" alt="">
                                         </div>
                                     </div>
                                     <div class="slide">
                                         <div class="inner-content">
-                                            <img src="assets/img/showcase/showcase-vt-pick-candidate.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="inner-content">
-                                            <img src="assets/img/showcase/showcase-vt-confirm-candidate.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <div class="inner-content">
-                                            <img src="assets/img/showcase/showcase-vt-voting-confirmation.png" alt="">
+                                            <img src="assets/img/showcase/showcase-admin-g-voting-status.png" alt="">
                                         </div>
                                     </div>
                                 </div>
