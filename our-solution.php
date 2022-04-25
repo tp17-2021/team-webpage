@@ -238,6 +238,78 @@
                         <div class="stats-app-images-slider slick-slider">
                             <div class="slide">
                                 <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-wait-for-nfc.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-picked-party.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-picked-party-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-filtering.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-filtering-pick.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-candidates-list.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-picked-candidates.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-picked-candidates-popup.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-summary.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-waiting.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-error.png" alt="">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="inner-content">
+                                    <img src="assets/img/showcase/showcase-vt-success.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="images-stats-section" role="tabpanel"
+             aria-labelledby="images-stats-section-tab">
+            <div class="row my-4">
+                <div class="col-md-8 mx-auto">
+                    <div class="slider-wrapper">
+                        <div class="vt-images-slider slick-slider">
+                            <div class="slide">
+                                <div class="inner-content">
                                     <img src="assets/img/showcase/showcase-candidates.png" alt="">
                                 </div>
                             </div>
@@ -259,43 +331,6 @@
                             <div class="slide">
                                 <div class="inner-content">
                                     <img src="assets/img/showcase/showcase-regional-tables.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="tab-pane fade" id="images-stats-section" role="tabpanel"
-             aria-labelledby="images-stats-section-tab">
-            <div class="row my-4">
-                <div class="col-md-8 mx-auto">
-                    <div class="slider-wrapper">
-                        <div class="vt-images-slider slick-slider">
-                            <div class="slide">
-                                <div class="inner-content">
-                                    <img src="assets/img/showcase/showcase-vt-party-list.png" alt="">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="inner-content">
-                                    <img src="assets/img/showcase/showcase-vt-party-confirmation.png" alt="">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="inner-content">
-                                    <img src="assets/img/showcase/showcase-vt-pick-candidate.png" alt="">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="inner-content">
-                                    <img src="assets/img/showcase/showcase-vt-confirm-candidate.png" alt="">
-                                </div>
-                            </div>
-                            <div class="slide">
-                                <div class="inner-content">
-                                    <img src="assets/img/showcase/showcase-vt-voting-confirmation.png" alt="">
                                 </div>
                             </div>
                         </div>

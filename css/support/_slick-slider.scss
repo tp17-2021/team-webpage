@@ -9,6 +9,21 @@
         max-height: unset;
     }
 
+    .slick-track {
+        margin-top: -8px;
+        margin-bottom: -8px;
+    }
+
+    .slick-slide {
+        margin: 8px;
+        //margin-top: 8px;
+        //margin-bottom: 8px;
+
+        .slide {
+            box-shadow: 1px 0px 8px #b5b5b5ab;
+        }
+    }
+
     .slick-control {
         color: $primary-color;
         width: 2rem;
