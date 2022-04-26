@@ -1,0 +1,75 @@
+// see https://github.com/kenwheeler/slick/issues/158
+// see https://stackoverflow.com/questions/47325172/slick-slider-box-shadows-are-cut-off
+.slick-slider {
+    visibility: hidden;
+    max-height: 400px;
+
+    &.slick-initialized {
+        visibility: visible;
+        max-height: unset;
+    }
+
+    .slick-track {
+        margin-top: -8px;
+        margin-bottom: -8px;
+    }
+
+    .slick-slide {
+        margin: 8px;
+        //margin-top: 8px;
+        //margin-bottom: 8px;
+
+        .slide {
+            box-shadow: 1px 0px 8px #b5b5b5ab;
+        }
+    }
+
+    .slick-control {
+        color: $primary-color;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+
+        > i {
+            font-size: 2rem;
+        }
+
+        svg {
+            stroke: $primary-color;
+            fill: $primary-color;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    .slick-control:focus {
+        outline: none;
+    }
+
+    .slick-prev {
+        left: -2rem;
+
+        @include media-breakpoint-down('md') {
+            left: 2rem;
+        }
+    }
+
+    .slick-next {
+        right: -2rem;
+        @include media-breakpoint-down('md') {
+            right: 2rem;
+        }
+    }
+
+    input, [type="button"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}

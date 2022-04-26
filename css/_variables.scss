@@ -77,6 +77,9 @@ $headings-font-sizes: (
     h6 : 1rem,
 );
 
+$link-color: $primary-color;
+$nav-link-color: $primary-color;
+
 
 // bootstrap override
 $custom-theme-colors: (
@@ -140,6 +143,16 @@ $table-striped-bg: #cae4fc45;
 //$modal-show-transform
 $modal-content-border-radius: $default-border-radius;
 $modal-inner-padding: 1rem 2rem;
+
+
+$nav-tabs-border-color: $primary-color;
+$nav-tabs-link-hover-border-color:	$primary-color $primary-color $nav-tabs-border-color;
+$nav-tabs-link-active-color: $primary-color;
+$nav-tabs-link-active-bg: white;
+$nav-tabs-link-active-border-color:	$primary-color $primary-color $nav-tabs-link-active-bg;
+
+$nav-pills-link-active-bg: $primary-color;
+$nav-pills-link-active-color : white;
 
 
 @keyframes float {

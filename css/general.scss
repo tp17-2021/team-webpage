@@ -329,18 +329,55 @@ iframe {
     }
 }
 
-#progress {
-
+#project-architecture-design, #app-images {
     .pattern {
         position: absolute;
         top: 0;
         right: 0;
+        z-index: -1;
 
         img {
             opacity: 0.85;
         }
     }
 
+    p {
+        text-align: justify;
+    }
+    @include media-breakpoint-down('lg'){
+        .nav-item {
+            width: calc(50% - 8px);
+            margin: 4px;
+
+            @include media-breakpoint-down('sm'){
+                width: calc(100% - 8px);
+                margin: 4px;
+            }
+
+            .nav-link {
+                border: 1px solid $primary-color;
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-pills .nav-link {
+        transition: none;
+    }
+}
+
+#app-images {
+    overflow-x: hidden;
+
+    .slick-slide {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#progress {
     .progress-wrapper {
         .progress {
             height: 1.4rem;
@@ -469,18 +506,19 @@ iframe {
     }
 }
 
-$starting-color: lighten($dark-blue, 40);
-@for $i from 1 through 12 {
+$starting-color: lighten($dark-blue, 45);
+$progress-darken-step : 5;
+@for $i from 1 through 13 {
     .bg-blue-shade-#{$i} {
-        background-color: darken($starting-color, $i * 4);
+        background-color: darken($starting-color, $i * $progress-darken-step);
     }
 
     .border-blue-shade-#{$i} {
-        border-color: darken($starting-color, $i * 4);
+        border-color: darken($starting-color, $i * $progress-darken-step);
     }
 
     .font-blue-shade-#{$i} {
-        color: darken($starting-color, $i * 4);
+        color: darken($starting-color, $i * $progress-darken-step);
     }
 }
 
@@ -577,6 +615,16 @@ $starting-color: lighten($dark-blue, 40);
                     }
                 }
             }
+        }
+    }
+}
+
+.slick-slider {
+    .slick-slide {
+        max-height: 500px;
+        img {
+            max-height: 500px;
+            margin: auto;
         }
     }
 }

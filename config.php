@@ -1,10 +1,10 @@
 <?php
 require_once 'functions.php';
 $current_week_number = date_diff_in_weeks('20/09/2021', date('d/m/Y'));
-$total_weeks_number = date_diff_in_weeks('20/09/2021', date('06/06/2022'));
+$total_weeks_number = date_diff_in_weeks('20/09/2021', date('01/05/2022'));
 
 $current_day_number = date_diff_in_days('20/09/2021', date('d/m/Y'));
-$total_days_number = date_diff_in_days('20/09/2021', date('06/06/2022'));
+$total_days_number = date_diff_in_days('20/09/2021', date('01/05/2022'));
 
 
 return [
@@ -12,6 +12,7 @@ return [
     'site_title' => 'Electie | TP@FIIT STU',
     'site_name' => 'Electie - The Future of Voting',
     'email' => 'tim172021@googlegroups.com',
+    'github_link' => 'https://github.com/tp17-2021',
     'main_title' => 'BUDÚCNOSŤ<br>VOLIEB',
     'main_subtitle' => 'Bezpečnejšie, rýchlejšie, lacnejšie a ekologickejšie',
 
@@ -25,19 +26,15 @@ return [
         ],
         [
             'name' => 'Rýchlejšie výsledky',
-            'description' => 'Výsledky hlasovania sa budú spracovávať automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
-        ],
-        [
-            'name' => 'Znovupoužiteľnosť',
-            'description' => 'Naše riešenie bude fungovať pre všetky typy volieb na Slovensku, rovnako počítame s podporou referenda alebo lokálnych hlasovaní napríklad pri akademických senátoch.'
+            'description' => 'Výsledky hlasovania sa spracovávajú automaticky počas volieb, čím vieme priebežne poskytovať prehľad o aktuálnej volebnej účasti. Po ukončení hlasovania vieme výsledky volieb poskytnúť prakticky okamžite. Ak to typ a legislatíva konkrétnych volieb dovoľuje, vysledky môžu byť dostupné v reálnom čase aj počas priebehu volieb.'
         ],
         [
             'name' => 'Znížená chybovosť',
-            'description' => 'V našom riešení obmedzíme chybovosť pri počítaní hlasov, keďže hlasy budú sčítané elektronicky. Členovia volebnej komisie budú mať tak na starosti len overovanie totožnosti voličov a vydávanie NFC tagov pre hlasovanie.'
+            'description' => 'V našom riešení eliminujeme chybovosť pri sčítaní hlasov, keďže hlasy sú sčítané elektronicky. Členovia volebnej komisie majú tak na starosti len overovanie totožnosti voličov a vydávanie autorizačných NFC tagov pre hlasovanie.'
         ],
         [
             'name' => 'Možnosť kontroly',
-            'description' => 'V prípade problémov je stále možné vytlačené volebné lístky ručne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti.'
+            'description' => 'V prípade problémov je stále možné vytlačené potvrdenia o voľbe manuálne spočítať a uistiť sa o výsledkoch volieb v prípade ústavnej sťažnosti. Tiež je možné automatizované offline spočítanie hlasov pomocou skenovania QR kódov z potvrdení o voľbe.'
         ]
     ],
 
@@ -45,19 +42,19 @@ return [
     'voting_items' => [
         [
             'name' => 'Overenie totožnosti',
-            'description' => 'Volebná komisia overí totožnosť voliča pomocou občianskeho preukazu a zoznamu voličov v tablete. Oproti klasickému vyhľadávaniu, bude elektronické vyhľadanie rýchlejšie a precíznejšie.'
+            'description' => 'Volebná komisia overí totožnosť voliča štandardným spôsobom, teda pomocou občianskeho preukazu a zoznamu oprávnených voličov vo vytlačenom zozname. Elektronizácia tohto kroku je zámerne vynechaná, aby nebolo v žiadom prípade možné na základe časových pečiatok identifikovať ku ktorému voličovi patrí odoslaný hlas.'
         ],
         [
             'name' => 'Výber NFC tagu',
-            'description' => '<a href="https://en.wikipedia.org/wiki/Near-field_communication">NFC</a> tag je naprogramovateľný čip, ktorý v sebe nesie jedinečný kód pre voľby. Volič si náhodne vyberie jeden z ponúkaných NFC tagov z misy. Informácie uložené na Tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
+            'description' => '<a href="https://en.wikipedia.org/wiki/Near-field_communication">NFC</a> tag je naprogramovateľný čip, ktorý v sebe nesie jedinečný autorizačný token pre voľby. Volič si náhodne vyberie jeden z ponúkaných NFC tagov z nádoby. Informácie uložené na tagu nie sú žiadnym spôsobom spájané s identitou voliča. Náhodným výberom sa snažíme získať dôveru voliča v anonymitu volieb.'
         ],
         [
             'name' => 'Hlasovanie',
-            'description' => 'Volič pristúpi k volebnému terminálu, do ktorého vloží NFC Tag, čím mu je umožnené odvoliť. Volič postupuje podľa pokynov na obrazovke. Aplikácia je navrhnutá s ohľadom na jej použiteľnosť, obrazovka je dostatočne veľká a písmo je jasne čitateľné. Svoju voľbu potvrdí a volebný terminál vytlačí potvrdenie o hlasovaní.'
+            'description' => 'Volič pristúpi k volebnému terminálu, ku čítačke priloží NFC tag, čím sa vykoná autorizácia a je mu umožnené odvoliť. Volič postupuje podľa pokynov na obrazovke. Aplikácia je navrhnutá s ohľadom na jej použiteľnosť, obrazovka je dostatočne veľká a písmo je jasne čitateľné. Svoju voľbu potvrdí a volebný terminál vytlačí potvrdenie o hlasovaní.'
         ],
         [
             'name' => 'Vhodenie potvrdenia do urny',
-            'description' => 'Vytlačený volebný lístok volič hodí do urny. Umožňuje tým kontrolu hlasov v prípade problémov alebo sťažností. Používame len jeden menší papier pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
+            'description' => 'Vytlačené potvrdenie o voľbe volič vhodí do urny. Je umožnená kontrola hlasov aj mimo volebného systému v prípade problémov alebo sťažností. Potvrdenie o voľbe je vytlačené na jednom malom papieri (menšom ako pokladničný doklad) pre každého zúčastneného voliča, čím sa výrazne znižuje odpad.'
         ],
         [
             'name' => 'Výsledky',
@@ -330,7 +327,7 @@ return [
     'current_week_number' => $current_week_number,
     'total_weeks_number' => $total_weeks_number,
 
-    'progress_bar_label' =>  round($current_day_number * 100 / $total_days_number, 1)."%", /* 100 / 24 * n (číslo týždna)*/
+    'progress_bar_label' => round($current_day_number * 100 / $total_days_number, 1) . "%", /* 100 / 24 * n (číslo týždna)*/
     'progress_bar_width' => round($current_day_number * 100 / $total_days_number, 0),
 
     /* Sprint results */
@@ -338,22 +335,82 @@ return [
         [
             'date' => '05.10.2021',
             'title' => 'Analýza hardvéru a technológii + Webová stránka',
-            'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.'
+            'description' => 'Vytvorili sme tímovú webovú stránku s použitím PHP a Bootstrap v5. Analyzovali sme možné zariadenia pre tlač potvrdení, čítačku NFC tagov a dotykový displej. Navrhli sme high-level architektúru aplikácie. Prihlásili sme sa do TP CUPu.',
+            'tags' => [
+                'Hardware', 'Architektúra', 'Tímový web'
+            ]
         ],
         [
             'date' => '19.10.2021',
             'title' => 'Dizajn volebnej aplikácie + Projektové metodiky',
-            'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.'
+            'description' => 'Vytvorili sme dizajn a prototyp volebnej aplikácie v nástroji Figma. Tento prototyp bude slúžiť na používateľské testovanie s cieľom odhalenia nedostatkov. Doplnili sme metodiky pre manažovanie kódu, testovanie, logovanie času a code style.',
+            'tags' => [
+                'UI/UX prototype', 'Figma', 'Axure'
+            ]
         ],
         [
             'date' => '02.11.2021',
             'title' => 'Používateľské testovanie a analýza komponentov',
-            'description' => 'Vykonali sme 7 používateľských testovaní, pomocou ktorých sme odhalili niekoľko problémov týkajúcich sa hlavne používateľov staršej vekovej kategórie. Zistenia sme zapracovali do dizajnu a prototypu. Ďalej sme vykonali podrobnejšie analýzy komponentov gateway a server, ich vzájomnej komunikácie a definovali sme prvotné dátové modely.'
+            'description' => 'Vykonali sme 7 používateľských testovaní, pomocou ktorých sme odhalili niekoľko problémov týkajúcich sa hlavne používateľov staršej vekovej kategórie. Zistenia sme zapracovali do dizajnu a prototypu. Ďalej sme vykonali podrobnejšie analýzy komponentov gateway a server, ich vzájomnej komunikácie a definovali sme prvotné dátové modely.',
+            'tags' => [
+                'UX testing', 'UI design'
+            ]
         ],
         [
             'date' => '16.11.2021',
             'title' => 'Začiatok implementácie',
-            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewayu a serveru (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Ich integrácia bude prebiehať pomocou dokerizácie jednotlivých komponentov.'
+            'description' => 'V tejto fáze sme začali s implementovaním jednotlivých komponentov. Prácu sme si rozdelili a súbežne sme pracovali na prvých prototypoch gatewaya a servera (FastAPI), databázy (MongoDB), a používateľskej aplikácie (Svelte). Navrhli sme ich integráciu pomocou dokerizácie jednotlivých komponentov.',
+            'tags' => [
+                'Microservices', 'Gateway', 'Voting frontend'
+            ]
+        ],
+        [
+            'date' => '30.11.2021',
+            'title' => 'Vytvorenie testov',
+            'description' => 'Ďalej sme rozširovali funkcionalitu jednotlivých mikroslužieb a vytvorili sme unit testy pre overenie nášho riešenia. Členovia tímu mali rozdelené jednotlivé služby a doimplementáciu testovacích prípadov s použitím knižnice pytest.',
+            'tags' => [
+                'Microservices', 'Unit tests', 'Pytest'
+            ]
+        ],
+        [
+            'date' => '16.12.2021',
+            'title' => 'Vianočný šprint',
+            'description' => 'Tento šprint sme sa rozhodli natiahnuť na 6 týždňov a každý sme pracovali individuálne podľa chuti. Implementovali sme spracovanie hlasov na serveri, vytvorili sme knižnicu na šifrovanie a implementovali automatizačnú pipeline na deployment.',
+            'tags' => [
+                'Šifrovanie', 'Server API', 'CI/CD pipelines'
+            ]
+        ],
+        [
+            'date' => '15.02.2022',
+            'title' => 'Hardwarový manifest',
+            'description' => 'V tomto šprinte sme obdržali čítačku NFC tagov, tlačiareň a dotykové zariadenia. Implementovali a modifikovali sme kód na obsluhu daných zariadení a prisposobovali ich nášmu prípadu použitia. Vytvoril sa formát potvrdenia o voľbe na tlačenie.',
+            'tags' => [
+                'NFC čítačka', 'Termotlačiareň', 'Dotykový monitor'
+            ]
+        ],
+        [
+            'date' => '01.03.2022',
+            'title' => 'Integračné testovanie a počítanie výsledkov',
+            'description' => 'Implementovali sme synchronizáciu hlasov do ElasticSearch a vytvorili endpointy na získavanie agregovaných výsledkov. Pripravili sme integračné testy medzi službami volebného terminálu a gatewaya (Selenium a Pytest).',
+            'tags' => [
+                'Elastic', 'Integračné testy', 'Selenium'
+            ]
+        ],
+        [
+            'date' => '15.03.2022',
+            'title' => 'Aplikácia na štatistiky',
+            'description' => 'Implentovali sme automatické generovanie a odosielanie zápisnice. Dokončili sme frontend aplikácie na zobrazovanie výsledkov. Prácovalo sa na tlači potvrdenia o voľbe.',
+            'tags' => [
+                'Svelte', 'Aplikácia na štatistiky', 'Volebný terminál'
+            ]
+        ],
+        [
+            'date' => '29.03.2022',
+            'title' => 'Publikácia na konferenciu',
+            'description' => 'Napísali sme publikáciu na školskú konferenciu IIT SRC, do ktorej sme zapracovali prehľadné diagramy architektúry a fungovania nášho riešenia. Poskladali a prepojili sme zariadenia volebného terminálu.',
+            'tags' => [
+                'IIT SRC', 'Voting terminal setup'
+            ]
         ]
     ]
 ];
