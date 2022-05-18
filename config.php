@@ -374,6 +374,26 @@ return [
                     'date' => '20.12.2021',
                     'filepath' => 'assets/documents/others/tim17_milnik2.pdf'
                 ],
+                [
+                    'name' => 'Technická dokumentácia',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/others/technical_documentation.pdf'
+                ],
+                [
+                    'name' => 'Používateľská príručka',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/others/user_guide.pdf'
+                ],
+                [
+                    'name' => 'Inštalačná príručka',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/others/installation_guide.pdf'
+                ],
+                [
+                    'name' => 'Míľnik LS',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/others/tim_17_milnik_final.pdf'
+                ],
             ]
         ]
     ],
