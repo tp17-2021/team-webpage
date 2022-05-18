@@ -507,7 +507,7 @@ iframe {
 }
 
 $starting-color: lighten($dark-blue, 45);
-$progress-darken-step : 5;
+$progress-darken-step : 4.4;
 @for $i from 1 through 13 {
     .bg-blue-shade-#{$i} {
         background-color: darken($starting-color, $i * $progress-darken-step);
