@@ -390,11 +390,6 @@ return [
                     'filepath' => 'assets/documents/others/installation_guide.pdf'
                 ],
                 [
-                    'name' => 'Poznámky k projektu',
-                    'date' => '18.05.2022',
-                    'filepath' => 'assets/documents/others/project_notes.pdf'
-                ],
-                [
                     'name' => 'Míľnik LS',
                     'date' => '18.05.2022',
                     'filepath' => 'assets/documents/others/tim_17_milnik_final.pdf'
