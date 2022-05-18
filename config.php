@@ -235,12 +235,12 @@ return [
                 ],
                 [
                     'name' => 'Zápisnica č.25',
-                    'date' => '17.05.2022',
+                    'date' => '18.05.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie25.pdf'
                 ],
                 [
                     'name' => 'Zápisnica č.26',
-                    'date' => '17.05.2022',
+                    'date' => '18.05.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie26.pdf'
                 ],
             ]
@@ -307,14 +307,14 @@ return [
                 ],
                 [
                     'name' => 'Zhodnotenie šprintu 12',
-                    'date' => '17.05.2022',
+                    'date' => '18.05.2022',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu12.pdf'
                 ],
-                /*[
+                [
                     'name' => 'Zhodnotenie šprintu 13',
-                    'date' => '17.05.2022',
+                    'date' => '18.05.2022',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu13.pdf'
-                ],*/
+                ],
             ]
         ],
         [
