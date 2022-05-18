@@ -55,8 +55,11 @@
             }
 
             &.docs-item {
+                color: #619fdb;
+
                 &:hover {
-                    background-color: #4d93d7;
+                    background-color: #619fdb;
+                    color: $white;
                 }
             }
         }
