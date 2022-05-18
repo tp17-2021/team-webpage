@@ -1,10 +1,10 @@
 <?php
 require_once 'functions.php';
-$current_week_number = date_diff_in_weeks('20/09/2021', date('d/m/Y'));
-$total_weeks_number = date_diff_in_weeks('20/09/2021', date('01/05/2022'));
+$current_week_number = 32; //date_diff_in_weeks('20/09/2021', date('d/m/Y'));
+$total_weeks_number = 32; //date_diff_in_weeks('20/09/2021', date('01/05/2022'));
 
-$current_day_number = date_diff_in_days('20/09/2021', date('d/m/Y'));
-$total_days_number = date_diff_in_days('20/09/2021', date('01/05/2022'));
+$current_day_number = 200; //date_diff_in_days('20/09/2021', date('d/m/Y'));
+$total_days_number = 200; //date_diff_in_days('20/09/2021', date('01/05/2022'));
 
 
 return [
@@ -228,6 +228,21 @@ return [
                     'date' => '19.04.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie23.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.24',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie24.pdf'
+                ],
+                [
+                    'name' => 'Zápisnica č.25',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie25.pdf'
+                ],
+                [
+                    'name' => 'Zápisnica č.26',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie26.pdf'
+                ],
             ]
         ],
         [
@@ -259,6 +274,46 @@ return [
                     'name' => 'Zhodnotenie šprintu 5',
                     'date' => '15.12.2021',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu5.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 6',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu6.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 7',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu7.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 8',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu8.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 9',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu9.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 10',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu10.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 11',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu11.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 12',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu12.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 13',
+                    'date' => '18.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu13.pdf'
                 ],
             ]
         ],
