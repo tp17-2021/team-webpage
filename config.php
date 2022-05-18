@@ -468,17 +468,9 @@ return [
             ]
         ],
         [
-            'date' => '30.03.2022',
-            'title' => 'Príprava na konferenciu',
-            'description' => 'Pripracovali sme naše riešenie na konferenciu IIT SRC. Zariadenia volebného terminálu sme niekoľko krát vyskúšali a pripravili interaktívnu ukážku. Taktiež sme sa zamýšlali nad scenárom tímového videa.',
-            'tags' => [
-                'IIT SRC', 'Voting terminal setup', 'Video'
-            ]
-        ],
-        [
             'date' => '12.04.2022',
             'title' => 'Príprava na konferenciu',
-            'description' => 'Pripracovali sme naše riešenie na konferenciu IIT SRC. Zariadenia volebného terminálu sme niekoľko krát vyskúšali a pripravili interaktívnu ukážku. Taktiež sme sa zamýšlali nad scenárom tímového videa.',
+            'description' => 'Pripravovali sme naše riešenie na konferenciu IIT SRC. Zariadenia volebného terminálu sme niekoľkokrát vyskúšali a pripravili interaktívnu ukážku. Taktiež sme sa zamýšlali nad scenárom tímového videa.',
             'tags' => [
                 'IIT SRC', 'Voting terminal setup', 'Video'
             ]

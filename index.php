@@ -184,7 +184,7 @@ require_once 'functions.php';
 
                     if ($index == count($config['sprint_results']) - 1) {
                         $sprint_end = clone $sprint_start;
-                        $sprint_end = $sprint_end->add(new DateInterval('P14D'));
+                        $sprint_end = $sprint_end->add(new DateInterval('P22D'));
                     } else {
                         $sprint_end = DateTime::createFromFormat('d.m.Y', $config['sprint_results'][$index + 1]['date']);
                         $sprint_end = $sprint_end->sub(new DateInterval('P1D'));
