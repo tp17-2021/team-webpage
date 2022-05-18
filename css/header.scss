@@ -53,6 +53,12 @@
                     padding: 1.15rem 1.4rem;
                 }
             }
+
+            &.docs-item {
+                &:hover {
+                    background-color: #4d93d7;
+                }
+            }
         }
     }
 

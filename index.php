@@ -26,9 +26,6 @@ require_once 'functions.php';
                         <a class="nav-link" aria-current="page" href="#advantages">Výhody</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#voting-process">Ako voliť</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#project-architecture-design">Návrh riešenia</a>
                     </li>
                     <li class="nav-item">
@@ -36,6 +33,9 @@ require_once 'functions.php';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#documents">Dokumenty</a>
+                    </li>
+                    <li class="nav-item docs-item">
+                        <a class="nav-link" aria-current="page" href="docs/">Dokumentácia</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#team">Tím</a>
