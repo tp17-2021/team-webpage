@@ -233,6 +233,16 @@ return [
                     'date' => '08.05.2022',
                     'filepath' => 'assets/documents/meeting_reports/stretnutie24.pdf'
                 ],
+                [
+                    'name' => 'Zápisnica č.25',
+                    'date' => '17.05.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie25.pdf'
+                ],
+                [
+                    'name' => 'Zápisnica č.26',
+                    'date' => '17.05.2022',
+                    'filepath' => 'assets/documents/meeting_reports/stretnutie26.pdf'
+                ],
             ]
         ],
         [
@@ -266,9 +276,19 @@ return [
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu5.pdf'
                 ],
                 [
+                    'name' => 'Zhodnotenie šprintu 6',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu6.pdf'
+                ],
+                [
                     'name' => 'Zhodnotenie šprintu 7',
                     'date' => '08.05.2022',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu7.pdf'
+                ],
+                [
+                    'name' => 'Zhodnotenie šprintu 8',
+                    'date' => '08.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu8.pdf'
                 ],
                 [
                     'name' => 'Zhodnotenie šprintu 9',
@@ -285,6 +305,16 @@ return [
                     'date' => '08.05.2022',
                     'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu11.pdf'
                 ],
+                [
+                    'name' => 'Zhodnotenie šprintu 12',
+                    'date' => '17.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu12.pdf'
+                ],
+                /*[
+                    'name' => 'Zhodnotenie šprintu 13',
+                    'date' => '17.05.2022',
+                    'filepath' => 'assets/documents/sprint_reports/zhodnotenie_sprintu13.pdf'
+                ],*/
             ]
         ],
         [
